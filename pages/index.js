@@ -9,7 +9,7 @@ export default function Home() {
       <header className="py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-2 lg:px-2">
           <nav className="relative z-50 flex justify-between">
-            <div className="flex w-96 items-center md:gap-x-12">
+            <div className="flex-1 items-center md:gap-x-10">
               <Link href="#">
                 <svg
                   width="150"
