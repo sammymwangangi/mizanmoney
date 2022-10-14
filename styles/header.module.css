@@ -1,0 +1,51 @@
+.waitlist {
+    background: linear-gradient(80.75deg, #D155FF 4.6%, #B532F2 17.14%, #A016E8 29.4%, #9406E2 40.22%, #8F00E0 48.46%, #A08CFF 92.32%);
+    border-radius: 40px;
+}
+.saalam {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 93px;
+    background: linear-gradient(97.82deg, #000000 6.24%, #9E7AFC 93.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.pr_1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(101.73deg, #000000 -3.33%, #9E7AFC 78.17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.pr_2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #4B4B4B;
+    margin-top: 21px;
+    margin-bottom: 76px;
+}
+
+.phone {
+    position: absolute;
+    width: 661.95px;
+    height: 530.45px;
+    right: 0px;
+    top: 200px;
+    z-index: 20;
+}
