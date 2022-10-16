@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         
       </Head>
-      <body className="flex h-full flex-col font-['Poppins']">
+      <body>
         <Main />
         <NextScript />
       </body>
