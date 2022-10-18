@@ -8,12 +8,14 @@ import kdic from "../public/clients/kdic.png";
 import pci from "../public/clients/pci.png";
 import shariyah from "../public/clients/shariyah.png";
 import trustpilot from "../public/clients/trustpilot.png";
-import iphone from "../public/banking/iphone.png";
 import phone from "../public/banking/phone3.png";
-import watch from "../public/banking/watchiphone.png";
+import pay from "../public/pay.png";
+import paymask from "../public/payMask.png";
+import card from "../public/card.png";
+import card2 from "../public/card2.png";
+import Shadow from "../public/Shadow.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { BsCheck2 } from "@heroicons/react/20/solid";
 
 const personal = [{ name: "Personal", href: "#" }];
 
@@ -28,12 +30,12 @@ export default function Index() {
   return (
     <div className={header.body}>
       <div className="relative overflow-hidden">
-        <div className="mx-auto max-w-[1265px]">
+        <div className="mx-auto max-w-[1290px]">
           <div className="relative z-10">
             <Popover>
-              <div className="px-2 sm:px-6 pt-[30px]">
+              <div className="px-2 sm:px-6 pt-[44px]">
                 <div className="flex items-center justify-between md:justify-start md:space-x-[50px]">
-                  <div className="flex justify-start lg:w-0 lg:flex-1">
+                  <div className="flex justify-start lg:w-[707px]">
                     <Link href="/home">
                       <svg
                         width="150"
@@ -108,9 +110,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                           <linearGradient
                             id="paint1_linear_11_6972"
@@ -120,9 +122,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                           <linearGradient
                             id="paint2_linear_11_6972"
@@ -132,9 +134,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                           <linearGradient
                             id="paint3_linear_11_6972"
@@ -144,9 +146,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                           <linearGradient
                             id="paint4_linear_11_6972"
@@ -156,9 +158,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                           <linearGradient
                             id="paint5_linear_11_6972"
@@ -168,9 +170,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                           <linearGradient
                             id="paint6_linear_11_6972"
@@ -180,9 +182,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                           <linearGradient
                             id="paint7_linear_11_6972"
@@ -192,9 +194,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                           <linearGradient
                             id="paint8_linear_11_6972"
@@ -204,9 +206,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                           <linearGradient
                             id="paint9_linear_11_6972"
@@ -216,9 +218,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                           <linearGradient
                             id="paint10_linear_11_6972"
@@ -228,9 +230,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                           <linearGradient
                             id="paint11_linear_11_6972"
@@ -240,9 +242,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                           <linearGradient
                             id="paint12_linear_11_6972"
@@ -252,9 +254,9 @@ export default function Index() {
                             y2="121.292"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#80B2FF" />
-                            <stop offset="0.51551" stop-color="#7C27D9" />
-                            <stop offset="1" stop-color="#FF68F0" />
+                            <stop stopColor="#80B2FF" />
+                            <stop offset="0.51551" stopColor="#7C27D9" />
+                            <stop offset="1" stopColor="#FF68F0" />
                           </linearGradient>
                         </defs>
                       </svg>
@@ -263,11 +265,11 @@ export default function Index() {
 
                   <Popover.Group
                     as="nav"
-                    className="hidden space-x-[76px] md:flex"
+                    className="hidden space-x-[72px] md:flex lg:-mt-6"
                   >
                     <a
                       href="#"
-                      className="text-lg text-[#1B1C39] font-semibold"
+                      className="text-[18px] leading-[25px] text-[#1B1C39] font-semibold"
                     >
                       Personal
                     </a>
@@ -279,7 +281,7 @@ export default function Index() {
                     </a>
                   </Popover.Group>
                   {/* Flag */}
-                  <div className="flex items-center justify-end lg:w-[166px]">
+                  <div className="flex items-center justify-end lg:w-[170px] lg:-mt-6">
                     <a
                       href="#"
                       className="group inline-flex items-center justify-center"
@@ -292,7 +294,7 @@ export default function Index() {
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <g clip-path="url(#clip0_7_234)">
+                          <g clipPath="url(#clip0_7_234)">
                             <path
                               d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
                               fill="#F0F0F0"
@@ -436,9 +438,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                                 <linearGradient
                                   id="paint1_linear_11_6972"
@@ -448,9 +450,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                                 <linearGradient
                                   id="paint2_linear_11_6972"
@@ -460,9 +462,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                                 <linearGradient
                                   id="paint3_linear_11_6972"
@@ -472,9 +474,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                                 <linearGradient
                                   id="paint4_linear_11_6972"
@@ -484,9 +486,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                                 <linearGradient
                                   id="paint5_linear_11_6972"
@@ -496,9 +498,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                                 <linearGradient
                                   id="paint6_linear_11_6972"
@@ -508,9 +510,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                                 <linearGradient
                                   id="paint7_linear_11_6972"
@@ -520,9 +522,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                                 <linearGradient
                                   id="paint8_linear_11_6972"
@@ -532,9 +534,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                                 <linearGradient
                                   id="paint9_linear_11_6972"
@@ -544,9 +546,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                                 <linearGradient
                                   id="paint10_linear_11_6972"
@@ -556,9 +558,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                                 <linearGradient
                                   id="paint11_linear_11_6972"
@@ -568,9 +570,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                                 <linearGradient
                                   id="paint12_linear_11_6972"
@@ -580,9 +582,9 @@ export default function Index() {
                                   y2="121.292"
                                   gradientUnits="userSpaceOnUse"
                                 >
-                                  <stop stop-color="#80B2FF" />
-                                  <stop offset="0.51551" stop-color="#7C27D9" />
-                                  <stop offset="1" stop-color="#FF68F0" />
+                                  <stop stopColor="#80B2FF" />
+                                  <stop offset="0.51551" stopColor="#7C27D9" />
+                                  <stop offset="1" stopColor="#FF68F0" />
                                 </linearGradient>
                               </defs>
                             </svg>
@@ -618,10 +620,12 @@ export default function Index() {
               </Transition>
             </Popover>
 
-            <main className="max-w-2xl mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+            <main className="max-w-xl mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-12 xl:mt-[90px]">
               <div className="sm:text-center lg:text-left">
-                <h1 className="text-6xl font-bold">
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#9E7AFC]">Salaam,</span>
+                <h1 className="text-[62px] leading[93px] font-bold -mb-[6px]">
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#9E7AFC]">
+                    Salaam,
+                  </span>
                 </h1>
                 <h1 className={header.pr_1}>
                   <span className="block xl:inline">We are Mizan,</span>
@@ -639,43 +643,44 @@ export default function Index() {
                 <p className="mt-3 text-xl text-[#4B4B4B] font-medium sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                   Join our waiting list.
                 </p>
-                <div className="mt-5 sm:mt-8 flex space-x-[80px] sm:flex sm:justify-center lg:justify-start">
+                <div className="mt-5 sm:mt-8 lg:flex space-x-[80px] sm:justify-center lg:justify-start">
                   <div className="rounded-full">
                     <div className={header.waitlist} style={{ color: "white" }}>
-                      <a href="#" className="items-center">
+                      <a href="#" className="items-center text-center">
                         JOIN WAITLIST
                       </a>
                     </div>
                   </div>
-                  <div className="flex mt-3 sm:mt-0 sm:ml-3">
-                    <a
-                      href="#"
-                      className="flex w-full items-center justify-center rounded-full text-base font-medium text-indigo-700 md:py-4 md:px-10 md:text-lg"
-                      style={{ seeHow }}
-                    >
-                      <span>SEE HOW</span>
-                      <span>
-                        <svg
-                          width="15"
-                          height="20"
-                          viewBox="0 0 15 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0.500157 0.939899L13.9442 10L0.500157 19.0601L0.500157 0.939899Z"
-                            fill="white"
-                            stroke="#1B1C39"
-                          />
-                        </svg>
-                      </span>
-                    </a>
+                  <div className={header.btn2}>
+                    <div className="flex mt-3 sm:mt-0 sm:ml-3">
+                      <a
+                        href="#"
+                        className="flex w-full space-x-[11px] items-center justify-center text-[15px] font-semibold text-[#6D6E8A] leading-[22px] py-[16px] px-[60px]"
+                      >
+                        <span>SEE HOW</span>
+                        <span>
+                          <svg
+                            width="15"
+                            height="20"
+                            viewBox="0 0 15 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.500157 0.939899L13.9442 10L0.500157 19.0601L0.500157 0.939899Z"
+                              fill="white"
+                              stroke="#1B1C39"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </main>
           </div>
-          <div className="flex space-x-[77px] mt-[157px] mb-[140px] items-center justify-center text-center">
+          <div className="flex lg:ml-[200px] space-x-[77px] mt-[157px] mb-[140px] items-center">
             <div>
               <Image
                 src={kdic}
@@ -718,7 +723,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="flex items-center mb-[141px]">
+          <div className="lg:flex items-center mb-[278px]">
             <Image
               src={phone}
               alt="Iphone"
@@ -726,7 +731,7 @@ export default function Index() {
               height={613.8}
               priority
             />
-            <div className="relative card1 flex flex-col px-[81px] pt-[50px] pb-[44px] bg-white rounded-3xl w-[760px] h-auto text-center">
+            <div className="relative z-20 card1 flex flex-col px-[81px] pt-[50px] pb-[44px] bg-white rounded-3xl lg:w-[760px] h-auto text-center">
               <style jsx>{`
                 .card1 {
                   box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
@@ -751,9 +756,9 @@ export default function Index() {
                       <path
                         d="M1.66699 5.16667L7.50033 11L17.5003 1"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
@@ -773,9 +778,9 @@ export default function Index() {
                       <path
                         d="M1.66699 5.16667L7.50033 11L17.5003 1"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
@@ -795,9 +800,9 @@ export default function Index() {
                       <path
                         d="M1.66699 5.16667L7.50033 11L17.5003 1"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
@@ -817,9 +822,9 @@ export default function Index() {
                       <path
                         d="M1.66699 5.16667L7.50033 11L17.5003 1"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
@@ -839,9 +844,9 @@ export default function Index() {
                       <path
                         d="M1.66699 5.16667L7.50033 11L17.5003 1"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
@@ -874,67 +879,110 @@ export default function Index() {
                 >
                   <g opacity="0.2">
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M285.001 127.573C308.985 127.573 328.429 147.016 328.429 171.001C328.429 194.986 308.985 214.429 285.001 214.429C261.016 214.429 241.572 194.986 241.572 171.001C241.572 147.016 261.016 127.573 285.001 127.573ZM285.001 114.002C316.481 114.002 342 139.521 342 171.001C342 202.481 316.481 228 285.001 228C253.521 228 228.001 202.481 228.001 171.001C228.001 139.521 253.521 114.002 285.001 114.002Z"
                       fill="#2603FF"
-                      fill-opacity="0.24"
+                      fillOpacity="0.24"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M284.999 156.073C293.244 156.073 299.927 162.757 299.927 171.001C299.927 179.246 293.244 185.93 284.999 185.93C276.754 185.93 270.07 179.246 270.07 171.001C270.07 162.757 276.754 156.073 284.999 156.073ZM284.999 142.502C300.739 142.502 313.499 155.261 313.499 171.001C313.499 186.741 300.739 199.501 284.999 199.501C269.259 199.501 256.499 186.741 256.499 171.001C256.499 155.261 269.259 142.502 284.999 142.502Z"
                       fill="#2603FF"
-                      fill-opacity="0.24"
+                      fillOpacity="0.24"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M228.001 243.837C228.001 235.091 235.131 227.885 243.795 229.086C294.118 236.06 333.941 275.883 340.915 326.205C342.116 334.869 334.91 341.999 326.163 341.999L243.838 341.999C235.091 341.999 228.001 334.909 228.001 326.162L228.001 243.837ZM308.072 297.893C308.072 316.256 293.185 331.142 274.822 331.142C256.459 331.142 241.572 316.256 241.572 297.893C241.572 279.529 256.459 264.643 274.822 264.643C293.185 264.643 308.072 279.529 308.072 297.893Z"
                       fill="#2603FF"
-                      fill-opacity="0.24"
+                      fillOpacity="0.24"
                     />
                     <path
                       d="M227.999 213.752C227.999 221.622 221.588 228.095 213.778 227.123C162.189 220.703 121.298 179.814 114.878 128.225C113.907 120.415 120.38 114.003 128.25 114.003C136.12 114.003 142.375 120.431 143.672 128.193C149.661 164.044 177.958 192.341 213.809 198.33C221.572 199.627 227.999 205.882 227.999 213.752Z"
                       fill="#2603FF"
-                      fill-opacity="0.24"
+                      fillOpacity="0.24"
                     />
                     <path
                       d="M192.266 114.006C183.519 114.006 176.186 121.261 178.828 129.599C183.879 145.539 196.466 158.127 212.406 163.177C220.744 165.819 228 158.486 228 149.74L228 129.843C228 121.096 220.909 114.006 212.163 114.006L192.266 114.006Z"
                       fill="#2603FF"
-                      fill-opacity="0.24"
+                      fillOpacity="0.24"
                     />
                     <path
                       d="M114.001 326.163C114.001 334.91 121.131 342.116 129.795 340.915C180.118 333.94 219.941 294.118 226.915 243.795C228.116 235.131 220.91 228.001 212.163 228.001L129.838 228.001C121.091 228.001 114.001 235.092 114.001 243.838L114.001 326.163Z"
                       fill="#2603FF"
-                      fill-opacity="0.24"
+                      fillOpacity="0.24"
                     />
                     <path
                       d="M295.855 82.7842C304.1 82.7842 310.783 76.1005 310.783 67.8558C310.783 59.611 304.1 52.9273 295.855 52.9273C287.61 52.9273 280.926 59.611 280.926 67.8558C280.926 76.1005 287.61 82.7842 295.855 82.7842Z"
                       fill="#2603FF"
-                      fill-opacity="0.24"
+                      fillOpacity="0.24"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M243.836 113.999C235.089 113.999 227.884 106.869 229.084 98.2049C236.059 47.8822 275.882 8.05953 326.204 1.08514C334.868 -0.115591 341.998 7.09034 341.998 15.8368L341.998 98.1619C341.998 106.908 334.908 113.999 326.161 113.999L243.836 113.999ZM295.855 96.3555C311.595 96.3555 324.355 83.5957 324.355 67.8558C324.355 52.1158 311.595 39.3561 295.855 39.3561C280.115 39.3561 267.355 52.1158 267.355 67.8558C267.355 83.5957 280.115 96.3555 295.855 96.3555Z"
                       fill="#2603FF"
-                      fill-opacity="0.24"
+                      fillOpacity="0.24"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M15.8369 342C7.09042 342 -0.115497 334.869 1.08524 326.206C8.0597 275.883 47.8825 236.061 98.2054 229.086C106.869 227.885 113.999 235.091 113.999 243.838L113.999 326.163C113.999 334.909 106.909 342 98.1624 342L15.8369 342ZM69.8924 261.929C88.2558 261.929 103.142 276.816 103.142 295.179C103.142 313.542 88.2558 328.428 69.8924 328.428C51.5291 328.428 36.6426 313.542 36.6426 295.179C36.6426 276.816 51.5291 261.929 69.8924 261.929Z"
                       fill="#2603FF"
-                      fill-opacity="0.24"
+                      fillOpacity="0.24"
                     />
                   </g>
                 </svg>
               </div>
             </div>
           </div>
+
+          <div className="relative lg:flex items-center ml-[30px]">
+            <div className="flex flex-col mb-[1570px]">
+              <div className={header.pr_6}>
+                Turn heads with our <br></br>cards made from steel.
+              </div>
+              <div className={header.pr_5}>
+                Pay or get paid, wherever, whenever.
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="lg:absolute inset-y-0 lg:right-0 z-20">
+
+        <div className="absolute inset-y-0 lg:left-[825px] top-[1997.22px] z-30">
+          <Image
+            src={card}
+            alt="card"
+            width={265.8}
+            height={392.7}
+            priority
+            className="object-contain lg:object-cover"
+          />
+        </div>
+        <div className="absolute inset-y-0 lg:left-[850.72px] top-[2150.75px] z-20 opacity-40 mix-blend-multiply">
+          <Image
+            src={Shadow}
+            alt="shadow"
+            width={280.04}
+            height={381.74}
+            priority
+            className="object-contain lg:object-cover -rotate-45"
+          />
+        </div>
+        <div className="absolute inset-y-0 lg:left-[1094.83px] top-[2108.6px] z-30">
+          <Image
+            src={card2}
+            alt="card2"
+            width={280.04}
+            height={381.74}
+            priority
+            className="object-contain lg:object-cover"
+          />
+        </div>
+
+        <div className="absolute inset-y-0 lg:right-0 z-20">
           <svg
             width="849"
             height="850"
@@ -1001,14 +1049,104 @@ export default function Index() {
             </g>
           </svg>
         </div>
-        <div className="lg:absolute inset-y-[206px] lg:left-[710px] z-30">
+        
+        <div className="lg:absolute inset-y-0 lg:right-0 top-[2400px] z-30">
+          <Image
+            src={pay}
+            alt="pay-with-credit-card"
+            width={1440}
+            height={513}
+            priority
+            className="object-contain lg:object-cover"
+          />
+        </div>
+        <div className="lg:absolute inset-y-0 lg:right-0 top-[2450px] z-20">
+          <Image
+            src={paymask}
+            alt="pay-with-credit-card"
+            width={1440}
+            height={513}
+            priority
+            className="object-contain lg:object-cover"
+          />
+        </div>
+        <div className="absolute inset-y-0 -left-[70px] top-[1814px] z-10">
+          <svg
+            width="1325"
+            height="1602"
+            viewBox="0 0 1325 1602"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.49"
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M517.5 108C131.074 108 -182 418.164 -182 801C-182 1183.84 131.074 1494 517.5 1494C903.926 1494 1217 1183.84 1217 801C1217 418.383 903.926 108 517.5 108Z"
+              stroke="url(#paint0_linear_11_6942)"
+              strokeOpacity="0.11"
+              strokeWidth="216"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_11_6942"
+                x1="678.114"
+                y1="1547.69"
+                x2="215.594"
+                y2="149.905"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#8F00E0" stopOpacity="0.22" />
+                <stop offset="1" stopColor="#8F00E0" stopOpacity="0.39" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div className="absolute inset-y-0 left-[42px] top-[2202px] z-10">
+          <svg
+            width="833"
+            height="825"
+            viewBox="0 0 833 825"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.19"
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M416.5 825C646.396 825 833 640.387 833 412.5C833 184.613 646.597 0 416.5 0C186.403 0 -7.20296e-08 184.613 -1.60943e-07 412.5C-2.49857e-07 640.387 186.403 825 416.5 825ZM416.5 628.675C536.96 628.675 634.571 532.002 634.571 412.699C634.571 293.395 536.96 196.722 416.5 196.722C296.04 196.722 198.429 293.395 198.429 412.699C198.429 532.002 296.04 628.675 416.5 628.675Z"
+              fill="url(#paint0_linear_11_6945)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_11_6945"
+                x1="82.5"
+                y1="-98.5"
+                x2="662.009"
+                y2="856.494"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#FAF2FF" stopOpacity="0.57" />
+                <stop
+                  offset="0.164053"
+                  stopColor="#FAF2FF"
+                  stopOpacity="0.57"
+                />
+                <stop offset="0.369168" stopColor="#EDDCF7" />
+                <stop offset="0.711458" stopColor="#EAD0F8" />
+                <stop offset="1" stopColor="#DA99FF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div className="lg:absolute inset-y-0 lg:left-[620px] top-[200px] z-30">
           <Image
             src={phonePic}
             alt="Phone"
-            width={730}
-            height={640}
-            objectFit="cover"
+            width={1836}
+            height="1642.16"
             priority
+            className="object-contain lg:object-cover"
           />
         </div>
       </div>
