@@ -10,8 +10,6 @@ export default function Home() {
         <Image
           src={splashScreen}
           alt="Phone"
-          width={1440}
-          height={880}
           priority
         />
       </div>
