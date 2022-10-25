@@ -302,11 +302,13 @@
   position: relative;
   margin-top: 84px;
   border-radius: 40.9381px;
-  width: 379px;
-}
-.price1::after {
   width: 380px;
   height: 573px;
+  background: #FFFFFF;
+}
+.price1::after {
+  width: inherit;
+  height: inherit;
   content: "";
   position: absolute;
   inset: 0;
@@ -328,15 +330,19 @@
 .price2 {
   position: relative;
   margin-top: 40px;
-}
-.price2::after {
+  background: #FFFFFF;
   width: 380px;
   height: 617px;
+  border-radius: 25px;
+}
+.price2::after {
+  width: inherit;
+  height: inherit;
   content: "";
   position: absolute;
   inset: 0;
   box-shadow: 0px -8px 107px rgba(105, 67, 175, 0.28);
-  border-radius: 25px;
+  border-radius: inherit;
   border: 2px solid transparent; /*2*/
   background: linear-gradient(225deg, #80b2ff 0%, #7c27d9 51.55%, #ff68f0 100%)
     border-box; /*3*/
@@ -350,10 +356,13 @@
   position: relative;
   margin-top: 84px;
   border-radius: 25px;
-}
-.price3::after {
+  background: #FFFFFF;
   width: 380px;
   height: 573px;
+}
+.price3::after {
+  width: inherit;
+  height: inherit;
   content: "";
   position: absolute;
   inset: 0;
