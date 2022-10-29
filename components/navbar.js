@@ -244,15 +244,17 @@ const navbar = () => {
                 >
                     <Link href="/home">
                         <a
-                        href="#"
                         className="text-[18px] leading-[25px] text-[#1B1C39] font-semibold"
                         >
                         Personal
                         </a>
                     </Link>
-                    <a href="#" className="text-lg text-[#6D6E8A] font-semibold">
-                    Brand Story
-                    </a>
+
+                    <Link href="/brand-story">
+                        <a className="text-lg text-[#6D6E8A] font-semibold cursor-pointer">
+                        Brand Story
+                        </a>
+                    </Link>
                 </Popover.Group>
                 {/* Flag */}
                 <div className="flex items-center justify-end lg:w-[170px] lg:-mt-6">

@@ -11,7 +11,7 @@ import pci2 from "../public/pci.png";
 const Footer = () => {
   return (
     <div className={header.footer}>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="lg:grid lg:grid-cols-4 gap-4">
         <div className="flex flex-col space-y-[37px]">
             <div>
             <svg
@@ -166,33 +166,33 @@ const Footer = () => {
         </div>
         </div>
 
-        <div className="flex justify-between mt-[106px]">
-        <div className="w-1/4">
-            <div className="text-white text-[15px] leading-[25px] font-medium">
-            Mizan Financial Ltd.<br></br> All rights reserved 2022
+        <div className="lg:flex lg:justify-between mt-[106px]">
+            <div className="w-1/4">
+                <div className="text-white text-[15px] leading-[25px] font-medium">
+                Mizan Financial Ltd.<br></br> All rights reserved 2022
+                </div>
             </div>
-        </div>
-        <div className="w-1/2">
-            <p className="text-white text-[10px] leading-[16px] font-normal">
-            Mizan Financial Ltd is a company registered in the Democratic
-            Republic of Kenya (Certificate of Incorporation No. No.
-            PVT-DLULVPV7) with a registered address: Le’Mac Towers, 4th
-            floor, Rhapta road, Westlands, Nairobi, Kenya. Mizan Financial
-            Ltd is a subsidiary of Mizan Group Ltd., registered in the Dubai
-            International Financial Centre (License No. XXXX), with the
-            registered address at: Unit 208, Level One, Gate Avenue, DIFC,
-            Dubai, United Arab Emirates.
-            </p>
-        </div>
-        <div className="flex w-1/4 justify-end">
-            <Image
-            src={pci2}
-            width={123}
-            height={48}
-            priority
-            alt="pci logo"
-            />
-        </div>
+            <div className="w-1/2">
+                <p className="text-white text-[10px] leading-[16px] font-normal">
+                Mizan Financial Ltd is a company registered in the Democratic
+                Republic of Kenya (Certificate of Incorporation No. No.
+                PVT-DLULVPV7) with a registered address: Le’Mac Towers, 4th
+                floor, Rhapta road, Westlands, Nairobi, Kenya. Mizan Financial
+                Ltd is a subsidiary of Mizan Group Ltd., registered in the Dubai
+                International Financial Centre (License No. XXXX), with the
+                registered address at: Unit 208, Level One, Gate Avenue, DIFC,
+                Dubai, United Arab Emirates.
+                </p>
+            </div>
+            <div className="flex w-1/4 justify-end">
+                <Image
+                src={pci2}
+                width={123}
+                height={48}
+                priority
+                alt="pci logo"
+                />
+            </div>
         </div>
 
         <div className="lg:absolute top-[12px] right-[15px]">

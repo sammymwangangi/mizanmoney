@@ -70,8 +70,8 @@ export default function Index() {
   return (
     <div className={header.body}>
       <div className="relative overflow-hidden">
-        <div className="relative mx-auto lg:mx-auto xl:mx-0 max-w-[1290px]">
-          <div className="">
+        <div className="relative mx-auto sm:mx-[20px] lg:mx-auto xl:mx-[130px] 2xl:mx-auto max-w-[1290px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1290px] 2xl:max-w-full">
+          <div className="z-50">
             <div className="relative z-10">
               {/* Navbar */}
               <Suspense fallback={`Loading...`}>
@@ -1377,7 +1377,7 @@ export default function Index() {
           {/* End */}
 
           {/* Peace of mind */}
-          <div className="relative mt-[172px] mb-[49px] max-w-[1290px] mx-[130px]">
+          <div className="relative mt-[172px] mb-[49px] max-w-[1290px] mx-auto sm:mx-[20px] lg:mx-[130px] xl:mx-[130px]">
             <div className="absolute left-[500px] -top-20 -z-20">
               <svg
                 width="751"
@@ -1721,7 +1721,7 @@ export default function Index() {
             <div className="mb-[40px] pl-[82px]">
               <h1 className={header.pr_3}>We work with top providers</h1>
             </div>
-            <div className="flex items-center gap-[20px] pl-[76px] pr-[84px]">
+            <div className="lg:flex items-center gap-[20px] pl-[76px] pr-[84px]">
               <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
                 <Image
                   src={shariyah2}
@@ -1835,7 +1835,7 @@ export default function Index() {
           {/* End */}
 
           {/* Zendesk */}
-          <div className="relative flex flex-col mb-[160px] mx-[130px]">
+          <div className="relative flex flex-col mb-[160px] mx-auto sm:mx-[20px] md:mx-[20px] lg:mx-[130px] xl:mx-[130px]">
             <h1 className="text-[40px] leading[60px] font-bold">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#9E7AFC]">
                 Any questions?
