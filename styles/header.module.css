@@ -19,6 +19,15 @@
   line-height: 19px;
 }
 
+.credit {
+  position: absolute;
+  left: 825px;
+  top: -40px;
+  z-index: 30;
+  transform: rotate(-19.84deg)
+}
+
+
 .button2 {
   background: linear-gradient(
     80.75deg,
@@ -75,7 +84,7 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 19px;
-  width: 100%;
+  width: 380px;
   text-align: center;
 }
 
@@ -281,46 +290,73 @@
 
 .btn3 {
   position: relative;
+  box-shadow: 0px 18.1947px 36.3894px rgba(105, 67, 175, 0.1);
+  border-radius: 40.9381px;
+  width: 95.36px;
 }
 .btn3::before {
-  width: 95.36px;
+  width: inherit;
   content: "";
   position: absolute;
   inset: 0;
 
-  border-radius: 40.9381px;
+  border-radius: inherit;
   border: 0.91px solid transparent; /*2*/
   background: linear-gradient(190.73deg, #4b99de, #6b3ba6) border-box; /*3*/
   -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor; /*5'*/
   mask-composite: exclude; /*5*/
-  box-shadow: 0px 18.1947px 36.3894px rgba(105, 67, 175, 0.1);
+}
+
+.btn10 {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px rgba(105, 67, 175, 0.1);
+  border-radius: 45px;
+  width: 155px;
+}
+.btn10::before {
+  width: inherit;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid;
+
+  border-image-source: linear-gradient(215.92deg, #4B99DE 0%, #6B3BA6 100%);
+  
+  
+  border-radius: inherit;
+  background: linear-gradient(215.92deg, #4B99DE 0%, #6B3BA6 100%) border-box; /*3*/
+  -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude; /*5*/
 }
 
 .price1 {
   position: relative;
   margin-top: 84px;
-  border-radius: 40.9381px;
+  background: #FFFFFF;
   width: 380px;
   height: 573px;
-  background: #FFFFFF;
+  border-radius: 25px;
 }
 .price1::after {
   width: inherit;
   height: inherit;
   content: "";
+  border: 1px solid;
   position: absolute;
   inset: 0;
-  z-index: -1;
   border-radius: inherit;
   border: 1px solid transparent; /*2*/
   background: linear-gradient(
-      354.38deg,
-      #a08cff -5.24%,
-      rgba(160, 140, 255, 0) 101.01%
-    )
-    border-box; /*3*/
+    354.38deg,
+    #a08cff -5.24%,
+    rgba(160, 140, 255, 0) 101.01%
+  )
+  border-box; /*3*/
   -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor; /*5'*/
@@ -334,6 +370,7 @@
   width: 380px;
   height: 617px;
   border-radius: 25px;
+  box-shadow: 0px -8px 107px rgba(105, 67, 175, 0.28);
 }
 .price2::after {
   width: inherit;
@@ -341,7 +378,6 @@
   content: "";
   position: absolute;
   inset: 0;
-  box-shadow: 0px -8px 107px rgba(105, 67, 175, 0.28);
   border-radius: inherit;
   border: 2px solid transparent; /*2*/
   background: linear-gradient(225deg, #80b2ff 0%, #7c27d9 51.55%, #ff68f0 100%)
@@ -457,13 +493,7 @@
   position: relative;
   border: 1.26px solid;
   padding: 20px, 30px;
-
-  /* border-image-source: linear-gradient(319.13deg, #A08CFF -4.79%, rgba(160, 140, 255, 0) 108.54%); */
-
   border-radius: 25px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;

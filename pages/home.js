@@ -13,42 +13,42 @@ import card2 from "../public/card2.png";
 import Shadow from "../public/Shadow.png";
 import feature1 from "../public/features/fe1.png";
 import phone2 from "../public/features/Phone.png";
+import phone3 from "../public/features/phone2.png";
 import phoneInvest from "../public/phone_invest.png";
 import cup from "../public/cup.png";
 import ccb from "../public/ccb.png";
 import ccb2 from "../public/ccb2.png";
 import ccb3 from "../public/ccb3.png";
-import love from "../public/profile/love.png"
-import wink from "../public/profile/wink.png"
-import glasses from "../public/profile/glasses.png"
-import pray from "../public/profile/pray.png"
-import cardImage from "../public/profile/card.png"
-import stars from "../public/profile/stars.png"
-import blackHand from "../public/blackHand.png"
-import blackShadow from "../public/blackShadow.png"
-import lady from "../public/lady.png"
-import cloud from "../public/providers/cloud.png"
-import codebase from "../public/providers/codebase.png"
-import duck from "../public/providers/duck.png"
-import shariyah2 from "../public/providers/shariyah.png"
-import backer1 from "../public/backers/1.png"
-import backer2 from "../public/backers/2.png"
-import backer3 from "../public/backers/3.png"
-import zenD from "../public/zend.png"
-import dynamic from 'next/dynamic'
-import {Suspense, useEffect} from 'react'
+import love from "../public/profile/love.png";
+import wink from "../public/profile/wink.png";
+import glasses from "../public/profile/glasses.png";
+import pray from "../public/profile/pray.png";
+import cardImage from "../public/profile/card.png";
+import stars from "../public/profile/stars.png";
+import blackHand from "../public/blackHand.png";
+import blackShadow from "../public/blackShadow.png";
+import lady from "../public/lady.png";
+import cloud from "../public/providers/cloud.png";
+import codebase from "../public/providers/codebase.png";
+import duck from "../public/providers/duck.png";
+import shariyah2 from "../public/providers/shariyah.png";
+import backer1 from "../public/backers/1.png";
+import backer2 from "../public/backers/2.png";
+import backer3 from "../public/backers/3.png";
+import zenD from "../public/zend.png";
+import dynamic from "next/dynamic";
+import { Suspense, useEffect } from "react";
 import { gsap } from "gsap";
 
-
-const DynamicNavbar = dynamic(() => import('../components/navbar'), {
+const DynamicNavbar = dynamic(() => import("../components/navbar"), {
   suspense: true,
-})
-const DynamicFooter = dynamic(() => import('../components/footer'), {
+});
+const DynamicFooter = dynamic(() => import("../components/footer"), {
   suspense: true,
-})
-const DynamicBanner = dynamic(() => import('../components/banner'), {
+});
+const DynamicBanner = dynamic(() => import("../components/banner"), {
   suspense: true,
-})
+});
 
 const personal = [{ name: "Personal", href: "#" }];
 
@@ -56,7 +56,7 @@ const brand = [{ name: "Brand Story", href: "#" }];
 
 const seeHow = {
   background:
-  "linear-gradient(80.75deg, #D155FF 4.6%, #B532F2 17.14%, #A016E8 29.4%, #9406E2 40.22%, #8F00E0 48.46%, #A08CFF 92.32%)",
+    "linear-gradient(80.75deg, #D155FF 4.6%, #B532F2 17.14%, #A016E8 29.4%, #9406E2 40.22%, #8F00E0 48.46%, #A08CFF 92.32%)",
 };
 
 export default function Index() {
@@ -70,23 +70,108 @@ export default function Index() {
   return (
     <div className={header.body}>
       <div className="relative overflow-hidden">
-        <div className="mx-auto max-w-[1290px]">
-          <div className="relative z-10">
-            {/* Navbar */}
-            <Suspense fallback={`Loading...`}>
-              <DynamicNavbar />
-            </Suspense>
-            {/* End */}
+        <div className="relative mx-auto lg:mx-auto xl:mx-0 max-w-[1290px]">
+          <div className="">
+            <div className="relative z-10">
+              {/* Navbar */}
+              <Suspense fallback={`Loading...`}>
+                <DynamicNavbar />
+              </Suspense>
+              {/* End */}
 
-            {/* Salaam */}
-            <Suspense fallback={`Loading...`}>
-              <DynamicBanner />
-            </Suspense>
-            {/* End */}
+              {/* Salaam */}
+              <Suspense fallback={`Loading...`}>
+                <DynamicBanner />
+              </Suspense>
+              {/* End */}
+            </div>
           </div>
 
+          {/* Phones Pic */}
+          <div className="lg:absolute inset-y-0 lg:left-[620px] top-[200px] z-30">
+            <Image
+              src={phonePic}
+              alt="Phone"
+              width={1836}
+              height="1642.16"
+              className="object-contain lg:object-cover"
+              priority
+            />
+          </div>
+          {/* End */}
+
+          {/* top vector */}
+          <div className="absolute inset-y-0 lg:right-0 z-20">
+            <svg
+              width="849"
+              height="850"
+              viewBox="0 0 849 850"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.2">
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M318.209 138.895C318.442 79.284 366.708 31.1473 426.015 31.3785C485.321 31.6097 533.21 80.1214 532.978 139.732C532.746 199.343 484.48 247.48 425.173 247.249C365.866 247.017 317.977 198.506 318.209 138.895ZM284.652 138.764C284.957 60.5248 348.306 -2.65466 426.146 -2.35119C503.986 -2.04772 566.841 61.6238 566.536 139.863C566.231 218.102 502.882 281.282 425.041 280.978C347.201 280.675 284.347 217.003 284.652 138.764Z"
+                  fill="#2603FF"
+                  fillOpacity="0.15"
+                />
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M388.681 139.174C388.761 118.683 405.352 102.136 425.739 102.215C446.126 102.294 462.587 118.97 462.508 139.462C462.428 159.953 445.836 176.5 425.45 176.42C405.063 176.341 388.601 159.665 388.681 139.174ZM355.123 139.043C355.276 99.9233 386.95 68.3336 425.87 68.4853C464.79 68.637 496.218 100.473 496.065 139.592C495.913 178.712 464.238 210.302 425.318 210.15C386.398 209.998 354.971 178.163 355.123 139.043Z"
+                  fill="#2603FF"
+                  fillOpacity="0.15"
+                />
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M595.983 281.645C579.415 281.58 565.87 268.053 567.657 251.581C582.025 119.131 687.152 14.2399 819.014 0.761058C835.496 -0.923779 848.92 12.7286 848.855 29.297L847.984 252.627C847.92 269.195 834.436 282.574 817.867 282.51L595.983 281.645ZM739.581 83.1963C784.988 83.3733 821.653 120.515 821.475 166.155C821.297 211.794 784.343 248.649 738.937 248.472C693.53 248.295 656.865 211.153 657.043 165.514C657.221 119.874 694.174 83.0193 739.581 83.1963Z"
+                  fill="#2603FF"
+                  fillOpacity="0.15"
+                />
+                <path
+                  d="M535.987 281.414C552.555 281.478 566.1 295.006 564.313 311.478C549.945 443.928 444.818 548.819 312.956 562.297C296.474 563.982 283.05 550.33 283.115 533.761L283.157 522.929C283.222 506.36 296.782 493.206 313.194 490.935C406.119 478.077 479.868 404.482 493.32 311.163C495.684 294.764 508.947 281.308 525.515 281.373L535.987 281.414Z"
+                  fill="#2603FF"
+                  fillOpacity="0.15"
+                />
+                <path
+                  d="M283.726 378.604C283.662 395.173 297.23 409.022 313.356 405.217C359.993 394.214 396.803 357.466 408.061 310.656C411.936 294.547 398.197 280.876 381.628 280.811L314.109 280.548C297.54 280.484 284.057 293.862 283.992 310.431L283.726 378.604Z"
+                  fill="#2603FF"
+                  fillOpacity="0.15"
+                />
+                <path
+                  d="M816.765 565.84C833.333 565.905 846.983 552.483 845.325 535.998C831.99 403.44 727.684 297.733 595.931 283.226C579.462 281.413 565.933 294.96 565.869 311.529L564.998 534.859C564.933 551.427 578.312 564.911 594.881 564.975L816.765 565.84Z"
+                  fill="#2603FF"
+                  fillOpacity="0.15"
+                />
+                <path
+                  d="M207.567 111.486C207.647 90.9944 191.185 74.3185 170.799 74.239C150.412 74.1595 133.82 90.7065 133.741 111.198C133.661 131.689 150.123 148.365 170.509 148.444C190.896 148.524 207.487 131.977 207.567 111.486Z"
+                  fill="#2603FF"
+                  fillOpacity="0.15"
+                />
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M284.211 250.433C284.146 267.001 270.617 280.549 254.148 278.735C122.395 264.229 18.0893 158.522 4.75422 25.9634C3.09585 9.47803 16.7458 -3.94353 33.3143 -3.87893L255.199 -3.01388C271.767 -2.94928 285.146 10.5344 285.081 27.1028L284.211 250.433ZM241.125 111.616C241.277 72.4968 209.85 40.6611 170.93 40.5093C132.01 40.3576 100.335 71.9473 100.183 111.067C100.03 150.187 131.458 182.022 170.378 182.174C209.298 182.326 240.972 150.736 241.125 111.616Z"
+                  fill="#2603FF"
+                  fillOpacity="0.15"
+                />
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M845.775 819.291C845.711 835.859 832.181 849.407 815.712 847.593C683.96 833.087 579.654 727.379 566.319 594.821C564.66 578.336 578.31 564.914 594.879 564.979L816.763 565.844C833.331 565.909 846.71 579.392 846.646 595.961L845.775 819.291ZM648.346 674.811C648.524 629.171 685.477 592.316 730.884 592.493C776.291 592.67 812.956 629.812 812.778 675.452C812.6 721.091 775.646 757.946 730.24 757.769C684.833 757.592 648.168 720.45 648.346 674.811Z"
+                  fill="#2603FF"
+                  fillOpacity="0.15"
+                />
+              </g>
+            </svg>
+          </div>
+          {/* End */}
+
           {/* Clients */}
-          <div className="flex lg:ml-[200px] space-x-[77px] mt-[157px] mb-[140px] items-center">
+          <div className="flex lg:ml-[200px] space-x-[77px] mt-[157px] mb-[140px] items-center max-w-[1290px]">
             <div>
               <Image src={kdic} alt="kdic" width={190} height={80} priority />
             </div>
@@ -115,7 +200,7 @@ export default function Index() {
           {/* End */}
 
           {/* Islamic Banking Reimagined */}
-          <div className="lg:flex items-center mb-[278px]">
+          <div className="lg:flex items-center mb-[278px] max-w-[1290px]">
             <div className="lg:w-[540px]">
               <Image src={phone} alt="Iphone" priority />
             </div>
@@ -338,6 +423,28 @@ export default function Index() {
                 Pay or get paid, wherever, whenever.
               </div>
             </div>
+            {/* Cards and shadow */}
+            <div>
+              <div className="">
+                <Image src={card} width={265.8} height={392.7} alt="card" priority className={header.credit} />
+              </div>
+              <div className="absolute lg:left-[1094.83px] -top-10 z-30">
+                <Image src={card2} width={280.04} height={381.74} alt="card2" priority />
+              </div>
+              <div className="card2 absolute lg:left-[850.72px] -top-10 z-20 opacity-40">
+                <Image src={Shadow} alt="shadow" priority />
+              </div>
+            </div>
+            {/* End */}
+
+            {/* Pay with card and shadow */}
+            <div className="lg:absolute inset-y-0 lg:right-0 top-[240px] z-30">
+              <Image src={pay} alt="pay-with-credit-card" priority />
+            </div>
+            <div className="lg:absolute inset-y-0 lg:right-0 top-[240px] z-20">
+              <Image src={paymask} alt="pay-with-credit-card" priority />
+            </div>
+            {/* End */}
           </div>
           {/* End */}
 
@@ -345,28 +452,35 @@ export default function Index() {
           <div className="flex flex-col text-center h-[919px] bg-white py-[34px]">
             <h1 className={header.features}>Features</h1>
             <div className="flex gap-4">
-              <div className={header.feature_2}>
+              <div className="rounded-[25px] px-[20px] py-[30px] w-[480px] h-[568px] -ml-[110px]">
                 <div className="flex flex-col">
-                  <div className={header.card_bg}>
+                  <div className="rounded-[25px] bg-[linear-gradient(145.77deg,_#FAF9FE_8.5%,_#C6BAFF_90.85%)] justify-center">
                     <Image
                       src={phone2}
                       alt="phone2"
-                      className="object-contain lg:object-cover"
                     />
+                  </div>
                   <div className="mt-[40px] mb-[87]">
                     <h1 className="text-[24px] leading-[36px] font-bold text-[#333333] mb-[31px]">
                       Track Ur buck. “The Ostrich-effect”
                     </h1>
                   </div>
-                  </div>
                 </div>
               </div>
-              <div className={header.feature_1}>
+              <div className="pace relative rounded-[25px] w-[580px] h-[692px] bg-white shadow-[0px_-8px_100px_rgba(105,_67,_175,_0.26)]">
+                <style jsx>
+                  {`
+                    .pace{
+                      border: 1.26px solid;
+                      border-image-source: linear-gradient(355.46deg, #A08CFF -5.29%, rgba(160, 140, 255, 0) 28.96%);
+                    }
+                  `}
+                </style>
                 <div className="flex flex-col">
                   <div>
                     <Image src={feature1} alt="feature" />
                   </div>
-                  <div className={header.card20}>
+                  <div className="bg-white rounded-[25px] p-[30px] w-[580px] h-[305px] text-center shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] absolute bottom-0 inset-x-0">
                     <h1 className="text-[27px] leading-[40.5px] font-bold text-[#333333] mb-[31px]">
                       Mizan Pay - Shop now pay at your own pace
                     </h1>
@@ -379,13 +493,12 @@ export default function Index() {
                   </div>
                 </div>
               </div>
-              <div className={header.feature_3}>
+              <div className="rounded-[25px] px-[20px] py-[30px] w-[480px] h-[568px] -mr-[110px]">
                 <div className="flex flex-col">
-                  <div className={header.card_bg}>
+                  <div className="rounded-[25px] bg-[linear-gradient(145.77deg,_#FAF9FE_8.5%,_#C6BAFF_90.85%)] justify-center">
                     <Image
-                      src={phone2}
-                      alt="phone2"
-                      className="object-contain lg:object-cover"
+                      src={phone3}
+                      alt="phone3"
                     />
                   </div>
                   <div className="mt-[40px] mb-[87]">
@@ -429,10 +542,10 @@ export default function Index() {
             <div className="absolute top-[269px] left-[641px]">
               <Image src={phoneInvest} alt="phone invest" priority />
             </div>
-            <div className="absolute top-[52px] left-[864px]">
+            <div className="absolute top-[70px] left-[864px]">
               <Image src={cup} alt="cup" priority />
             </div>
-            <div className="absolute top-[536px] left-[987.42px]">
+            <div className="absolute top-[558px] left-[1000px]">
               <svg
                 width="18"
                 height="21"
@@ -448,7 +561,7 @@ export default function Index() {
                 />
               </svg>
             </div>
-            <div className="absolute top-[338.5px] left-[988.5px]">
+            <div className="absolute top-[338.5px] left-[980px] -rotate-12">
               <svg
                 width="229"
                 height="223"
@@ -532,7 +645,8 @@ export default function Index() {
               </svg>
             </div>
           </div>
-          <div className="relative z-20 -top-40 card1 flex gap-8 px-[40px] bg-white rounded-3xl lg:w-[1177px] h-[auto] left-[50px]">
+
+          <div className="relative z-20 -top-[150px] card1 flex gap-8 px-[40px] bg-white rounded-3xl lg:w-[1177px] h-[auto] left-[50px]">
             <style jsx>{`
               .card1 {
                 box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
@@ -563,7 +677,7 @@ export default function Index() {
             </div>
             <div className="relative flex flex-col pt-[24px]">
               <svg
-                width="576"
+                width="484"
                 height="384"
                 viewBox="0 0 576 384"
                 fill="none"
@@ -854,32 +968,32 @@ export default function Index() {
               </svg>
 
               <div className="flex gap-2 items-center">
-                <div className={header.pr_4}>
+                <div className="text-[18px] font-medium leading-[27px] text-[#1B1C39]">
                   Enter a recurring monthly/weekly deposit
                 </div>
-                <div className={header.btn3}>
-                  <div className="flex mt-3 sm:mt-0 sm:ml-3">
+                <div className={header.btn10}>
+                  <div className="flex gap-[10px] mt-3 sm:mt-0 sm:ml-3 items-center ">
                     <a
                       href="#"
-                      className="items-center text-center text-[13.65px] text-[#1B1C39] leading-[20.47px] py-[15px] px-[15px]"
+                      className="text-[20px] text-center leading-[30px] text-[#1B1828] py-[15px] pl-[30px]"
                     >
-                      <span>$ 10.00</span>
+                      $ 10.00
                     </a>
                   </div>
                 </div>
               </div>
-              <div>
-                <p className="text-[12px] text-[#1B1C39] leading-[20.52px] font-[300] mt-[25px] mb-[37px]">
+              <div className="w-[539px]">
+                <p className="text-[12px] text-[#1B1C39] leading-[20.52px] mt-[25px] mb-[37px]">
                   Use this tool to see how round-ups and depositing money each
                   month can impact the long term value of your account.
                 </p>
               </div>
-              <div className="absolute top-[59px] left-[550px]">
+              <div className="absolute top-[59px] left-[500px]">
                 <div className={header.btn3}>
                   <div className="flex mt-3 sm:mt-0 sm:ml-3">
                     <a
                       href="#"
-                      className="items-center text-center text-[13.65px] text-[#1B1C39] leading-[20.47px] py-[15px] px-[15px]"
+                      className="items-center text-center text-[13.65px] text-[#1B1C39] leading-[20px] py-[15px] px-[15px]"
                     >
                       <span>$500</span>
                     </a>
@@ -918,30 +1032,32 @@ export default function Index() {
               {/* Purple */}
               <div className="flex">
                 <div className={header.price1}>
-                  <div className="relative flex flex-col px-[20px] py-[50px] items-center">
-                    <div className="flex justify-between gap-[100px]">
-                      <div className="text-[30px] text-[#A08CFF] font-semibold leading-[45px]">
-                        Purple
+                  <div className="relative flex flex-col  py-[50px]">
+                    <div className="px-[20px]">
+                      <div className="flex justify-between gap-[100px]">
+                        <div className="text-[30px] text-[#A08CFF] font-semibold leading-[45px]">
+                          Purple
+                        </div>
+                        <div className="text-[#1B1C39]">
+                          <span className="font-medium text-[28px] leading-[42px]">
+                            $1.00
+                          </span>
+                          <span className="text-[12px] leading-[18px]">
+                            /per month
+                          </span>
+                        </div>
                       </div>
-                      <div className="text-[#1B1C39]">
-                        <span className="font-medium text-[28px] leading-[42px]">
-                          $1.00
-                        </span>
-                        <span className="text-[12px] leading-[18px]">
-                          /per month
-                        </span>
+                      <div className="border-b border-[#1B1828]/0.12 mt-[33px] mb-[30px]"></div>
+                      <div className="">
+                        <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] marker:text-[#8F00E0]">
+                          <li>Bank Better</li>
+                          <li>Pay Later</li>
+                          <li>Customizable Virtual Cards</li>
+                        </ul>
                       </div>
-                    </div>
-                    <div className="border-b border-[#1B1828]/0.12 mt-[33px] mb-[30px]"></div>
-                    <div className="relative">
-                      <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px]">
-                        <li>Bank Better</li>
-                        <li>Pay Later</li>
-                        <li>Customizable Virtual Cards</li>
-                      </ul>
-                    </div>
-                    <div className="absolute top-[216px]">
-                      <Image src={ccb} alt="card control" />
+                      <div className="absolute top-[234px]">
+                        <Image src={ccb} alt="card control" />
+                      </div>
                     </div>
                     <div className={header.sub1} style={{ color: "white" }}>
                       <a href="#" className="items-center">
@@ -957,39 +1073,41 @@ export default function Index() {
                   <div className="absolute top-0 left-0 right-0 rounded-t-[25px] w-[380px] text-center text-[15px] leading-[22.5px] bg-[#6D6E8A] text-white py-2 mb-[25px]">
                     Recommended
                   </div>
-                  <div className="relative flex flex-col px-[20px] py-[50px] items-center">
-                    <div className="flex justify-between pl-[10px] gap-[61px]">
-                      <div className={header.premium}>Premium</div>
-                      <div className="flex flex-col">
-                        <div className="text-[#1B1C39]">
-                          <span className="font-medium text-[28px] leading-[42px]">
-                            $3.00
-                          </span>
-                          <span className="text-[12px] leading-[18px]">
-                            {" "}
-                            /m
-                          </span>
-                        </div>
-                        <div className="text-[12px] leading-[18px] text-[#6D6E8A]">
-                          (per user per month)
+                  <div className="relative flex flex-col py-[50px]">
+                    <div className="px-[20px]">
+                      <div className="flex justify-between pl-[10px] gap-[61px]">
+                        <div className={header.premium}>Premium</div>
+                        <div className="flex flex-col">
+                          <div className="text-[#1B1C39]">
+                            <span className="font-medium text-[28px] leading-[42px]">
+                              $3.00
+                            </span>
+                            <span className="text-[12px] leading-[18px]">
+                              {" "}
+                              /m
+                            </span>
+                          </div>
+                          <div className="text-[12px] leading-[18px] text-[#6D6E8A]">
+                            (per user per month)
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="border-b border-[#1B1828]/0.12 mt-[33px] mb-[19px]"></div>
-                    <div className="text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[15px]">
-                      Everything in Purple plus:
-                    </div>
-                    <div className="relative">
-                      <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px]">
-                        <li>Bank Better +</li>
-                        <li>Pay Later +</li>
-                        <li>Spend Better +</li>
-                        <li>Physical Card</li>
-                        <li>Save Better +</li>
-                      </ul>
-                    </div>
-                    <div className="absolute top-[279px]">
-                      <Image src={ccb2} alt="card control" />
+                      <div className="border-b border-[#1B1828]/0.12 mt-[23px] mb-[19px]"></div>
+                      <div className="px-[20px] text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[15px]">
+                        Everything in Purple plus:
+                      </div>
+                      <div className="px-[20px]">
+                        <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] marker:text-[#8F00E0]">
+                          <li>Bank Better +</li>
+                          <li>Pay Later +</li>
+                          <li>Spend Better +</li>
+                          <li>Physical Card</li>
+                          <li>Save Better +</li>
+                        </ul>
+                      </div>
+                      <div className="absolute top-[294px]">
+                        <Image src={ccb2} alt="card control" />
+                      </div>
                     </div>
                     <div className={header.sub2} style={{ color: "white" }}>
                       <a href="#" className="items-center">
@@ -1002,39 +1120,43 @@ export default function Index() {
               {/* Metal */}
               <div className="flex">
                 <div className={header.price3}>
-                  <div className="relative flex flex-col px-[20px] py-[50px] items-center">
-                    <div className="flex justify-end pl-[10px] gap-[61px]">
-                      <div className="text-[#393939] text-[30px] leading-[45px] font-medium">Metal</div>
-                      <div className="flex flex-col">
-                        <div className="text-[#1B1C39]">
-                          <span className="font-medium text-[28px] leading-[42px]">
-                            $5.00
-                          </span>
-                          <span className="text-[12px] leading-[18px]">
-                            {" "}
-                            /m
-                          </span>
+                  <div className="relative flex flex-col py-[38px]">
+                    <div className="px-[20px]">
+                      <div className="flex justify-between pl-[10px] gap-[61px]">
+                        <div className="text-[#393939] text-[30px] leading-[45px] font-medium">
+                          Metal
                         </div>
-                        <div className="text-[12px] leading-[18px] text-[#6D6E8A]">
-                          (per user per month)
+                        <div className="flex flex-col">
+                          <div className="text-[#1B1C39]">
+                            <span className="font-medium text-[28px] leading-[42px]">
+                              $5.00
+                            </span>
+                            <span className="text-[12px] leading-[18px]">
+                              {" "}
+                              /m
+                            </span>
+                          </div>
+                          <div className="text-[12px] leading-[18px] text-[#6D6E8A]">
+                            (per user per month)
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="border-b border-[#1B1828]/0.12 mt-[33px] mb-[15px]"></div>
-                    <div className="text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[18px] pl-[30px]">
-                      Everything in Premium plus:
-                    </div>
-                    <div className="relative">
-                      <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] pl-[30px]">
-                        <li>Bank Better Pro</li>
-                        <li>Pay Later Pro</li>
-                        <li>Spend Better Pro</li>
-                        <li>Signature Metal card</li>
-                        <li>Invest better Pro</li>
-                      </ul>
-                    </div>
-                    <div className="absolute top-[279px]">
-                      <Image src={ccb3} alt="card control" />
+                      <div className="border-b border-[#1B1828]/0.12 mt-[14px] mb-[15px]"></div>
+                      <div className="text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[18px] px-[20px]">
+                        Everything in Premium plus:
+                      </div>
+                      <div className="relative">
+                        <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] px-[20px] marker:text-[#8F00E0]">
+                          <li>Bank Better Pro</li>
+                          <li>Pay Later Pro</li>
+                          <li>Spend Better Pro</li>
+                          <li>Signature Metal card</li>
+                          <li>Invest better Pro</li>
+                        </ul>
+                      </div>
+                      <div className="absolute top-[245px]">
+                        <Image src={ccb3} alt="card control" />
+                      </div>
                     </div>
                     <div className={header.sub3} style={{ color: "white" }}>
                       <a href="#" className="items-center">
@@ -1049,50 +1171,82 @@ export default function Index() {
           {/* End */}
 
           {/* Testimonials */}
-          <div className="mt-[270px]">
-            <div className="relative flex gap-4 text-center items-center justify-center mb-[55px]">
-              <div className="lg:absolute lg:top-0 lg:left-0 pt-[80px]">
-                <svg width="99" height="70" viewBox="0 0 99 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.48" d="M31.304 69.12H0.296L29.48 0.111992H49.24L31.304 69.12ZM80.552 69.12H49.544L78.728 0.111992H98.488L80.552 69.12Z" fill="#6D6E8A"/>
-                </svg>
-              </div>
+          <div className="relative mt-[270px]">
+            <div className="lg:absolute lg:top-0 lg:left-0 pt-[80px] px-[23px]">
+              <svg
+                width="99"
+                height="70"
+                viewBox="0 0 99 70"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.48"
+                  d="M31.304 69.12H0.296L29.48 0.111992H49.24L31.304 69.12ZM80.552 69.12H49.544L78.728 0.111992H98.488L80.552 69.12Z"
+                  fill="#6D6E8A"
+                />
+              </svg>
+            </div>
+            <div className="lg:absolute lg:top-[490px] lg:right-0">
+              <svg
+                width="99"
+                height="70"
+                viewBox="0 0 99 70"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.48"
+                  d="M18.664 0.111992H49.368L20.184 69.12H0.728L18.664 0.111992ZM67.912 0.111992H98.616L69.432 69.12H49.672L67.912 0.111992Z"
+                  fill="#6D6E8A"
+                />
+              </svg>
+            </div>
+            <div className="flex lg:absolute inset-x-0 lg:top-[490px] rounded-[30px] justify-center">
+              <Image src={pray} width={90} height={98.44} alt="pray" />
+            </div>
+
+            <div className="relative flex gap-4 text-center items-center justify-center mb-[55px] mx-[130px]">
               <div>
                 <Image src={love} width={120} height={120} alt="love" />
               </div>
               <div className="flex flex-col mb-[4px] text-center">
-                <h1 className={header.pr_3}>
-                What our “Early Users” say
-                </h1>
+                <h1 className={header.pr_3}>What our “Early Users” say</h1>
                 <h1 className={header.h2}>
-                (Don’t just take our word for it).
+                  (Don’t just take our word for it).
                 </h1>
               </div>
               <div>
                 <Image src={wink} width={80} height={91.2} alt="love" />
               </div>
-              <div className="lg:absolute lg:-top-[10px] lg:right-[166.77px]">
+              <div className="lg:absolute lg:-top-[10px] lg:right-[50px]">
                 <Image src={glasses} width={68} height={70.2} alt="love" />
               </div>
-              <div>
-                <svg width="99" height="70" viewBox="0 0 99 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.48" d="M18.664 0.111992H49.368L20.184 69.12H0.728L18.664 0.111992ZM67.912 0.111992H98.616L69.432 69.12H49.672L67.912 0.111992Z" fill="#6D6E8A"/>
-                </svg>
-              </div>
             </div>
-            <div className="flex items-center gap-4 justify-center">
-              <div className="flex flex-col w-[380px] h-[275px] space-y-[20px] bg-white rounded-3xl p-8 border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
-                <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 justify-center mx-[130px]">
+              <div className="flex flex-col w-[380px] h-[275px] bg-white rounded-3xl p-[30px] border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+                <div className="flex items-center gap-4 mb-[20px]">
                   <div>
-                    <Image src={cardImage} width={48} height={48} alt="card image" />
+                    <Image
+                      src={cardImage}
+                      width={48}
+                      height={48}
+                      alt="card image"
+                    />
                   </div>
                   <div className="flex flex-col">
                     <div>Aldo P.</div>
                     <div>
-                      <Image src={stars} width={124} height={16} alt="stars rating" />
+                      <Image
+                        src={stars}
+                        width={124}
+                        height={16}
+                        alt="stars rating"
+                      />
                     </div>
                   </div>
                 </div>
-                <div className="flex space-x-[8px] items-center">
+                <div className="flex space-x-[8px] mb-[24px] items-center">
                   <div className="w-[12px] h-[12px] flex rounded-full bg-[#A08CFF] items-center justify-center">
                     <svg
                       width="11"
@@ -1114,19 +1268,31 @@ export default function Index() {
                     Verified Testimonial
                   </div>
                 </div>
-                <div className="text-[16px] text-[#6D6E8A]">
-                  Just wow, i used revolut in the UK, when i came to Africa, i came across Mizan App, it took minutes to setup. I’d say its like the Islamic “Revolt App” version.
+                <div className="text-[16px] leading-[24px] text-[#6D6E8A]">
+                  Just wow, i used revolut in the UK, when i came to Africa, i
+                  came across Mizan App, it took minutes to setup. I’d say its
+                  like the Islamic “Revolt App” version.
                 </div>
               </div>
-              <div className="flex flex-col w-[380px] h-[275px] space-y-[20px] bg-white rounded-3xl p-8 border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className="flex flex-col w-[380px] h-[275px] space-y-[20px] bg-white rounded-3xl p-[30px] border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
                 <div className="flex items-center gap-4">
                   <div>
-                    <Image src={cardImage} width={48} height={48} alt="card image" />
+                    <Image
+                      src={cardImage}
+                      width={48}
+                      height={48}
+                      alt="card image"
+                    />
                   </div>
                   <div className="flex flex-col">
                     <div>Aldo P.</div>
                     <div>
-                      <Image src={stars} width={124} height={16} alt="stars rating" />
+                      <Image
+                        src={stars}
+                        width={124}
+                        height={16}
+                        alt="stars rating"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1153,18 +1319,29 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="text-[16px] text-[#6D6E8A]">
-                  I never considered myself a saver until I started using Mizan – all hail the king of converge and roll.
+                  I never considered myself a saver until I started using Mizan
+                  – all hail the king of converge and roll.
                 </div>
               </div>
-              <div className="flex flex-col w-[380px] h-[275px] space-y-[20px] bg-white rounded-3xl p-8 border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className="flex flex-col w-[380px] h-[275px] space-y-[20px] bg-white rounded-3xl p-[30px] border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
                 <div className="flex items-center gap-4">
                   <div>
-                    <Image src={cardImage} width={48} height={48} alt="card image" />
+                    <Image
+                      src={cardImage}
+                      width={48}
+                      height={48}
+                      alt="card image"
+                    />
                   </div>
                   <div className="flex flex-col">
                     <div>Aldo P.</div>
                     <div>
-                      <Image src={stars} width={124} height={16} alt="stars rating" />
+                      <Image
+                        src={stars}
+                        width={124}
+                        height={16}
+                        alt="stars rating"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1191,7 +1368,8 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="text-[16px] text-[#6D6E8A]">
-                  I never considered myself a saver until I started using Mizan – all hail the king of converge and roll.
+                  I never considered myself a saver until I started using Mizan
+                  – all hail the king of converge and roll.
                 </div>
               </div>
             </div>
@@ -1199,127 +1377,358 @@ export default function Index() {
           {/* End */}
 
           {/* Peace of mind */}
-          <div className="mt-[60px] mb-[49px] flex items-center justify-center">
-            <div className="flex flex-col z-30">
-              <div className="mb-[40px]">
-                <h1 className={header.pr_3}>
-                  And finally peace of mind
-                </h1>
-              </div>
-              <div className="flex gap-[30px] items-center bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
-                <div className="p-[9px] rounded-full bg-[#E0D2FF]">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25.71 7.9957C26.1899 8.26904 26.8005 8.10159 27.0738 7.6217C27.3472 7.1418 27.1797 6.53118 26.6998 6.25783L25.71 7.9957ZM29.7477 32.4149C30.0965 31.9867 30.0321 31.3568 29.6039 31.008C29.1756 30.6592 28.5458 30.7237 28.197 31.1519L29.7477 32.4149ZM21.8462 37.4997L21.4029 36.6034L21.8462 37.4997ZM20.72 36.6207C15.2067 34.2374 11.9998 29.5765 10.1316 24.8971C8.26268 20.2158 7.77738 15.6176 7.65275 13.5589L5.65641 13.6798C5.78735 15.8428 6.29391 20.6785 8.27416 25.6387C10.2552 30.6007 13.7547 35.7886 19.9264 38.4565L20.72 36.6207ZM8.11529 12.7615L20.6012 5.64964L19.6114 3.91178L7.12542 11.0236L8.11529 12.7615ZM21.5911 5.64964L25.71 7.9957L26.6998 6.25783L22.581 3.91178L21.5911 5.64964ZM28.197 31.1519C26.4521 33.2942 24.2329 35.2038 21.4029 36.6034L22.2895 38.3961C25.4037 36.856 27.8424 34.7542 29.7477 32.4149L28.197 31.1519ZM7.65275 13.5589C7.63419 13.2524 7.79452 12.9442 8.11529 12.7615L7.12542 11.0236C6.19718 11.5523 5.5881 12.5515 5.65641 13.6798L7.65275 13.5589ZM19.9264 38.4565C20.6829 38.7835 21.5504 38.7617 22.2895 38.3961L21.4029 36.6034C21.1907 36.7083 20.9377 36.7148 20.72 36.6207L19.9264 38.4565ZM20.6012 5.64964C20.908 5.47489 21.2843 5.47489 21.5911 5.64964L22.581 3.91178C21.6605 3.38751 20.5318 3.38751 19.6114 3.91178L20.6012 5.64964Z" fill="#1B1C39"/>
-                    <circle opacity="0.1" cx="28.4624" cy="17.0639" r="10.0639" fill="url(#paint0_linear_11_7237)" stroke="url(#paint1_linear_11_7237)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <circle cx="28.5991" cy="16.9878" r="10.0639" stroke="#9A73CB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M25.7352 15.6389C25.3446 15.2483 24.7115 15.2483 24.321 15.6389C23.9304 16.0294 23.9304 16.6625 24.321 17.0531L25.7352 15.6389ZM28.2025 19.5204L27.4954 20.2275C27.886 20.6181 28.5191 20.6181 28.9096 20.2275L28.2025 19.5204ZM34.1042 15.0329C34.4948 14.6424 34.4948 14.0093 34.1042 13.6187C33.7137 13.2282 33.0805 13.2282 32.69 13.6187L34.1042 15.0329ZM24.321 17.0531L27.4954 20.2275L28.9096 18.8133L25.7352 15.6389L24.321 17.0531ZM28.9096 20.2275L34.1042 15.0329L32.69 13.6187L27.4954 18.8133L28.9096 20.2275Z" fill="url(#paint2_linear_11_7237)"/>
-                    <defs>
-                    <linearGradient id="paint0_linear_11_7237" x1="38.5263" y1="7" x2="18.3984" y2="27.1279" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#8BB4F2"/>
-                    <stop offset="0.51551" stopColor="#7C27D9" stopOpacity="0.887325"/>
-                    <stop offset="1" stopColor="#DE52D0" stopOpacity="0.76"/>
-                    </linearGradient>
-                    <linearGradient id="paint1_linear_11_7237" x1="38.5263" y1="7" x2="18.3984" y2="27.1279" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#8BB4F2"/>
-                    <stop offset="0.51551" stopColor="#7C27D9" stopOpacity="0.887325"/>
-                    <stop offset="1" stopColor="#DE52D0" stopOpacity="0.76"/>
-                    </linearGradient>
-                    <linearGradient id="paint2_linear_11_7237" x1="33.3971" y1="14.3258" x2="25.9496" y2="12.5282" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#8BB4F2"/>
-                    <stop offset="0.51551" stopColor="#7C27D9" stopOpacity="0.887325"/>
-                    <stop offset="1" stopColor="#DE52D0" stopOpacity="0.76"/>
-                    </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div className="">Swiss level bank security with PCI /DSS certified.</div>
-              </div>
-              <div className="flex gap-[30px] items-center bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[18px] mb-[20px]">
-                <div className="p-[9px] rounded-full bg-[#E0D2FF]">
-                  <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M29 20.0237V22C29 23.1046 28.1046 24 27 24H3C1.89543 24 1 23.1046 1 22V11.1253M15.0727 6H3C1.89543 6 1 6.89543 1 8V11.1253M1 11.1253H11.439" stroke="#1B1C39" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M20.1289 8.25632H19C17.8954 8.25632 17 9.15175 17 10.2563V15C17 16.1046 17.8954 17 19 17H27C28.1046 17 29 16.1046 29 15V10.2563C29 9.15175 28.1046 8.25632 27 8.25632H20.1289ZM20.1289 8.25632V4.44759C20.1289 2.54354 21.6725 1 23.5765 1V1C25.4806 1 27.0241 2.54354 27.0241 4.44759V5.28163M23.2349 12.2732V13.4752" stroke="url(#paint0_linear_11_7248)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <defs>
-                    <linearGradient id="paint0_linear_11_7248" x1="29" y1="1" x2="13.64" y2="12.52" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#8BB4F2"/>
-                    <stop offset="0.51551" stopColor="#7C27D9" stopOpacity="0.887325"/>
-                    <stop offset="1" stopColor="#DE52D0" stopOpacity="0.76"/>
-                    </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div className="">Instantly freeze your lost card, wherever, whenever.</div>
-              </div>
-              <div className="flex gap-[30px] items-center bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
-                <div className="p-[9px] rounded-full bg-[#E0D2FF]">
-                  <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="15.0517" cy="14.541" r="9.16696" stroke="url(#paint0_linear_11_7256)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M19.2301 16.2004C16.923 18.5075 13.1824 18.5075 10.8753 16.2004" stroke="#9A73CB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M8.56 1H3C1.89543 1 1 1.89543 1 3V8.56" stroke="#1B1C39" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M8.56 27.9375H3C1.89543 27.9375 1 27.0421 1 25.9375V20.3775" stroke="#1B1C39" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M28 8.56L28 3C28 1.89543 27.1046 1 26 1L20.44 1" stroke="#1B1C39" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M28 20.3775L28 25.9375C28 27.0421 27.1046 27.9375 26 27.9375L20.44 27.9375" stroke="#1B1C39" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <defs>
-                    <linearGradient id="paint0_linear_11_7256" x1="24.2187" y1="5.37402" x2="5.88476" y2="23.7079" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#8BB4F2"/>
-                    <stop offset="0.51551" stopColor="#7C27D9" stopOpacity="0.887325"/>
-                    <stop offset="1" stopColor="#DE52D0" stopOpacity="0.76"/>
-                    </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div className="">Biometrics login, with enhanced 2FA. No more (xh!#12@?3) passwords.</div>
-              </div>
-              <div className="flex gap-[30px] items-center bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
-                <div className="p-[9px] rounded-full bg-[#E0D2FF]">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.2436 33.3111L28.5926 27.3361C28.902 27.1575 29.0926 26.8273 29.0926 26.4701V21.837M18.2436 33.3111L7.89453 27.3361C7.58513 27.1575 7.39453 26.8273 7.39453 26.4701V14.52M18.2436 33.3111V20.688C18.2436 20.3127 18.0335 19.9691 17.6994 19.798L7.39453 14.52M7.39453 14.52L17.7436 8.54502C18.053 8.36639 18.4342 8.36639 18.7436 8.54502L22.4458 10.6825" stroke="#1B1C39" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M22.002 10.4472V17.3974C22.002 17.7487 22.1863 18.0742 22.4875 18.2549L27.7512 21.4131C28.0678 21.6031 28.4635 21.6031 28.7801 21.4131L34.0438 18.2549C34.345 18.0742 34.5293 17.7487 34.5293 17.3974V11.0134C34.5293 10.6621 34.345 10.3366 34.0438 10.1559L28.7801 6.99766C28.4635 6.80765 28.0678 6.80765 27.7512 6.99766L22.002 10.4472ZM22.002 10.4472L28.2656 13.8933" stroke="url(#paint0_linear_11_7267)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <defs>
-                    <linearGradient id="paint0_linear_11_7267" x1="34.5293" y1="6.68896" x2="19.7429" y2="19.011" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#80B2FF"/>
-                    <stop offset="0.51551" stopColor="#7C27D9"/>
-                    <stop offset="1" stopColor="#FF68F0"/>
-                    </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div className="">Built on blockchain technology (will take approximately 1,000,000,000,000 years to crack).</div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="">
-                <svg width="751" height="751" viewBox="0 0 751 751" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="375.5" cy="375.5" r="375.5" fill="url(#paint0_linear_11_6955)"/>
-                  <defs>
-                  <linearGradient id="paint0_linear_11_6955" x1="157.617" y1="1.08952e-05" x2="640.9" y2="710.437" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#FAF9FE"/>
-                  <stop offset="1" stopColor="#C6BAFF"/>
+          <div className="relative mt-[172px] mb-[49px] max-w-[1290px] mx-[130px]">
+            <div className="absolute left-[500px] -top-20 -z-20">
+              <svg
+                width="751"
+                height="751"
+                viewBox="0 0 751 751"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="375.5"
+                  cy="375.5"
+                  r="375.5"
+                  fill="url(#paint0_linear_11_6955)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_11_6955"
+                    x1="157.617"
+                    y1="1.08952e-05"
+                    x2="640.9"
+                    y2="710.437"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stopColor="#FAF9FE" />
+                    <stop offset="1" stopColor="#C6BAFF" />
                   </linearGradient>
-                  </defs>
-                </svg>
+                </defs>
+              </svg>
+            </div>  
+            <div className="absolute w-[561px] h-[803px] left-[600px] top-[20px] -z-10">
+              <Image
+                src={blackHand}
+                width={561}
+                height={803}
+                alt="black hand holding phone"
+              />
+            </div>
+            <div className="absolute w-full left-[500px] -z-20 top-[20px]">
+              <Image
+                src={blackShadow}
+                width={596}
+                height={748}
+                alt="black hand holding phone"
+              />
+            </div>
+            <div className="flex">
+              <div className="flex flex-col z-30 ">
+                <div className="mb-[40px]">
+                  <h1 className={header.pr_3}>And finally peace of mind</h1>
+                </div>
+                <div className="flex gap-[30px] w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
+                  <div className="p-[9px] rounded-full bg-[#E0D2FF]">
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25.71 7.9957C26.1899 8.26904 26.8005 8.10159 27.0738 7.6217C27.3472 7.1418 27.1797 6.53118 26.6998 6.25783L25.71 7.9957ZM29.7477 32.4149C30.0965 31.9867 30.0321 31.3568 29.6039 31.008C29.1756 30.6592 28.5458 30.7237 28.197 31.1519L29.7477 32.4149ZM21.8462 37.4997L21.4029 36.6034L21.8462 37.4997ZM20.72 36.6207C15.2067 34.2374 11.9998 29.5765 10.1316 24.8971C8.26268 20.2158 7.77738 15.6176 7.65275 13.5589L5.65641 13.6798C5.78735 15.8428 6.29391 20.6785 8.27416 25.6387C10.2552 30.6007 13.7547 35.7886 19.9264 38.4565L20.72 36.6207ZM8.11529 12.7615L20.6012 5.64964L19.6114 3.91178L7.12542 11.0236L8.11529 12.7615ZM21.5911 5.64964L25.71 7.9957L26.6998 6.25783L22.581 3.91178L21.5911 5.64964ZM28.197 31.1519C26.4521 33.2942 24.2329 35.2038 21.4029 36.6034L22.2895 38.3961C25.4037 36.856 27.8424 34.7542 29.7477 32.4149L28.197 31.1519ZM7.65275 13.5589C7.63419 13.2524 7.79452 12.9442 8.11529 12.7615L7.12542 11.0236C6.19718 11.5523 5.5881 12.5515 5.65641 13.6798L7.65275 13.5589ZM19.9264 38.4565C20.6829 38.7835 21.5504 38.7617 22.2895 38.3961L21.4029 36.6034C21.1907 36.7083 20.9377 36.7148 20.72 36.6207L19.9264 38.4565ZM20.6012 5.64964C20.908 5.47489 21.2843 5.47489 21.5911 5.64964L22.581 3.91178C21.6605 3.38751 20.5318 3.38751 19.6114 3.91178L20.6012 5.64964Z"
+                        fill="#1B1C39"
+                      />
+                      <circle
+                        opacity="0.1"
+                        cx="28.4624"
+                        cy="17.0639"
+                        r="10.0639"
+                        fill="url(#paint0_linear_11_7237)"
+                        stroke="url(#paint1_linear_11_7237)"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <circle
+                        cx="28.5991"
+                        cy="16.9878"
+                        r="10.0639"
+                        stroke="#9A73CB"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M25.7352 15.6389C25.3446 15.2483 24.7115 15.2483 24.321 15.6389C23.9304 16.0294 23.9304 16.6625 24.321 17.0531L25.7352 15.6389ZM28.2025 19.5204L27.4954 20.2275C27.886 20.6181 28.5191 20.6181 28.9096 20.2275L28.2025 19.5204ZM34.1042 15.0329C34.4948 14.6424 34.4948 14.0093 34.1042 13.6187C33.7137 13.2282 33.0805 13.2282 32.69 13.6187L34.1042 15.0329ZM24.321 17.0531L27.4954 20.2275L28.9096 18.8133L25.7352 15.6389L24.321 17.0531ZM28.9096 20.2275L34.1042 15.0329L32.69 13.6187L27.4954 18.8133L28.9096 20.2275Z"
+                        fill="url(#paint2_linear_11_7237)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_11_7237"
+                          x1="38.5263"
+                          y1="7"
+                          x2="18.3984"
+                          y2="27.1279"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#8BB4F2" />
+                          <stop
+                            offset="0.51551"
+                            stopColor="#7C27D9"
+                            stopOpacity="0.887325"
+                          />
+                          <stop
+                            offset="1"
+                            stopColor="#DE52D0"
+                            stopOpacity="0.76"
+                          />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_11_7237"
+                          x1="38.5263"
+                          y1="7"
+                          x2="18.3984"
+                          y2="27.1279"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#8BB4F2" />
+                          <stop
+                            offset="0.51551"
+                            stopColor="#7C27D9"
+                            stopOpacity="0.887325"
+                          />
+                          <stop
+                            offset="1"
+                            stopColor="#DE52D0"
+                            stopOpacity="0.76"
+                          />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint2_linear_11_7237"
+                          x1="33.3971"
+                          y1="14.3258"
+                          x2="25.9496"
+                          y2="12.5282"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#8BB4F2" />
+                          <stop
+                            offset="0.51551"
+                            stopColor="#7C27D9"
+                            stopOpacity="0.887325"
+                          />
+                          <stop
+                            offset="1"
+                            stopColor="#DE52D0"
+                            stopOpacity="0.76"
+                          />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div className="text-[16px] leading-[28px] text-[#1B1C39]">
+                    Swiss level bank security with PCI /DSS certified.
+                  </div>
+                </div>
+                <div className="flex gap-[30px] w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[18px] mb-[20px]">
+                  <div className="p-[9px] rounded-full bg-[#E0D2FF]">
+                    <svg
+                      width="30"
+                      height="25"
+                      viewBox="0 0 30 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M29 20.0237V22C29 23.1046 28.1046 24 27 24H3C1.89543 24 1 23.1046 1 22V11.1253M15.0727 6H3C1.89543 6 1 6.89543 1 8V11.1253M1 11.1253H11.439"
+                        stroke="#1B1C39"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M20.1289 8.25632H19C17.8954 8.25632 17 9.15175 17 10.2563V15C17 16.1046 17.8954 17 19 17H27C28.1046 17 29 16.1046 29 15V10.2563C29 9.15175 28.1046 8.25632 27 8.25632H20.1289ZM20.1289 8.25632V4.44759C20.1289 2.54354 21.6725 1 23.5765 1V1C25.4806 1 27.0241 2.54354 27.0241 4.44759V5.28163M23.2349 12.2732V13.4752"
+                        stroke="url(#paint0_linear_11_7248)"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_11_7248"
+                          x1="29"
+                          y1="1"
+                          x2="13.64"
+                          y2="12.52"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#8BB4F2" />
+                          <stop
+                            offset="0.51551"
+                            stopColor="#7C27D9"
+                            stopOpacity="0.887325"
+                          />
+                          <stop
+                            offset="1"
+                            stopColor="#DE52D0"
+                            stopOpacity="0.76"
+                          />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div className="text-[16px] leading-[28px] text-[#1B1C39]">
+                    Instantly freeze your lost card, wherever, whenever.
+                  </div>
+                </div>
+                <div className="flex gap-[30px] w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
+                  <div className="p-[9px] rounded-full bg-[#E0D2FF]">
+                    <svg
+                      width="29"
+                      height="29"
+                      viewBox="0 0 29 29"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="15.0517"
+                        cy="14.541"
+                        r="9.16696"
+                        stroke="url(#paint0_linear_11_7256)"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M19.2301 16.2004C16.923 18.5075 13.1824 18.5075 10.8753 16.2004"
+                        stroke="#9A73CB"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M8.56 1H3C1.89543 1 1 1.89543 1 3V8.56"
+                        stroke="#1B1C39"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M8.56 27.9375H3C1.89543 27.9375 1 27.0421 1 25.9375V20.3775"
+                        stroke="#1B1C39"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M28 8.56L28 3C28 1.89543 27.1046 1 26 1L20.44 1"
+                        stroke="#1B1C39"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M28 20.3775L28 25.9375C28 27.0421 27.1046 27.9375 26 27.9375L20.44 27.9375"
+                        stroke="#1B1C39"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_11_7256"
+                          x1="24.2187"
+                          y1="5.37402"
+                          x2="5.88476"
+                          y2="23.7079"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#8BB4F2" />
+                          <stop
+                            offset="0.51551"
+                            stopColor="#7C27D9"
+                            stopOpacity="0.887325"
+                          />
+                          <stop
+                            offset="1"
+                            stopColor="#DE52D0"
+                            stopOpacity="0.76"
+                          />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div className="text-[16px] leading-[28px] text-[#1B1C39]">
+                    Biometrics login, with enhanced 2FA. No more (xh!#12@?3)
+                    passwords.
+                  </div>
+                </div>
+                <div className="flex gap-[30px] w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
+                  <div className="p-[9px] rounded-full bg-[#E0D2FF]">
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.2436 33.3111L28.5926 27.3361C28.902 27.1575 29.0926 26.8273 29.0926 26.4701V21.837M18.2436 33.3111L7.89453 27.3361C7.58513 27.1575 7.39453 26.8273 7.39453 26.4701V14.52M18.2436 33.3111V20.688C18.2436 20.3127 18.0335 19.9691 17.6994 19.798L7.39453 14.52M7.39453 14.52L17.7436 8.54502C18.053 8.36639 18.4342 8.36639 18.7436 8.54502L22.4458 10.6825"
+                        stroke="#1B1C39"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M22.002 10.4472V17.3974C22.002 17.7487 22.1863 18.0742 22.4875 18.2549L27.7512 21.4131C28.0678 21.6031 28.4635 21.6031 28.7801 21.4131L34.0438 18.2549C34.345 18.0742 34.5293 17.7487 34.5293 17.3974V11.0134C34.5293 10.6621 34.345 10.3366 34.0438 10.1559L28.7801 6.99766C28.4635 6.80765 28.0678 6.80765 27.7512 6.99766L22.002 10.4472ZM22.002 10.4472L28.2656 13.8933"
+                        stroke="url(#paint0_linear_11_7267)"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_11_7267"
+                          x1="34.5293"
+                          y1="6.68896"
+                          x2="19.7429"
+                          y2="19.011"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#80B2FF" />
+                          <stop offset="0.51551" stopColor="#7C27D9" />
+                          <stop offset="1" stopColor="#FF68F0" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div className="text-[16px] leading-[28px] text-[#1B1C39]">
+                    Built on blockchain technology (will take approximately
+                    1,000,000,000,000 years to crack).
+                  </div>
+                </div>
               </div>
-              <div className="absolute bottom-0 right-10 top-28 z-10">
-                <Image src={blackHand} width={561} height={803} alt="black hand holding phone" />
-              </div>
-              <div className="absolute bottom-0 right-20 top-56 -z-10">
-                <Image src={blackShadow} width={596} height={748} alt="black hand holding phone" />
-              </div>
-
+              
             </div>
           </div>
           {/* End */}
 
           {/* Top Providers */}
-          <div className="flex flex-col rounded-3xl py-[70px] bg-white shadow-[0px_-8px_100px_rgba(105,_67,_175,_0.1)] z-20 mb-[160px]">
+          <div className="flex flex-col rounded-3xl py-[70px] bg-white shadow-[0px_-8px_100px_rgba(105,_67,_175,_0.1)] z-20 mt-[180px] mb-[160px] max-w-[1290px] ml-[54px]">
             <div className="mb-[40px] pl-[82px]">
-              <h1 className={header.pr_3}>
-                We work with top providers
-              </h1>
+              <h1 className={header.pr_3}>We work with top providers</h1>
             </div>
             <div className="flex items-center gap-[20px] pl-[76px] pr-[84px]">
               <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
-                <Image src={shariyah2} width={123} height={115} alt="shariyah logo" />
+                <Image
+                  src={shariyah2}
+                  width={123}
+                  height={115}
+                  alt="shariyah logo"
+                />
               </div>
               <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
                 <Image src={codebase} alt="codebase technologies logo" />
@@ -1331,71 +1740,93 @@ export default function Index() {
                 <Image src={cloud} alt="google cloud logo" />
               </div>
             </div>
-
           </div>
-          {/* End */}
+          {/* End */} 
 
           {/* Backed By */}
           <div className="flex flex-col mb-[160px]">
-            <div className="mb-[40px] pl-[82px]">
-              <h1 className="text-[40px] leading[60px] font-bold">
+            <div className="mb-[40px] mx-[130px]">
+              <h1 className="text-[40px] leading-[60px] font-bold">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#9E7AFC]">
-                Backed by
+                  Backed by
                 </span>
               </h1>
             </div>
-            <div className="flex items-center justify-center gap-[20px]">
-              <div className="flex flex-col w-[380px] h-[508px] bg-white rounded-3xl p-8 shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
-                <div className="flex items-center justify-start gap-[20px]">
-                  <div className="">
-                    <Image src={backer1} alt="sponsor1" />
+            <div className="grid grid-cols-1 gap-y-10 gap-x-[20px] sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-3 mx-[130px]">
+              <div className="bg-white rounded-3xl pl-[30px] pt-[40px] pr-[28px] pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+                <div className="flex items-center">
+                  <div className="mr-[20px] h-24 w-24 rounded-full flex-shrink-0 overflow-hidden">
+                    <Image src={backer1} width={94} height={94} alt="sponsor1" />
                   </div>
-                  <div className="flex-1 text-[24px] leading-[36px] text-[#1B1C39] font-medium">Sheikh Abdullatif Essajee</div>
+                  <div className="text-[24px] leading-[36px] text-[#1B1C39] font-medium">
+                    Sheikh Abdullatif Essajee
+                  </div>
                 </div>
-                <div className="flex flex-col space-y-[20px] text-[14px] leading-[23.38px] text-[#6D6E8A]">
+                <div className="mt-[33px] flex flex-col space-y-[20px] text-[14px] leading-[23.38px] text-[#6D6E8A]">
                   <p>
-                    Essajee is a promoter of Islamic banking in Kenya, and co-founder and currently the Chairman of First Community Bank.
+                    Essajee is a promoter of Islamic banking in Kenya, and
+                    co-founder and currently the Chairman of First Community
+                    Bank.
                   </p>
                   <p>
-                    He also served as its Executive Director in charge of support and control and later as its Managing Director, during his leave of absence from the University of Nairobi.
+                    He also served as its Executive Director in charge of
+                    support and control and later as its Managing Director,
+                    during his leave of absence from the University of Nairobi.
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col w-[380px] h-[508px] bg-white rounded-3xl p-8 shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
-                <div className="flex items-center justify-start gap-[20px]">
-                  <div className="">
-                    <Image src={backer2} alt="sponsor1" />
+              <div className="flex flex-col bg-white rounded-3xl p-8 shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+                <div className="flex items-center justify-start">
+                  <div className="mr-[20px] h-24 w-24 rounded-full flex-shrink-0 overflow-hidden">
+                    <Image src={backer2} width={94} height={94} alt="sponsor1" />
                   </div>
-                  <div className="flex-1 text-[24px] leading-[36px] text-[#1B1C39] font-medium">Mufti Ismail menk</div>
+                  <div className="flex-1 text-[24px] leading-[36px] text-[#1B1C39] font-medium">
+                    Mufti Ismail menk
+                  </div>
                 </div>
-                <div className="flex flex-col space-y-[20px] text-[14px] leading-[23.38px] text-[#6D6E8A]">
+                <div className="mt-[33px] flex flex-col space-y-[20px] text-[14px] leading-[23.38px] text-[#6D6E8A]">
                   <p>
-                    Mufti Dr Ismail Menk is a leading global Islamic scholar born and raised in Zimbabwe. He studied Shariah in Madinah and holds a Doctorate of Social Guidance from Aldersgate University.
+                    Mufti Dr Ismail Menk is a leading global Islamic scholar
+                    born and raised in Zimbabwe. He studied Shariah in Madinah
+                    and holds a Doctorate of Social Guidance from Aldersgate
+                    University.
                   </p>
                   <div className="flex flex-col space-y-[5px]">
                     <p className="font-medium">Awards</p>
                     <ul className="list-inside list-disc">
-                      <li>Top 500 Most Influential Muslims in the World since 2010 to date.</li>
+                      <li>
+                        Top 500 Most Influential Muslims in the World since 2010
+                        to date.
+                      </li>
                       <li>KSBA Global Leadership Award Social Guidance</li>
-                      <li>Honorary Doctorate Social Guidance Aldersgate University</li>
-
+                      <li>
+                        Honorary Doctorate Social Guidance Aldersgate University
+                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col w-[380px] h-[508px] bg-white rounded-3xl p-8 shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
-                <div className="flex items-center justify-start gap-[20px]">
-                  <div className="">
-                    <Image src={backer3} alt="sponsor1" />
+              <div className="flex flex-col bg-white rounded-3xl p-8 shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+                <div className="flex items-center">
+                  <div className="mr-[20px] h-24 w-24 rounded-full flex-shrink-0 overflow-hidden">
+                    <Image src={backer3} width={94} height={94} alt="sponsor1" />
                   </div>
-                  <div className="flex-1 text-[24px] leading-[36px] text-[#1B1C39] font-medium">Sh. Muhammad Ahmad Shaikh</div>
+                  <div className="text-[24px] leading-[36px] text-[#1B1C39] font-medium">
+                    Sh. Muhammad Ahmad Shaikh
+                  </div>
                 </div>
-                <div className="flex flex-col space-y-[20px] text-[14px] leading-[23.38px] text-[#6D6E8A]">
+                <div className="mt-[33px] flex flex-col space-y-[20px] text-[14px] leading-[23.38px] text-[#6D6E8A]">
                   <p>
-                    Shaikh Muhammad has over 10 years of experience as a Shari’a consultant and academic in various parts of Islamic finance. He has worked predominantly in the financial services along with retail and investment banking and has expertise in corporate advisory and real-estate funds.
+                    Shaikh Muhammad has over 10 years of experience as a Shari’a
+                    consultant and academic in various parts of Islamic finance.
+                    He has worked predominantly in the financial services along
+                    with retail and investment banking and has expertise in
+                    corporate advisory and real-estate funds.
                   </p>
                   <p>
-                    His work ranges from redesigning conventional Sukuk, organizational structures of funds in the banking, insurance and private equity sector.
+                    His work ranges from redesigning conventional Sukuk,
+                    organizational structures of funds in the banking, insurance
+                    and private equity sector.
                   </p>
                 </div>
               </div>
@@ -1404,92 +1835,274 @@ export default function Index() {
           {/* End */}
 
           {/* Zendesk */}
-          <div className="flex flex-col mb-[160px]">
+          <div className="relative flex flex-col mb-[160px] mx-[130px]">
             <h1 className="text-[40px] leading[60px] font-bold">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#9E7AFC]">
-                Any questions? 
+                Any questions?
               </span>
             </h1>
             <h1 className={header.h3}>
-              Did not understand some products? Need any further explantion? or have a suggestion? Do let us know, we dont like leaving anything to chance
+              Did not understand some products? Need any further explantion? or
+              have a suggestion? Do let us know, we dont like leaving anything
+              to chance
             </h1>
             <div className="flex items-center justify-center gap-[150px] mt-[40px]">
               <div className="flex flex-col text-center">
                 <div>
-                  <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.1" d="M275.744 93.2728C316.129 133.658 313.288 204.241 266.235 251.293C219.183 298.346 139.909 322.38 73.1244 255.595C32.7389 215.21 38.1439 144.327 85.1967 97.274C132.25 50.2212 218.241 35.7695 275.744 93.2728Z" fill="url(#paint0_linear_11_7217)"/>
-                    <path opacity="0.4" d="M174.708 248.721C134.03 259.506 94.3836 228.099 83.5988 187.42C72.8139 146.742 106.838 94.4778 147.516 83.693C188.195 72.9081 229.914 97.1415 240.699 137.82C251.483 178.498 215.386 237.936 174.708 248.721Z" fill="url(#paint1_linear_11_7217)"/>
-                    <path opacity="0.4" d="M263.603 158.756C282.545 196.336 264.644 245.751 220.86 267.82C177.076 289.889 111.705 255.197 92.7628 217.618C73.8211 180.038 93.9598 131.683 137.744 109.614C181.528 87.5451 244.662 121.176 263.603 158.756Z" fill="url(#paint2_linear_11_7217)"/>
+                  <svg
+                    width="350"
+                    height="350"
+                    viewBox="0 0 350 350"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.1"
+                      d="M275.744 93.2728C316.129 133.658 313.288 204.241 266.235 251.293C219.183 298.346 139.909 322.38 73.1244 255.595C32.7389 215.21 38.1439 144.327 85.1967 97.274C132.25 50.2212 218.241 35.7695 275.744 93.2728Z"
+                      fill="url(#paint0_linear_11_7217)"
+                    />
+                    <path
+                      opacity="0.4"
+                      d="M174.708 248.721C134.03 259.506 94.3836 228.099 83.5988 187.42C72.8139 146.742 106.838 94.4778 147.516 83.693C188.195 72.9081 229.914 97.1415 240.699 137.82C251.483 178.498 215.386 237.936 174.708 248.721Z"
+                      fill="url(#paint1_linear_11_7217)"
+                    />
+                    <path
+                      opacity="0.4"
+                      d="M263.603 158.756C282.545 196.336 264.644 245.751 220.86 267.82C177.076 289.889 111.705 255.197 92.7628 217.618C73.8211 180.038 93.9598 131.683 137.744 109.614C181.528 87.5451 244.662 121.176 263.603 158.756Z"
+                      fill="url(#paint2_linear_11_7217)"
+                    />
                     <g opacity="0.6" filter="url(#filter0_f_11_7217)">
-                    <ellipse cx="168.094" cy="214.06" rx="64.033" ry="44.8231" fill="url(#paint3_linear_11_7217)"/>
+                      <ellipse
+                        cx="168.094"
+                        cy="214.06"
+                        rx="64.033"
+                        ry="44.8231"
+                        fill="url(#paint3_linear_11_7217)"
+                      />
                     </g>
-                    <circle cx="168.092" cy="176.921" r="64.033" fill="url(#paint4_linear_11_7217)"/>
-                    <path d="M165.054 171.912C167.178 171.139 169.487 171.139 171.611 171.912C172.738 172.322 173.986 171.748 174.399 170.63C174.812 169.512 174.233 168.274 173.107 167.864C170.017 166.74 166.648 166.74 163.558 167.864C162.432 168.274 161.853 169.512 162.266 170.63C162.679 171.748 163.927 172.322 165.054 171.912Z" fill="url(#paint5_linear_11_7217)"/>
-                    <path d="M170.123 178.065C168.952 177.758 167.741 177.758 166.569 178.065C165.409 178.369 164.22 177.682 163.914 176.531C163.608 175.38 164.3 174.201 165.46 173.897C167.359 173.399 169.334 173.399 171.233 173.897C172.393 174.201 173.085 175.38 172.779 176.531C172.472 177.682 171.284 178.369 170.123 178.065Z" fill="url(#paint6_linear_11_7217)"/>
-                    <path fillRule="evenodd" clipRule="evenodd" d="M154.573 168.652C154.573 161.11 160.731 155 168.332 155C175.934 155 182.092 161.11 182.092 168.652V184.459C182.092 192.001 175.934 198.111 168.332 198.111C160.731 198.111 154.573 192.001 154.573 184.459V168.652ZM168.332 159.311C163.13 159.311 158.918 163.491 158.918 168.652V184.459C158.918 189.62 163.13 193.8 168.332 193.8C173.534 193.8 177.747 189.62 177.747 184.459V168.652C177.747 163.491 173.534 159.311 168.332 159.311Z" fill="url(#paint7_linear_11_7217)"/>
-                    <path d="M146.173 176.986C147.372 176.986 148.345 177.951 148.345 179.142V184.028C148.345 194.966 157.308 203.859 168.333 203.859C179.357 203.859 188.32 194.966 188.32 184.028V179.142C188.32 177.951 189.293 176.986 190.492 176.986C191.692 176.986 192.665 177.951 192.665 179.142V184.028C192.665 196.62 182.914 206.982 170.505 208.075V214.637C170.505 215.827 169.532 216.792 168.332 216.792C167.132 216.792 166.16 215.827 166.16 214.637V208.075C153.751 206.982 144 196.62 144 184.028V179.142C144 177.951 144.973 176.986 146.173 176.986Z" fill="url(#paint8_linear_11_7217)"/>
+                    <circle
+                      cx="168.092"
+                      cy="176.921"
+                      r="64.033"
+                      fill="url(#paint4_linear_11_7217)"
+                    />
+                    <path
+                      d="M165.054 171.912C167.178 171.139 169.487 171.139 171.611 171.912C172.738 172.322 173.986 171.748 174.399 170.63C174.812 169.512 174.233 168.274 173.107 167.864C170.017 166.74 166.648 166.74 163.558 167.864C162.432 168.274 161.853 169.512 162.266 170.63C162.679 171.748 163.927 172.322 165.054 171.912Z"
+                      fill="url(#paint5_linear_11_7217)"
+                    />
+                    <path
+                      d="M170.123 178.065C168.952 177.758 167.741 177.758 166.569 178.065C165.409 178.369 164.22 177.682 163.914 176.531C163.608 175.38 164.3 174.201 165.46 173.897C167.359 173.399 169.334 173.399 171.233 173.897C172.393 174.201 173.085 175.38 172.779 176.531C172.472 177.682 171.284 178.369 170.123 178.065Z"
+                      fill="url(#paint6_linear_11_7217)"
+                    />
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M154.573 168.652C154.573 161.11 160.731 155 168.332 155C175.934 155 182.092 161.11 182.092 168.652V184.459C182.092 192.001 175.934 198.111 168.332 198.111C160.731 198.111 154.573 192.001 154.573 184.459V168.652ZM168.332 159.311C163.13 159.311 158.918 163.491 158.918 168.652V184.459C158.918 189.62 163.13 193.8 168.332 193.8C173.534 193.8 177.747 189.62 177.747 184.459V168.652C177.747 163.491 173.534 159.311 168.332 159.311Z"
+                      fill="url(#paint7_linear_11_7217)"
+                    />
+                    <path
+                      d="M146.173 176.986C147.372 176.986 148.345 177.951 148.345 179.142V184.028C148.345 194.966 157.308 203.859 168.333 203.859C179.357 203.859 188.32 194.966 188.32 184.028V179.142C188.32 177.951 189.293 176.986 190.492 176.986C191.692 176.986 192.665 177.951 192.665 179.142V184.028C192.665 196.62 182.914 206.982 170.505 208.075V214.637C170.505 215.827 169.532 216.792 168.332 216.792C167.132 216.792 166.16 215.827 166.16 214.637V208.075C153.751 206.982 144 196.62 144 184.028V179.142C144 177.951 144.973 176.986 146.173 176.986Z"
+                      fill="url(#paint8_linear_11_7217)"
+                    />
                     <g filter="url(#filter1_f_11_7217)">
-                    <ellipse cx="210.52" cy="136.458" rx="37.7794" ry="17.3613" transform="rotate(44.7926 210.52 136.458)" fill="#91DCFC"/>
+                      <ellipse
+                        cx="210.52"
+                        cy="136.458"
+                        rx="37.7794"
+                        ry="17.3613"
+                        transform="rotate(44.7926 210.52 136.458)"
+                        fill="#91DCFC"
+                      />
                     </g>
                     <g opacity="0.5" filter="url(#filter2_f_11_7217)">
-                    <ellipse cx="132.4" cy="224.823" rx="37.7794" ry="17.3613" transform="rotate(44.7926 132.4 224.823)" fill="#FFB9A3"/>
+                      <ellipse
+                        cx="132.4"
+                        cy="224.823"
+                        rx="37.7794"
+                        ry="17.3613"
+                        transform="rotate(44.7926 132.4 224.823)"
+                        fill="#FFB9A3"
+                      />
                     </g>
                     <defs>
-                    <filter id="filter0_f_11_7217" x="64.0605" y="129.237" width="208.066" height="169.646" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                    <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_11_7217"/>
-                    </filter>
-                    <filter id="filter1_f_11_7217" x="157.044" y="83.1201" width="106.952" height="106.675" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                    <feGaussianBlur stdDeviation="12" result="effect1_foregroundBlur_11_7217"/>
-                    </filter>
-                    <filter id="filter2_f_11_7217" x="78.9238" y="171.486" width="106.952" height="106.675" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                    <feGaussianBlur stdDeviation="12" result="effect1_foregroundBlur_11_7217"/>
-                    </filter>
-                    <linearGradient id="paint0_linear_11_7217" x1="110.909" y1="112.39" x2="251.42" y2="236.488" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#80B2FF"/>
-                    <stop offset="0.433611" stopColor="#FF68F0"/>
-                    <stop offset="1" stopColor="#FF68F0" stopOpacity="0.18"/>
-                    </linearGradient>
-                    <linearGradient id="paint1_linear_11_7217" x1="250.38" y1="174.338" x2="88.6556" y2="195.608" gradientUnits="userSpaceOnUse">
-                    <stop offset="0.404924" stopColor="#B377FF"/>
-                    <stop offset="1" stopColor="#FF9E68" stopOpacity="0.45"/>
-                    </linearGradient>
-                    <linearGradient id="paint2_linear_11_7217" x1="152.248" y1="126.125" x2="221.939" y2="245.389" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#80B2FF"/>
-                    <stop offset="0.433611" stopColor="#FF68F0"/>
-                    <stop offset="1" stopColor="#FF68F0" stopOpacity="0.18"/>
-                    </linearGradient>
-                    <linearGradient id="paint3_linear_11_7217" x1="232.126" y1="169.237" x2="147.895" y2="289.567" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#80B2FF"/>
-                    <stop offset="0.51551" stopColor="#7C27D9"/>
-                    <stop offset="1" stopColor="#FF68F0"/>
-                    </linearGradient>
-                    <linearGradient id="paint4_linear_11_7217" x1="232.125" y1="112.888" x2="104.059" y2="240.954" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#80B2FF"/>
-                    <stop offset="0.51551" stopColor="#7C27D9"/>
-                    <stop offset="1" stopColor="#FF68F0"/>
-                    </linearGradient>
-                    <linearGradient id="paint5_linear_11_7217" x1="192.665" y1="152.586" x2="159.051" y2="227.134" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="white"/>
-                    <stop offset="1" stopColor="white" stopOpacity="0"/>
-                    </linearGradient>
-                    <linearGradient id="paint6_linear_11_7217" x1="192.665" y1="152.586" x2="159.051" y2="227.134" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="white"/>
-                    <stop offset="1" stopColor="white" stopOpacity="0"/>
-                    </linearGradient>
-                    <linearGradient id="paint7_linear_11_7217" x1="192.665" y1="152.586" x2="159.051" y2="227.134" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="white"/>
-                    <stop offset="1" stopColor="white" stopOpacity="0"/>
-                    </linearGradient>
-                    <linearGradient id="paint8_linear_11_7217" x1="192.665" y1="152.586" x2="159.051" y2="227.134" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="white"/>
-                    <stop offset="1" stopColor="white" stopOpacity="0"/>
-                    </linearGradient>
+                      <filter
+                        id="filter0_f_11_7217"
+                        x="64.0605"
+                        y="129.237"
+                        width="208.066"
+                        height="169.646"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feGaussianBlur
+                          stdDeviation="20"
+                          result="effect1_foregroundBlur_11_7217"
+                        />
+                      </filter>
+                      <filter
+                        id="filter1_f_11_7217"
+                        x="157.044"
+                        y="83.1201"
+                        width="106.952"
+                        height="106.675"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feGaussianBlur
+                          stdDeviation="12"
+                          result="effect1_foregroundBlur_11_7217"
+                        />
+                      </filter>
+                      <filter
+                        id="filter2_f_11_7217"
+                        x="78.9238"
+                        y="171.486"
+                        width="106.952"
+                        height="106.675"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feGaussianBlur
+                          stdDeviation="12"
+                          result="effect1_foregroundBlur_11_7217"
+                        />
+                      </filter>
+                      <linearGradient
+                        id="paint0_linear_11_7217"
+                        x1="110.909"
+                        y1="112.39"
+                        x2="251.42"
+                        y2="236.488"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#80B2FF" />
+                        <stop offset="0.433611" stopColor="#FF68F0" />
+                        <stop
+                          offset="1"
+                          stopColor="#FF68F0"
+                          stopOpacity="0.18"
+                        />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_11_7217"
+                        x1="250.38"
+                        y1="174.338"
+                        x2="88.6556"
+                        y2="195.608"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.404924" stopColor="#B377FF" />
+                        <stop
+                          offset="1"
+                          stopColor="#FF9E68"
+                          stopOpacity="0.45"
+                        />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint2_linear_11_7217"
+                        x1="152.248"
+                        y1="126.125"
+                        x2="221.939"
+                        y2="245.389"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#80B2FF" />
+                        <stop offset="0.433611" stopColor="#FF68F0" />
+                        <stop
+                          offset="1"
+                          stopColor="#FF68F0"
+                          stopOpacity="0.18"
+                        />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint3_linear_11_7217"
+                        x1="232.126"
+                        y1="169.237"
+                        x2="147.895"
+                        y2="289.567"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#80B2FF" />
+                        <stop offset="0.51551" stopColor="#7C27D9" />
+                        <stop offset="1" stopColor="#FF68F0" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint4_linear_11_7217"
+                        x1="232.125"
+                        y1="112.888"
+                        x2="104.059"
+                        y2="240.954"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#80B2FF" />
+                        <stop offset="0.51551" stopColor="#7C27D9" />
+                        <stop offset="1" stopColor="#FF68F0" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint5_linear_11_7217"
+                        x1="192.665"
+                        y1="152.586"
+                        x2="159.051"
+                        y2="227.134"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="white" />
+                        <stop offset="1" stopColor="white" stopOpacity="0" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint6_linear_11_7217"
+                        x1="192.665"
+                        y1="152.586"
+                        x2="159.051"
+                        y2="227.134"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="white" />
+                        <stop offset="1" stopColor="white" stopOpacity="0" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint7_linear_11_7217"
+                        x1="192.665"
+                        y1="152.586"
+                        x2="159.051"
+                        y2="227.134"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="white" />
+                        <stop offset="1" stopColor="white" stopOpacity="0" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint8_linear_11_7217"
+                        x1="192.665"
+                        y1="152.586"
+                        x2="159.051"
+                        y2="227.134"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="white" />
+                        <stop offset="1" stopColor="white" stopOpacity="0" />
+                      </linearGradient>
                     </defs>
                   </svg>
                 </div>
@@ -1497,36 +2110,95 @@ export default function Index() {
                   <Image src={zenD} width={100} height={56.25} alt="" />
                 </div>
               </div>
-              <div className="flex flex-col w-[580px] h-[425px] justify-between px-[30px] py-[40px] border bg-white rounded-xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.17)]">
+              <div className="flex flex-col w-[580px] h-[425px] justify-between px-[30px] py-[40px] border bg-white rounded-xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.17)] z-20">
                 <div className="flex items-center gap-2">
                   <div>
-                    <Image src={lady} width={64} height={64} alt="lady zendesk" />
+                    <Image
+                      src={lady}
+                      width={64}
+                      height={64}
+                      alt="lady zendesk"
+                    />
                   </div>
                   <div className="relative">
-                    <svg width="451" height="52" viewBox="0 0 451 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20.6881 26C20.6881 11.6406 32.3287 0 46.6881 0H425C439.359 0 451 11.6406 451 26C451 40.3594 439.44 52 425.081 52C334.544 52 35.9217 52 0 52C20.6881 48.5588 20.6881 29.8235 20.6881 29.8235V26Z" fill="#6943AF" fillOpacity="0.1"/>
+                    <svg
+                      width="451"
+                      height="52"
+                      viewBox="0 0 451 52"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.6881 26C20.6881 11.6406 32.3287 0 46.6881 0H425C439.359 0 451 11.6406 451 26C451 40.3594 439.44 52 425.081 52C334.544 52 35.9217 52 0 52C20.6881 48.5588 20.6881 29.8235 20.6881 29.8235V26Z"
+                        fill="#6943AF"
+                        fillOpacity="0.1"
+                      />
                     </svg>
-                    <div className="absolute left-[44px] top-[15px] text-[#6D6E8A] tex-[15px] leading-[19px]">Hi! My name’s Sofie, how can we help you?</div>
+                    <div className="absolute left-[44px] top-[15px] text-[#6D6E8A] tex-[15px] leading-[19px]">
+                      Hi! My name’s Sofie, how can we help you?
+                    </div>
                   </div>
                 </div>
                 <div className="relative">
-                  <svg width="520" height="62" viewBox="0 0 520 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="520" height="62" rx="31" fill="#F3F1F9"/>
+                  <svg
+                    width="520"
+                    height="62"
+                    viewBox="0 0 520 62"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="520" height="62" rx="31" fill="#F3F1F9" />
                   </svg>
                   <div className="absolute flex items-center gap-[20px] left-[25px] top-[18px] text-[#6D6E8A] tex-[15px] leading-[19px]">
                     <span>
-                      <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg
+                        width="23"
+                        height="24"
+                        viewBox="0 0 23 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <g clipPath="url(#clip0_11_7201)">
-                        <path d="M20.0117 14.8051V18.4273H6.51172L1.01172 22.4766V3.47656H4.53966" stroke="#A276FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        <circle cx="14.5227" cy="8.75019" r="7.04804" stroke="#A276FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        <path d="M16.502 9.58204C15.4087 10.6753 13.6362 10.6753 12.543 9.58204" stroke="#A276FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        <circle cx="11.3973" cy="6.87826" r="1.1141" fill="#A276FF"/>
-                        <circle cx="17.6473" cy="6.87826" r="1.1141" fill="#A276FF"/>
+                          <path
+                            d="M20.0117 14.8051V18.4273H6.51172L1.01172 22.4766V3.47656H4.53966"
+                            stroke="#A276FF"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <circle
+                            cx="14.5227"
+                            cy="8.75019"
+                            r="7.04804"
+                            stroke="#A276FF"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M16.502 9.58204C15.4087 10.6753 13.6362 10.6753 12.543 9.58204"
+                            stroke="#A276FF"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <circle
+                            cx="11.3973"
+                            cy="6.87826"
+                            r="1.1141"
+                            fill="#A276FF"
+                          />
+                          <circle
+                            cx="17.6473"
+                            cy="6.87826"
+                            r="1.1141"
+                            fill="#A276FF"
+                          />
                         </g>
                         <defs>
-                        <clipPath id="clip0_11_7201">
-                        <rect width="23" height="24" fill="white"/>
-                        </clipPath>
+                          <clipPath id="clip0_11_7201">
+                            <rect width="23" height="24" fill="white" />
+                          </clipPath>
                         </defs>
                       </svg>
                     </span>
@@ -1535,106 +2207,61 @@ export default function Index() {
                 </div>
               </div>
             </div>
+
+            
           </div>
           {/* End */}
 
-          <div className="mt-[1400px]"></div>
+          
         </div>
 
-        {/* Cards and shadow */}
-        <div>
-          <div className="absolute inset-y-0 lg:left-[825px] top-[1997.22px] z-30">
-            <Image src={card} alt="card" priority />
-          </div>
-          <div className="absolute inset-y-0 lg:left-[1094.83px] top-[2108.6px] z-30">
-            <Image
-              src={card2}
-              alt="card2"
-              priority
-            />
-          </div>
-          <div className="card2 absolute inset-y-0 lg:left-[850.72px] top-[2150.75px] z-20 opacity-40">
-            <Image src={Shadow} alt="shadow" priority />
-          </div>
-        </div>
-        {/* End */}
-
-        <div className="absolute inset-y-0 lg:right-0 z-20">
+        <div className="lg:absolute inset-y-0 lg:right-0 top-[8872px] -z-10">
           <svg
-            width="849"
-            height="850"
-            viewBox="0 0 849 850"
+            width="647"
+            height="918"
+            viewBox="0 0 647 918"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g opacity="0.2">
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M318.209 138.895C318.442 79.284 366.708 31.1473 426.015 31.3785C485.321 31.6097 533.21 80.1214 532.978 139.732C532.746 199.343 484.48 247.48 425.173 247.249C365.866 247.017 317.977 198.506 318.209 138.895ZM284.652 138.764C284.957 60.5248 348.306 -2.65466 426.146 -2.35119C503.986 -2.04772 566.841 61.6238 566.536 139.863C566.231 218.102 502.882 281.282 425.041 280.978C347.201 280.675 284.347 217.003 284.652 138.764Z"
-                fill="#2603FF"
-                fillOpacity="0.15"
-              />
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M388.681 139.174C388.761 118.683 405.352 102.136 425.739 102.215C446.126 102.294 462.587 118.97 462.508 139.462C462.428 159.953 445.836 176.5 425.45 176.42C405.063 176.341 388.601 159.665 388.681 139.174ZM355.123 139.043C355.276 99.9233 386.95 68.3336 425.87 68.4853C464.79 68.637 496.218 100.473 496.065 139.592C495.913 178.712 464.238 210.302 425.318 210.15C386.398 209.998 354.971 178.163 355.123 139.043Z"
-                fill="#2603FF"
-                fillOpacity="0.15"
-              />
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M595.983 281.645C579.415 281.58 565.87 268.053 567.657 251.581C582.025 119.131 687.152 14.2399 819.014 0.761058C835.496 -0.923779 848.92 12.7286 848.855 29.297L847.984 252.627C847.92 269.195 834.436 282.574 817.867 282.51L595.983 281.645ZM739.581 83.1963C784.988 83.3733 821.653 120.515 821.475 166.155C821.297 211.794 784.343 248.649 738.937 248.472C693.53 248.295 656.865 211.153 657.043 165.514C657.221 119.874 694.174 83.0193 739.581 83.1963Z"
-                fill="#2603FF"
-                fillOpacity="0.15"
-              />
-              <path
-                d="M535.987 281.414C552.555 281.478 566.1 295.006 564.313 311.478C549.945 443.928 444.818 548.819 312.956 562.297C296.474 563.982 283.05 550.33 283.115 533.761L283.157 522.929C283.222 506.36 296.782 493.206 313.194 490.935C406.119 478.077 479.868 404.482 493.32 311.163C495.684 294.764 508.947 281.308 525.515 281.373L535.987 281.414Z"
-                fill="#2603FF"
-                fillOpacity="0.15"
-              />
-              <path
-                d="M283.726 378.604C283.662 395.173 297.23 409.022 313.356 405.217C359.993 394.214 396.803 357.466 408.061 310.656C411.936 294.547 398.197 280.876 381.628 280.811L314.109 280.548C297.54 280.484 284.057 293.862 283.992 310.431L283.726 378.604Z"
-                fill="#2603FF"
-                fillOpacity="0.15"
-              />
-              <path
-                d="M816.765 565.84C833.333 565.905 846.983 552.483 845.325 535.998C831.99 403.44 727.684 297.733 595.931 283.226C579.462 281.413 565.933 294.96 565.869 311.529L564.998 534.859C564.933 551.427 578.312 564.911 594.881 564.975L816.765 565.84Z"
-                fill="#2603FF"
-                fillOpacity="0.15"
-              />
-              <path
-                d="M207.567 111.486C207.647 90.9944 191.185 74.3185 170.799 74.239C150.412 74.1595 133.82 90.7065 133.741 111.198C133.661 131.689 150.123 148.365 170.509 148.444C190.896 148.524 207.487 131.977 207.567 111.486Z"
-                fill="#2603FF"
-                fillOpacity="0.15"
-              />
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M284.211 250.433C284.146 267.001 270.617 280.549 254.148 278.735C122.395 264.229 18.0893 158.522 4.75422 25.9634C3.09585 9.47803 16.7458 -3.94353 33.3143 -3.87893L255.199 -3.01388C271.767 -2.94928 285.146 10.5344 285.081 27.1028L284.211 250.433ZM241.125 111.616C241.277 72.4968 209.85 40.6611 170.93 40.5093C132.01 40.3576 100.335 71.9473 100.183 111.067C100.03 150.187 131.458 182.022 170.378 182.174C209.298 182.326 240.972 150.736 241.125 111.616Z"
-                fill="#2603FF"
-                fillOpacity="0.15"
-              />
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M845.775 819.291C845.711 835.859 832.181 849.407 815.712 847.593C683.96 833.087 579.654 727.379 566.319 594.821C564.66 578.336 578.31 564.914 594.879 564.979L816.763 565.844C833.331 565.909 846.71 579.392 846.646 595.961L845.775 819.291ZM648.346 674.811C648.524 629.171 685.477 592.316 730.884 592.493C776.291 592.67 812.956 629.812 812.778 675.452C812.6 721.091 775.646 757.946 730.24 757.769C684.833 757.592 648.168 720.45 648.346 674.811Z"
-                fill="#2603FF"
-                fillOpacity="0.15"
-              />
-            </g>
+            <circle
+              cx="459"
+              cy="459"
+              r="365"
+              stroke="url(#paint0_linear_11_6944)"
+              strokeOpacity="0.36"
+              strokeWidth="188"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_11_6944"
+                x1="521.816"
+                y1="86.5053"
+                x2="457.791"
+                y2="917.907"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#FAF2FF" stopOpacity="0.57" />
+                <stop offset="0.645833" stopColor="#EDDCF7" />
+                <stop offset="0.711458" stopColor="#EAD0F8" />
+                <stop offset="1" stopColor="#DA99FF" />
+              </linearGradient>
+            </defs>
           </svg>
         </div>
 
-        {/* Pay with card and shadow */}
-        <div className="lg:absolute inset-y-0 lg:right-0 top-[2400px] z-30">
-          <Image src={pay} alt="pay-with-credit-card" priority />
+        <div className="absolute inset-y-0 lg:left-[32px] top-[8271px] -z-10">
+          <svg width="1226" height="2076" viewBox="0 0 1226 2076" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="1038" cy="1038" r="820" stroke="url(#paint0_linear_11_6943)" stroke-opacity="0.1" stroke-width="435"/>
+            <defs>
+            <linearGradient id="paint0_linear_11_6943" x1="1150.22" y1="372.541" x2="1035.84" y2="1857.83" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FAF2FF" stop-opacity="0.57"/>
+            <stop offset="0.645833" stop-color="#EDDCF7"/>
+            <stop offset="0.711458" stop-color="#EAD0F8"/>
+            <stop offset="1" stop-color="#DA99FF"/>
+            </linearGradient>
+            </defs>
+          </svg>
         </div>
-        <div className="lg:absolute inset-y-0 lg:right-0 top-[2405px] z-20">
-          <Image src={paymask} alt="pay-with-credit-card" priority />
-        </div>
-        {/* End */}
 
         <div className="absolute inset-y-0 -left-[70px] top-[1814px] z-10">
           <svg
@@ -1706,56 +2333,9 @@ export default function Index() {
           </svg>
         </div>
 
-        {/* Phones Pic */}
-        <div className="lg:absolute inset-y-0 lg:left-[620px] top-[200px] z-30">
-          <Image
-            src={phonePic}
-            alt="Phone"
-            width={1836}
-            height="1642.16"
-            className="object-contain lg:object-cover"
-            priority
-          />
-        </div>
-        {/* End */}
-
-
-        <div className="lg:absolute inset-y-0 lg:left-[793px] top-[8872px]">
-          <svg
-            width="647"
-            height="918"
-            viewBox="0 0 647 918"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="459"
-              cy="459"
-              r="365"
-              stroke="url(#paint0_linear_11_6944)"
-              strokeOpacity="0.36"
-              strokeWidth="188"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_11_6944"
-                x1="521.816"
-                y1="86.5053"
-                x2="457.791"
-                y2="917.907"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#FAF2FF" stopOpacity="0.57" />
-                <stop offset="0.645833" stopColor="#EDDCF7" />
-                <stop offset="0.711458" stopColor="#EAD0F8" />
-                <stop offset="1" stopColor="#DA99FF" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
       </div>
       {/* footer */}
-      <div className="pt-12">
+      <div>
         <Suspense fallback={`Loading...`}>
           <DynamicFooter />
         </Suspense>

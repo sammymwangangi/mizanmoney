@@ -335,7 +335,7 @@ export default function BrandStory() {
                         </div>
                     </div>
                     <div className="mt-[95px] mb-[60px] px-[58px]">
-                        <h1 className="what">Mizan Donate - First Islamic crowdfunding</h1>
+                        <h1 className="what">Mizan Donate - <br></br>First Islamic crowdfunding</h1>
                         <style jsx>{`
                             .what {
                               font-weight: 600;
