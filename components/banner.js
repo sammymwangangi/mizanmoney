@@ -2,8 +2,8 @@ import header from "../styles/header.module.css";
 
 const banner = () => {
     return (
-        <main className="max-w-xl mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-12 xl:mt-[90px]">
-            <div className="sm:text-center lg:text-left">
+        <main className="max-w-xl mt-10 sm:mt-12 px-[20px] md:px-0 md:mt-16 lg:mt-12 xl:mt-[90px]">
+            <div className="">
                 <h1 className="text-[62px] leading[93px] font-bold -mb-[6px]">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#9E7AFC]">
                     Salaam,

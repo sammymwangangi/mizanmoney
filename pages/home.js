@@ -37,8 +37,7 @@ import backer2 from "../public/backers/2.png";
 import backer3 from "../public/backers/3.png";
 import zenD from "../public/zend.png";
 import dynamic from "next/dynamic";
-import { Suspense, useEffect } from "react";
-import { gsap } from "gsap";
+import React, { Suspense } from "react";
 
 const DynamicNavbar = dynamic(() => import("../components/navbar"), {
   suspense: true,
@@ -50,27 +49,12 @@ const DynamicBanner = dynamic(() => import("../components/banner"), {
   suspense: true,
 });
 
-const personal = [{ name: "Personal", href: "#" }];
-
-const brand = [{ name: "Brand Story", href: "#" }];
-
-const seeHow = {
-  background:
-    "linear-gradient(80.75deg, #D155FF 4.6%, #B532F2 17.14%, #A016E8 29.4%, #9406E2 40.22%, #8F00E0 48.46%, #A08CFF 92.32%)",
-};
-
 export default function Index() {
-  // useEffect(() => {
-  //
-  //
-  //   return () => {
-  //     second
-  //   }
-  // }, [])
+
   return (
     <div className={header.body}>
       <div className="relative overflow-hidden">
-        <div className="relative mx-auto sm:mx-[20px] lg:mx-auto xl:mx-[130px] 2xl:mx-auto max-w-[1290px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1290px] 2xl:max-w-full">
+        <div className="relative mx-auto sm:mx-[20px] lg:mx-auto xl:mx-[130px] 2xl:ml-[130px] max-w-[1290px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1290px] 2xl:max-w-full">
           <div className="z-50">
             <div className="relative z-10">
               {/* Navbar */}
@@ -86,22 +70,20 @@ export default function Index() {
               {/* End */}
             </div>
           </div>
+          
 
           {/* Phones Pic */}
-          <div className="lg:absolute inset-y-0 lg:left-[620px] top-[200px] z-30">
+          <div className="lg:absolute inset-y-0 lg:left-[620px] top-[200px] z-30 hidden md:block w-xl">
             <Image
               src={phonePic}
               alt="Phone"
-              width={1836}
-              height="1642.16"
-              className="object-contain lg:object-cover"
               priority
             />
           </div>
           {/* End */}
 
-          {/* top vector */}
-          <div className="absolute inset-y-0 lg:right-0 z-20">
+          {/* top desktop vector */}
+          <div className="absolute inset-y-0 right-0 z-20 hidden lg:block">
             <svg
               width="849"
               height="850"
@@ -165,6 +147,24 @@ export default function Index() {
                   fill="#2603FF"
                   fillOpacity="0.15"
                 />
+              </g>
+            </svg>
+          </div>
+          {/* End */}
+
+          {/* top mobile vector */}
+          <div className="absolute inset-0 z-20 lg:hidden w-full">
+            <svg width="360" height="528" viewBox="0 0 360 528" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.2">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8984 87.8856C31.0423 50.9681 60.9338 21.1567 97.6629 21.2999C134.392 21.4431 164.05 51.4867 163.906 88.4041C163.762 125.322 133.871 155.133 97.1417 154.99C60.4126 154.847 30.7545 124.803 30.8984 87.8856ZM10.1159 87.8046C10.3048 39.3504 49.5374 0.222861 97.7444 0.410804C145.951 0.598747 184.878 40.031 184.689 88.4852C184.5 136.939 145.267 176.067 97.0603 175.879C48.8533 175.691 9.927 136.259 10.1159 87.8046Z" fill="#2603FF" fill-opacity="0.15"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M74.5421 88.0587C74.5916 75.3684 84.8668 65.1207 97.4924 65.1699C110.118 65.2191 120.313 75.5466 120.264 88.237C120.214 100.927 109.939 111.175 97.3132 111.126C84.6876 111.077 74.4926 100.749 74.5421 88.0587ZM53.7596 87.9777C53.8541 63.7506 73.4704 44.1869 97.5738 44.2808C121.677 44.3748 141.14 64.0909 141.046 88.318C140.952 112.545 121.335 132.109 97.2318 132.015C73.1283 131.921 53.6652 112.205 53.7596 87.9777Z" fill="#2603FF" fill-opacity="0.15"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M214.346 176.336C197.778 176.272 184.132 162.681 186.982 146.36C199.709 73.4847 257.149 16.1574 329.729 3.87292C346.065 1.10795 359.551 14.8631 359.487 31.4315L359.036 146.9C358.972 163.468 345.488 176.847 328.92 176.783L214.346 176.336ZM291.857 53.391C319.978 53.5007 342.685 76.5028 342.574 104.768C342.464 133.033 319.579 155.857 291.458 155.747C263.337 155.638 240.63 132.636 240.74 104.371C240.851 76.1058 263.736 53.2814 291.857 53.391Z" fill="#2603FF" fill-opacity="0.15"/>
+              <path d="M162.529 176.135C174.581 176.182 184.454 186.039 182.934 197.995C172.842 277.378 110.012 340.104 30.9878 349.727C18.963 351.191 9.13204 341.188 9.17926 329.074C9.22649 316.961 19.1592 307.373 31.1116 305.403C86.0328 296.354 129.505 252.937 138.846 197.775C140.858 185.893 150.477 176.088 162.529 176.135Z" fill="#2603FF" fill-opacity="0.15"/>
+              <path d="M9.58962 224.918C9.52502 241.487 23.3804 255.51 38.7795 249.396C58.9151 241.401 75.0083 225.325 83.0849 205.131C89.2377 189.748 75.3242 175.795 58.7558 175.73L39.7819 175.657C23.2135 175.592 9.72976 188.971 9.66517 205.539L9.58962 224.918Z" fill="#2603FF" fill-opacity="0.15"/>
+              <path d="M328.236 352.251C344.805 352.315 358.556 338.832 355.833 322.488C343.675 249.516 286.684 191.743 214.202 178.893C197.888 176.001 184.295 189.65 184.23 206.219L183.78 321.687C183.715 338.256 197.094 351.739 213.663 351.804L328.236 352.251Z" fill="#2603FF" fill-opacity="0.15"/>
+              <path d="M-37.6239 70.9104C-37.5744 58.22 -47.7694 47.8925 -60.3951 47.8433C-73.0207 47.794 -83.2959 58.0417 -83.3454 70.7321C-83.3948 83.4225 -73.1998 93.75 -60.5742 93.7992C-47.9486 93.8484 -37.6734 83.6008 -37.6239 70.9104Z" fill="#2603FF" fill-opacity="0.15"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.88649 145.541C9.8219 162.109 -3.77135 175.759 -20.0855 172.866C-92.5672 160.016 -149.559 102.243 -161.717 29.271C-164.439 12.9277 -150.688 -0.555843 -134.119 -0.491248L-19.5462 -0.0445658C-2.97774 0.0200289 10.4013 13.5038 10.3367 30.0722L9.88649 145.541ZM-16.8414 70.9914C-16.747 46.7643 -36.2101 27.0482 -60.3136 26.9542C-84.4171 26.8602 -104.033 46.424 -104.128 70.6511C-104.222 94.8782 -84.7591 114.594 -60.6557 114.688C-36.5522 114.782 -16.9359 95.2185 -16.8414 70.9914Z" fill="#2603FF" fill-opacity="0.15"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M357.67 497.839C357.605 514.408 344.012 528.057 327.698 525.165C255.216 512.315 198.225 454.541 186.067 381.569C183.344 365.226 197.095 351.742 213.664 351.807L328.237 352.254C344.805 352.318 358.184 365.802 358.12 382.371L357.67 497.839ZM235.356 419.782C235.466 391.517 258.351 368.693 286.472 368.802C314.593 368.912 337.3 391.914 337.19 420.179C337.079 448.444 314.194 471.268 286.073 471.159C257.952 471.049 235.245 448.047 235.356 419.782Z" fill="#2603FF" fill-opacity="0.15"/>
               </g>
             </svg>
           </div>
