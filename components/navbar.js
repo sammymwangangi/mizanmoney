@@ -8,9 +8,9 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 const navbar = () => {
   return (
     <Popover>
-        <div className="px-2 sm:px-6 pt-[44px]">
+        <div className="ml-[130px] mr-[57px] pt-[44px]">
             <div className="flex items-center justify-between md:space-x-[50px]">
-                <div className="flex justify-start w-[707px]">
+                <div className="flex justify-start w-[536px] lg:w-[210px] xl:w-[536px] 2xl:w-[720px]">
                     <Link href="/home">
                     <svg
                         width="150"
@@ -257,7 +257,7 @@ const navbar = () => {
                     </Link>
                 </Popover.Group>
                 {/* Flag */}
-                <div className="flex items-center justify-end lg:w-[170px] lg:-mt-6">
+                <div className="flex items-center lg:-mt-6">
                     <a href="#" className="group inline-flex items-center justify-center">
                     <span>
                         <svg
@@ -310,10 +310,14 @@ const navbar = () => {
                     </a>
                 </div>
 
-                <div className="-my-2 md:hidden">
+                <div className="-my-2 ml-[20px] md:hidden">
                     <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Open menu</span>
-                    <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                    <svg width="24" height="9" viewBox="0 0 24 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" width="16" height="2" rx="1" fill="#6D6E8A"/>
+                        <rect y="7" width="24" height="2" rx="1" fill="#6D6E8A"/>
+                    </svg>
+
                     </Popover.Button>
                 </div>
             </div>
