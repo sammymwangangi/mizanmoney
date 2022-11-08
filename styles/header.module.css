@@ -129,6 +129,8 @@
   text-align: center;
 }
 
+
+
 .saalam {
   font-family: "Poppins";
   font-style: normal;
@@ -272,6 +274,8 @@
   z-index: 20;
 }
 
+
+
 .btn2 {
   position: relative;
 }
@@ -322,10 +326,7 @@
   position: absolute;
   inset: 0;
   border: 1px solid;
-
   border-image-source: linear-gradient(215.92deg, #4B99DE 0%, #6B3BA6 100%);
-  
-  
   border-radius: inherit;
   background: linear-gradient(215.92deg, #4B99DE 0%, #6B3BA6 100%) border-box; /*3*/
   -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
@@ -333,6 +334,7 @@
   -webkit-mask-composite: xor; /*5'*/
   mask-composite: exclude; /*5*/
 }
+
 
 .price1 {
   position: relative;
@@ -361,6 +363,44 @@
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor; /*5'*/
   mask-composite: exclude; /*5*/
+}
+
+.aldo {
+  position: relative;
+  width: 380px;
+  height: 275px;
+  background: #FFFFFF;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 26px;
+  padding-top: 30px;
+  padding-bottom: 32px;
+  box-shadow: 0px 20px 40px rgba(105, 67, 175, 0.1);
+}
+
+.aldo::before{
+  content: "";
+  width: 353px;
+  height: 275px;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  border-radius: inherit;
+  border: 1px solid transparent; /*2*/
+  background: linear-gradient(
+    124.81deg, rgba(160, 140, 255, 0.4) 1.51%, rgba(160, 140, 255, 0) 95.88%
+  )
+  border-box; /*3*/
+  -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude; /*5*/
+  padding-left: 20px;
+  padding-right: 26px;
+  padding-top: 30px;
+  padding-bottom: 32px;
+  
 }
 
 .price2 {

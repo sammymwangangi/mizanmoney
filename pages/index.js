@@ -9,11 +9,7 @@ import trustpilot from "../public/clients/trustpilot.png";
 import phone from "../public/banking/phone3.png";
 import pay from "../public/pay.png";
 import kadi from "../public/kadi.png";
-import kadi2 from "../public/kadi2.png";
 import paymask from "../public/payMask.png";
-import card from "../public/card.png";
-import card2 from "../public/card2.png";
-import Shadow from "../public/Shadow.png";
 import feature1 from "../public/features/fe1.png";
 import phone2 from "../public/features/Phone.png";
 import phone3 from "../public/features/phone2.png";
@@ -39,6 +35,7 @@ import backer1 from "../public/backers/back1.png";
 import backer2 from "../public/backers/back2.png";
 import backer3 from "../public/backers/back3.png";
 import zenD from "../public/zend.png";
+import handShadow from "../public/hand.png";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 
@@ -206,11 +203,11 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Islamic Banking Reimagined */}
-          <div className="lg:flex items-center mb-[278px] lg">
-            <div className="lg:w-[540px]">
-              <Image src={phone} alt="Iphone" priority />
+          <div className="lg:flex items-center mb-[278px]">
+            <div className="w-[539px] ml-[108px]">
+              <Image src={phone} alt="Iphone" objectFit='cover' priority />
             </div>
-            <div className="relative z-20 card1 flex flex-col px-[81px] pt-[50px] pb-[44px] bg-white rounded-3xl lg:w-[760px] h-auto text-center">
+            <div className="relative z-20 card1 flex flex-col px-[81px] pt-[50px] pb-[44px] bg-white rounded-3xl lg:w-[760px] h-auto text-center mr-[49px]">
               <style jsx>{`
                 .card1 {
                   box-shadow: 0px -8px 100px 0px #6943AF1A;
@@ -1064,7 +1061,7 @@ const { locale, locales, defaultLocale } = router
                           <li>Customizable Virtual Cards</li>
                         </ul>
                       </div>
-                      <div className="absolute top-[242px]">
+                      <div className="absolute top-[234px]">
                         <Image src={ccb} alt="card control" />
                       </div>
                     </div>
@@ -1114,7 +1111,7 @@ const { locale, locales, defaultLocale } = router
                           <li>Save Better +</li>
                         </ul>
                       </div>
-                      <div className="absolute top-[303px]">
+                      <div className="absolute top-[294px]">
                         <Image src={ccb2} alt="card control" />
                       </div>
                     </div>
@@ -1163,7 +1160,7 @@ const { locale, locales, defaultLocale } = router
                           <li>Invest better Pro</li>
                         </ul>
                       </div>
-                      <div className="absolute top-[254px]">
+                      <div className="absolute top-[245px]">
                         <Image src={ccb3} alt="card control" />
                       </div>
                     </div>
@@ -1215,7 +1212,7 @@ const { locale, locales, defaultLocale } = router
               <Image src={pray} width={90} height={98.44} alt="pray" />
             </div>
 
-            <div className="relative flex gap-4 text-center items-center justify-center mb-[55px] mx-[130px]">
+            <div className="relative flex gap-[20px] text-center items-center justify-center mb-[55px] mx-[130px]">
               <div>
                 <Image src={love} width={120} height={120} alt="love" />
               </div>
@@ -1233,7 +1230,7 @@ const { locale, locales, defaultLocale } = router
               </div>
             </div>
             <div className="flex items-center gap-4 justify-center mx-[130px]">
-              <div className="flex flex-col w-[380px] h-[275px] bg-white rounded-3xl p-[30px] border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className={header.aldo}>
                 <div className="flex items-center gap-4 mb-[20px]">
                   <div>
                     <Image
@@ -1256,10 +1253,10 @@ const { locale, locales, defaultLocale } = router
                   </div>
                 </div>
                 <div className="flex space-x-[8px] mb-[24px] items-center">
-                  <div className="w-[12px] h-[12px] flex rounded-full bg-[#A08CFF] items-center justify-center">
+                  <div className="p-0.5 flex rounded-full bg-[#A08CFF] items-center justify-center">
                     <svg
-                      width="11"
-                      height="11"
+                      width="10"
+                      height="10"
                       viewBox="0 0 19 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1283,7 +1280,7 @@ const { locale, locales, defaultLocale } = router
                   like the Islamic “Revolt App” version.
                 </div>
               </div>
-              <div className="flex flex-col w-[380px] h-[275px] space-y-[20px] bg-white rounded-3xl p-[30px] border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className={header.aldo}>
                 <div className="flex items-center gap-4">
                   <div>
                     <Image
@@ -1306,10 +1303,10 @@ const { locale, locales, defaultLocale } = router
                   </div>
                 </div>
                 <div className="flex space-x-[8px] items-center">
-                  <div className="w-[12px] h-[12px] flex rounded-full bg-[#A08CFF] items-center justify-center">
+                  <div className="p-0.5 flex rounded-full bg-[#A08CFF] items-center justify-center">
                     <svg
-                      width="11"
-                      height="11"
+                      width="10"
+                      height="10"
                       viewBox="0 0 19 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1327,12 +1324,11 @@ const { locale, locales, defaultLocale } = router
                     Verified Testimonial
                   </div>
                 </div>
-                <div className="text-[16px] text-[#6D6E8A]">
-                  I never considered myself a saver until I started using Mizan
-                  – all hail the king of converge and roll.
+                <div className="text-[16px] leading-[24px] text-[#6D6E8A]">
+                Just wow, i used revolut in the UK, when i came to Africa, i came across Mizan App, it took minutes to setup. I’d say its like the Islamic “Revolt App” version.
                 </div>
               </div>
-              <div className="flex flex-col w-[380px] h-[275px] space-y-[20px] bg-white rounded-3xl p-[30px] border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className={header.aldo}>
                 <div className="flex items-center gap-4">
                   <div>
                     <Image
@@ -1355,10 +1351,10 @@ const { locale, locales, defaultLocale } = router
                   </div>
                 </div>
                 <div className="flex space-x-[8px] items-center">
-                  <div className="w-[12px] h-[12px] flex rounded-full bg-[#A08CFF] items-center justify-center">
+                  <div className="p-0.5 flex rounded-full bg-[#A08CFF] items-center justify-center">
                     <svg
-                      width="11"
-                      height="11"
+                      width="10"
+                      height="10"
                       viewBox="0 0 19 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1376,9 +1372,8 @@ const { locale, locales, defaultLocale } = router
                     Verified Testimonial
                   </div>
                 </div>
-                <div className="text-[16px] text-[#6D6E8A]">
-                  I never considered myself a saver until I started using Mizan
-                  – all hail the king of converge and roll.
+                <div className="text-[16px] leading-[24px] text-[#6D6E8A]">
+                When i joined beta program, i got to experience first hand how my financial future will be revolutionized. Ditching my bank for G.
                 </div>
               </div>
             </div>
@@ -1424,9 +1419,9 @@ const { locale, locales, defaultLocale } = router
                 alt="black hand holding phone"
               />
             </div>
-            <div className="absolute w-full left-[500px] -z-20 top-[20px]">
+            <div className="absolute w-full left-[500px] -z-20 top-[200px]">
               <Image
-                src={blackShadow}
+                src={handShadow}
                 width={596}
                 height={748}
                 alt="black hand holding phone"
@@ -1770,7 +1765,7 @@ const { locale, locales, defaultLocale } = router
             </div>
             <div className="grid grid-cols-1 gap-y-10 gap-x-[20px] sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-3">
               <div className="bg-white rounded-3xl pl-[30px] pt-[40px] pr-[28px] pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
-                <div className="flex items-center gap-[20px]">
+                <div className="flex gap-[20px]">
                   <div className="h-24 w-24 rounded-full flex-shrink-0 overflow-hidden drop-shadow-[0px_30px_50px_rgba(53,_60,_119,_0.1)]">
                     <Image src={backer1} alt="sponsor1" />
                   </div>

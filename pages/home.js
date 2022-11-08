@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import Image from "next/image";
 import header from "../styles/header.module.css";
 import phonePic from "../public/phone2.png";
@@ -8,11 +9,7 @@ import trustpilot from "../public/clients/trustpilot.png";
 import phone from "../public/banking/phone3.png";
 import pay from "../public/pay.png";
 import kadi from "../public/kadi.png";
-import kadi2 from "../public/kadi2.png";
 import paymask from "../public/payMask.png";
-import card from "../public/card.png";
-import card2 from "../public/card2.png";
-import Shadow from "../public/Shadow.png";
 import feature1 from "../public/features/fe1.png";
 import phone2 from "../public/features/Phone.png";
 import phone3 from "../public/features/phone2.png";
@@ -34,12 +31,14 @@ import cloud from "../public/providers/cloud.png";
 import codebase from "../public/providers/codebase.png";
 import duck from "../public/providers/duck.png";
 import shariyah2 from "../public/providers/shariyah.png";
-import backer1 from "../public/backers/1.png";
-import backer2 from "../public/backers/2.png";
-import backer3 from "../public/backers/3.png";
+import backer1 from "../public/backers/back1.png";
+import backer2 from "../public/backers/back2.png";
+import backer3 from "../public/backers/back3.png";
 import zenD from "../public/zend.png";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
+
+
 
 const DynamicNavbar = dynamic(() => import("../components/navbar"), {
   suspense: true,
@@ -52,6 +51,8 @@ const DynamicBanner = dynamic(() => import("../components/banner"), {
 });
 
 export default function Index() {
+  const router = useRouter()
+const { locale, locales, defaultLocale } = router
 
   return (
     <div className={header.body}>
@@ -84,7 +85,7 @@ export default function Index() {
           {/* End */}
 
           {/* top desktop vector */}
-          <div className="absolute inset-y-0 right-0 z-20 hidden lg:block">
+          <div className="absolute inset-y-0 right-0 hidden lg:block">
             <svg
               width="849"
               height="850"
@@ -154,7 +155,7 @@ export default function Index() {
           {/* End */}
 
           {/* top mobile vector */}
-          <div className="absolute inset-0 z-20 lg:hidden w-full">
+          <div className="absolute inset-0 lg:hidden w-full">
             <svg width="360" height="528" viewBox="0 0 360 528" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.2">
               <path fillRule="evenodd" clipRule="evenodd" d="M30.8984 87.8856C31.0423 50.9681 60.9338 21.1567 97.6629 21.2999C134.392 21.4431 164.05 51.4867 163.906 88.4041C163.762 125.322 133.871 155.133 97.1417 154.99C60.4126 154.847 30.7545 124.803 30.8984 87.8856ZM10.1159 87.8046C10.3048 39.3504 49.5374 0.222861 97.7444 0.410804C145.951 0.598747 184.878 40.031 184.689 88.4852C184.5 136.939 145.267 176.067 97.0603 175.879C48.8533 175.691 9.927 136.259 10.1159 87.8046Z" fill="#2603FF" fillOpacity="0.15"/>
@@ -172,7 +173,7 @@ export default function Index() {
           {/* End */}
 
           {/* Clients */}
-          <div className="flex lg:ml-[200px] space-x-[77px] mt-[157px] sm:mt-[100px] md:mt-[200px] lg:mt-[200px] xl:mt-[500px] 2xl:mt-[] mb-[140px] items-center justify-center max-w-[1290px]">
+          <div className="flex space-x-[77px] mt-[157px] mb-[140px] items-center justify-center">
             <div>
               <Image src={kdic} alt="kdic" width={190} height={80} priority />
             </div>
@@ -201,14 +202,14 @@ export default function Index() {
           {/* End */}
 
           {/* Islamic Banking Reimagined */}
-          <div className="lg:flex items-center mb-[278px] lg">
-            <div className="lg:w-[540px]">
-              <Image src={phone} alt="Iphone" priority />
+          <div className="lg:flex items-center mb-[278px]">
+            <div className="w-[539px] ml-[108px]">
+              <Image src={phone} alt="Iphone" objectFit='cover' priority />
             </div>
-            <div className="relative z-20 card1 flex flex-col px-[81px] pt-[50px] pb-[44px] bg-white rounded-3xl lg:w-[760px] h-auto text-center">
+            <div className="relative z-20 card1 flex flex-col px-[81px] pt-[50px] pb-[44px] bg-white rounded-3xl lg:w-[760px] h-auto text-center mr-[49px]">
               <style jsx>{`
                 .card1 {
-                  box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
+                  box-shadow: 0px -8px 100px 0px #6943AF1A;
                 }
                 .button2 {
                   box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
@@ -416,15 +417,15 @@ export default function Index() {
 
           {/* Pay with card */}
           <div className="relative flex mb-[541px]">
-            <div className="flex flex-col space-y-[20px] ml-[130px] w-[880px]">
+            <div className="flex flex-col space-y-[20px] ml-[130px]">
               <div>
                 <div className="text-[40px] leading-[60px] font-bold">
-                  <span className="bg-clip-text text-transparent bg-[linear-gradient(89.87deg,_#000000_2.29%,_#A488FF_99.84%)]">
+                  <span className="bg-clip-text text-transparent bg-[linear-gradient(89.87deg,_#000000_30%,_#A488FF_99.84%)]">
                     Turn heads with our
                   </span>
                 </div>
                 <div className="text-[40px] leading-[60px] font-bold">
-                  <span className="bg-clip-text text-transparent bg-[linear-gradient(89.87deg,_#000000_2.29%,_#A488FF_99.84%)]">
+                  <span className="bg-clip-text text-transparent bg-[linear-gradient(89.87deg,_#000000_30%,_#A488FF_99.84%)]">
                     cards made from steel.
                   </span>
                 </div>
@@ -436,7 +437,7 @@ export default function Index() {
               </div>
             </div>
             {/* Cards and shadow */}
-            <div className="w-[760px]">
+            <div className="lg:absolute lg:right-0 lg:-top-[100px] lg:w-[680px]">
               <Image src={kadi} alt="card" priority />
             </div>
             {/* End */}
@@ -517,7 +518,7 @@ export default function Index() {
           {/* End */}
 
           {/* Round Ups */}
-          <div className="relative z-20 card1 flex px-[79px] pt-[123px] pb-[44px] bg-white rounded-3xl lg:w-[1290px] h-[821px]">
+          <div className="mt-20 relative z-20 card1 flex mx-[49px] px-[79px] pt-[123px] pb-[44px] bg-white rounded-3xl h-[821px]">
             <style jsx>{`
               .card1 {
                 box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
@@ -549,7 +550,7 @@ export default function Index() {
             <div className="absolute top-[70px] left-[864px]">
               <Image src={cup} alt="cup" priority />
             </div>
-            <div className="absolute top-[558px] left-[1000px]">
+            <div className="absolute top-[550px] left-[1000px]">
               <svg
                 width="18"
                 height="21"
@@ -565,7 +566,7 @@ export default function Index() {
                 />
               </svg>
             </div>
-            <div className="absolute top-[338.5px] left-[980px] -rotate-12">
+            <div className="absolute top-[320px] left-[978px] -rotate-[20deg]">
               <svg
                 width="229"
                 height="223"
@@ -650,7 +651,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="relative z-20 -top-[150px] card1 flex gap-8 px-[40px] bg-white rounded-3xl lg:w-[1177px] h-[auto] left-[50px]">
+          <div className="relative z-20 mx-[130px] -top-[130px] card1 flex gap-8 px-[40px] bg-white rounded-3xl h-[auto]">
             <style jsx>{`
               .card1 {
                 box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
@@ -1036,13 +1037,13 @@ export default function Index() {
               {/* Purple */}
               <div className="flex">
                 <div className={header.price1}>
-                  <div className="relative flex flex-col  py-[50px]">
-                    <div className="px-[20px]">
-                      <div className="flex justify-between gap-[100px]">
+                  <div className="relative flex flex-col py-[50px]">
+                    <div className="pl-[20px]">
+                      <div className="flex justify-between gap-[80px] pl-[10px]">
                         <div className="text-[30px] text-[#A08CFF] font-semibold leading-[45px]">
                           Purple
                         </div>
-                        <div className="text-[#1B1C39]">
+                        <div className="text-[#1B1C39] pr-[20px]">
                           <span className="font-medium text-[28px] leading-[42px]">
                             $1.00
                           </span>
@@ -1051,8 +1052,8 @@ export default function Index() {
                           </span>
                         </div>
                       </div>
-                      <div className="border-b border-[#1B1828]/0.12 mt-[33px] mb-[30px]"></div>
-                      <div className="">
+                      <div className="border-b border-[#1B1828]/0.12 mt-[33px] mb-[30px] w-[340px]"></div>
+                      <div className="pl-[10px]">
                         <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] marker:text-[#8F00E0]">
                           <li>Bank Better</li>
                           <li>Pay Later</li>
@@ -1078,8 +1079,8 @@ export default function Index() {
                     Recommended
                   </div>
                   <div className="relative flex flex-col py-[50px]">
-                    <div className="px-[20px]">
-                      <div className="flex justify-between pl-[10px] gap-[61px]">
+                    <div className="pl-[20px] pr-[20px]">
+                      <div className="flex justify-between gap-[61px] pl-[10px]">
                         <div className={header.premium}>Premium</div>
                         <div className="flex flex-col">
                           <div className="text-[#1B1C39]">
@@ -1096,11 +1097,11 @@ export default function Index() {
                           </div>
                         </div>
                       </div>
-                      <div className="border-b border-[#1B1828]/0.12 mt-[23px] mb-[19px]"></div>
-                      <div className="px-[20px] text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[15px]">
+                      <div className="border-b border-[#1B1828]/0.12 mt-[23px] mb-[19px] pr-[22px]"></div>
+                      <div className="pl-[10px] text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[15px]">
                         Everything in Purple plus:
                       </div>
-                      <div className="px-[20px]">
+                      <div className="pl-[10px]">
                         <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] marker:text-[#8F00E0]">
                           <li>Bank Better +</li>
                           <li>Pay Later +</li>
@@ -1125,8 +1126,8 @@ export default function Index() {
               <div className="flex">
                 <div className={header.price3}>
                   <div className="relative flex flex-col py-[38px]">
-                    <div className="px-[20px]">
-                      <div className="flex justify-between pl-[10px] gap-[61px]">
+                    <div className="pl-[20px]">
+                      <div className="flex justify-between gap-[61px] pl-[10px] pr-[20px]">
                         <div className="text-[#393939] text-[30px] leading-[45px] font-medium">
                           Metal
                         </div>
@@ -1145,12 +1146,12 @@ export default function Index() {
                           </div>
                         </div>
                       </div>
-                      <div className="border-b border-[#1B1828]/0.12 mt-[14px] mb-[15px]"></div>
-                      <div className="text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[18px] px-[20px]">
+                      <div className="border-b border-[#1B1828]/0.12 mt-[14px] mb-[15px] w-[340px]"></div>
+                      <div className="text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[18px] pl-[10px]">
                         Everything in Premium plus:
                       </div>
-                      <div className="relative">
-                        <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] px-[20px] marker:text-[#8F00E0]">
+                      <div className="relative pl-[10px]">
+                        <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] marker:text-[#8F00E0]">
                           <li>Bank Better Pro</li>
                           <li>Pay Later Pro</li>
                           <li>Spend Better Pro</li>
@@ -1210,7 +1211,7 @@ export default function Index() {
               <Image src={pray} width={90} height={98.44} alt="pray" />
             </div>
 
-            <div className="relative flex gap-4 text-center items-center justify-center mb-[55px] mx-[130px]">
+            <div className="relative flex gap-[20px] text-center items-center justify-center mb-[55px] mx-[130px]">
               <div>
                 <Image src={love} width={120} height={120} alt="love" />
               </div>
@@ -1228,7 +1229,7 @@ export default function Index() {
               </div>
             </div>
             <div className="flex items-center gap-4 justify-center mx-[130px]">
-              <div className="flex flex-col w-[380px] h-[275px] bg-white rounded-3xl p-[30px] border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className={header.aldo}>
                 <div className="flex items-center gap-4 mb-[20px]">
                   <div>
                     <Image
@@ -1251,10 +1252,10 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="flex space-x-[8px] mb-[24px] items-center">
-                  <div className="w-[12px] h-[12px] flex rounded-full bg-[#A08CFF] items-center justify-center">
+                  <div className="p-0.5 flex rounded-full bg-[#A08CFF] items-center justify-center">
                     <svg
-                      width="11"
-                      height="11"
+                      width="10"
+                      height="10"
                       viewBox="0 0 19 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1278,7 +1279,7 @@ export default function Index() {
                   like the Islamic “Revolt App” version.
                 </div>
               </div>
-              <div className="flex flex-col w-[380px] h-[275px] space-y-[20px] bg-white rounded-3xl p-[30px] border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className={header.aldo}>
                 <div className="flex items-center gap-4">
                   <div>
                     <Image
@@ -1301,10 +1302,10 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="flex space-x-[8px] items-center">
-                  <div className="w-[12px] h-[12px] flex rounded-full bg-[#A08CFF] items-center justify-center">
+                  <div className="p-0.5 flex rounded-full bg-[#A08CFF] items-center justify-center">
                     <svg
-                      width="11"
-                      height="11"
+                      width="10"
+                      height="10"
                       viewBox="0 0 19 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1322,12 +1323,11 @@ export default function Index() {
                     Verified Testimonial
                   </div>
                 </div>
-                <div className="text-[16px] text-[#6D6E8A]">
-                  I never considered myself a saver until I started using Mizan
-                  – all hail the king of converge and roll.
+                <div className="text-[16px] leading-[24px] text-[#6D6E8A]">
+                Just wow, i used revolut in the UK, when i came to Africa, i came across Mizan App, it took minutes to setup. I’d say its like the Islamic “Revolt App” version.
                 </div>
               </div>
-              <div className="flex flex-col w-[380px] h-[275px] space-y-[20px] bg-white rounded-3xl p-[30px] border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className={header.aldo}>
                 <div className="flex items-center gap-4">
                   <div>
                     <Image
@@ -1350,10 +1350,10 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="flex space-x-[8px] items-center">
-                  <div className="w-[12px] h-[12px] flex rounded-full bg-[#A08CFF] items-center justify-center">
+                  <div className="p-0.5 flex rounded-full bg-[#A08CFF] items-center justify-center">
                     <svg
-                      width="11"
-                      height="11"
+                      width="10"
+                      height="10"
                       viewBox="0 0 19 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1371,9 +1371,8 @@ export default function Index() {
                     Verified Testimonial
                   </div>
                 </div>
-                <div className="text-[16px] text-[#6D6E8A]">
-                  I never considered myself a saver until I started using Mizan
-                  – all hail the king of converge and roll.
+                <div className="text-[16px] leading-[24px] text-[#6D6E8A]">
+                When i joined beta program, i got to experience first hand how my financial future will be revolutionized. Ditching my bank for G.
                 </div>
               </div>
             </div>
@@ -1726,7 +1725,14 @@ export default function Index() {
               <h1 className={header.pr_3}>We work with top providers</h1>
             </div>
             <div className="lg:flex items-center gap-[20px] pl-[76px] pr-[84px]">
-              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 providers">
+                <style jsx>{`
+                  .providers {
+                    border: 1px solid;
+                    border-image-source: linear-gradient(319.13deg, #A08CFF -4.79%, rgba(160, 140, 255, 0) 108.54%);
+                  }
+                  `}
+                </style>
                 <Image
                   src={shariyah2}
                   width={123}
@@ -1734,13 +1740,13 @@ export default function Index() {
                   alt="shariyah logo"
                 />
               </div>
-              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border ">
                 <Image src={codebase} alt="codebase technologies logo" />
               </div>
-              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border ">
                 <Image src={duck} alt="duck design logo" />
               </div>
-              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border ">
                 <Image src={cloud} alt="google cloud logo" />
               </div>
             </div>
@@ -1748,21 +1754,21 @@ export default function Index() {
           {/* End */} 
 
           {/* Backed By */}
-          <div className="flex flex-col mb-[160px]">
-            <div className="mb-[40px] mx-[130px]">
+          <div className="flex flex-col mb-[160px] mx-[130px]">
+            <div className="mb-[40px]">
               <h1 className="text-[40px] leading-[60px] font-bold">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#9E7AFC]">
                   Backed by
                 </span>
               </h1>
             </div>
-            <div className="grid grid-cols-1 gap-y-10 gap-x-[20px] sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-3 mx-[130px]">
+            <div className="grid grid-cols-1 gap-y-10 gap-x-[20px] sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-3">
               <div className="bg-white rounded-3xl pl-[30px] pt-[40px] pr-[28px] pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
-                <div className="flex items-center">
-                  <div className="mr-[20px] h-24 w-24 rounded-full flex-shrink-0 overflow-hidden">
-                    <Image src={backer1} width={94} height={94} alt="sponsor1" />
+                <div className="flex gap-[20px]">
+                  <div className="h-24 w-24 rounded-full flex-shrink-0 overflow-hidden drop-shadow-[0px_30px_50px_rgba(53,_60,_119,_0.1)]">
+                    <Image src={backer1} alt="sponsor1" />
                   </div>
-                  <div className="text-[24px] leading-[36px] text-[#1B1C39] font-medium">
+                  <div className="h-[72px] text-[24px] leading-[36px] text-[#1B1C39] font-medium">
                     Sheikh Abdullatif Essajee
                   </div>
                 </div>
@@ -1779,12 +1785,12 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col bg-white rounded-3xl p-8 shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className="flex flex-col bg-white rounded-3xl pl-[30px] pt-[40px] pr-[28px] pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
                 <div className="flex items-center justify-start">
-                  <div className="mr-[20px] h-24 w-24 rounded-full flex-shrink-0 overflow-hidden">
-                    <Image src={backer2} width={94} height={94} alt="sponsor1" />
+                  <div className="mr-[20px] h-24 w-24 rounded-full flex-shrink-0 overflow-hidden drop-shadow-[0px_30px_50px_rgba(53,_60,_119,_0.1)]">
+                    <Image src={backer2} alt="sponsor1" />
                   </div>
-                  <div className="flex-1 text-[24px] leading-[36px] text-[#1B1C39] font-medium">
+                  <div className="h-[72px] flex-1 text-[24px] leading-[36px] text-[#1B1C39] font-medium">
                     Mufti Ismail menk
                   </div>
                 </div>
@@ -1810,12 +1816,12 @@ export default function Index() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col bg-white rounded-3xl p-8 shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
-                <div className="flex items-center">
-                  <div className="mr-[20px] h-24 w-24 rounded-full flex-shrink-0 overflow-hidden">
-                    <Image src={backer3} width={94} height={94} alt="sponsor1" />
+              <div className="flex flex-col bg-white rounded-3xl pl-[30px] pt-[40px] pr-[28px] pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+                <div className="flex">
+                  <div className="mr-[20px] flex-shrink-0 overflow-hidden drop-shadow-[0px_30px_50px_rgba(53,_60,_119,_0.1)]">
+                    <Image src={backer3} alt="sponsor1" />
                   </div>
-                  <div className="text-[24px] leading-[36px] text-[#1B1C39] font-medium">
+                  <div className="h-[72px] text-[24px] leading-[36px] text-[#1B1C39] font-medium">
                     Sh. Muhammad Ahmad Shaikh
                   </div>
                 </div>
