@@ -172,7 +172,7 @@ export default function Index() {
           {/* End */}
 
           {/* Clients */}
-          <div className="flex lg:ml-[200px] space-x-[77px] mt-[157px] mb-[140px] items-center max-w-[1290px]">
+          <div className="flex lg:ml-[200px] space-x-[77px] mt-[157px] sm:mt-[100px] md:mt-[200px] lg:mt-[200px] xl:mt-[500px] 2xl:mt-[] mb-[140px] items-center justify-center max-w-[1290px]">
             <div>
               <Image src={kdic} alt="kdic" width={190} height={80} priority />
             </div>
@@ -201,7 +201,7 @@ export default function Index() {
           {/* End */}
 
           {/* Islamic Banking Reimagined */}
-          <div className="lg:flex items-center mb-[278px] max-w-[1290px]">
+          <div className="lg:flex items-center mb-[278px] lg">
             <div className="lg:w-[540px]">
               <Image src={phone} alt="Iphone" priority />
             </div>
@@ -415,7 +415,7 @@ export default function Index() {
           {/* End */}
 
           {/* Pay with card */}
-          <div className="relative flex mb-[700px]">
+          <div className="relative flex mb-[541px]">
             <div className="flex flex-col space-y-[20px] ml-[130px] w-[880px]">
               <div>
                 <div className="text-[40px] leading-[60px] font-bold">

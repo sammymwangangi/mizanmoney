@@ -15,7 +15,7 @@ import Brand11 from "../public/brand11.png"
 import {Suspense, useEffect} from 'react'
 
 
-const DynamicNavbar = dynamic(() => import('../components/navbar'), {
+const DynamicNavbar = dynamic(() => import('../components/Nav'), {
     suspense: true,
 })
 const DynamicFooter = dynamic(() => import('../components/footer'), {
