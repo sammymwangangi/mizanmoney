@@ -455,7 +455,7 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Features */}
-          <div className="flex flex-col text-center h-[919px] bg-white py-[34px]">
+          {/* <div className="flex flex-col text-center h-[919px] bg-white py-[34px]">
             <h1 className={header.features}>Features</h1>
             <div className="flex gap-4">
               <div className="rounded-[25px] px-[20px] py-[30px] w-[480px] h-[568px] -ml-[110px]">
@@ -486,7 +486,7 @@ const { locale, locales, defaultLocale } = router
                   <div>
                     <Image src={feature1} alt="feature" />
                   </div>
-                  <div className="bg-white rounded-[25px] p-[30px] w-[580px] h-[305px] text-center shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] absolute bottom-0 inset-x-0">
+                  <div className={header.pace}>
                     <h1 className="text-[27px] leading-[40.5px] font-bold text-[#333333] mb-[31px]">
                       Mizan Pay - Shop now pay at your own pace
                     </h1>
@@ -515,7 +515,7 @@ const { locale, locales, defaultLocale } = router
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* End */}
 
           {/* Round Ups */}
@@ -1726,14 +1726,7 @@ const { locale, locales, defaultLocale } = router
               <h1 className={header.pr_3}>We work with top providers</h1>
             </div>
             <div className="lg:flex items-center gap-[20px] pl-[76px] pr-[84px]">
-              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 providers">
-                <style jsx>{`
-                  .providers {
-                    border: 1px solid;
-                    border-image-source: linear-gradient(319.13deg, #A08CFF -4.79%, rgba(160, 140, 255, 0) 108.54%);
-                  }
-                  `}
-                </style>
+              <div className={header.provider}>
                 <Image
                   src={shariyah2}
                   width={123}
@@ -1741,13 +1734,13 @@ const { locale, locales, defaultLocale } = router
                   alt="shariyah logo"
                 />
               </div>
-              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border ">
+              <div className={header.codebase}>
                 <Image src={codebase} alt="codebase technologies logo" />
               </div>
-              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border ">
+              <div className={header.duck}>
                 <Image src={duck} alt="duck design logo" />
               </div>
-              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border ">
+              <div className={header.cloud}>
                 <Image src={cloud} alt="google cloud logo" />
               </div>
             </div>
@@ -2121,7 +2114,7 @@ const { locale, locales, defaultLocale } = router
                   <Image src={zenD} width={100} height={56.25} alt="" />
                 </div>
               </div>
-              <div className="flex flex-col w-[580px] h-[425px] justify-between px-[30px] py-[40px] border bg-white rounded-xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.17)] z-20">
+              <div className={header.zendesk}>
                 <div className="flex items-center gap-2">
                   <div>
                     <Image

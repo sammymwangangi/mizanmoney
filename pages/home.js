@@ -35,6 +35,7 @@ import backer1 from "../public/backers/back1.png";
 import backer2 from "../public/backers/back2.png";
 import backer3 from "../public/backers/back3.png";
 import zenD from "../public/zend.png";
+import handShadow from "../public/hand.png";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 
@@ -1418,9 +1419,9 @@ const { locale, locales, defaultLocale } = router
                 alt="black hand holding phone"
               />
             </div>
-            <div className="absolute w-full left-[500px] -z-20 top-[20px]">
+            <div className="absolute w-full left-[500px] -z-20 top-[200px]">
               <Image
-                src={blackShadow}
+                src={handShadow}
                 width={596}
                 height={748}
                 alt="black hand holding phone"
@@ -1725,14 +1726,7 @@ const { locale, locales, defaultLocale } = router
               <h1 className={header.pr_3}>We work with top providers</h1>
             </div>
             <div className="lg:flex items-center gap-[20px] pl-[76px] pr-[84px]">
-              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 providers">
-                <style jsx>{`
-                  .providers {
-                    border: 1px solid;
-                    border-image-source: linear-gradient(319.13deg, #A08CFF -4.79%, rgba(160, 140, 255, 0) 108.54%);
-                  }
-                  `}
-                </style>
+              <div className={header.provider}>
                 <Image
                   src={shariyah2}
                   width={123}
@@ -1740,13 +1734,13 @@ const { locale, locales, defaultLocale } = router
                   alt="shariyah logo"
                 />
               </div>
-              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border ">
+              <div className={header.codebase}>
                 <Image src={codebase} alt="codebase technologies logo" />
               </div>
-              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border ">
+              <div className={header.duck}>
                 <Image src={duck} alt="duck design logo" />
               </div>
-              <div className="flex items-center justify-center w-[280px] h-[201px] bg-white rounded-3xl p-8 border ">
+              <div className={header.cloud}>
                 <Image src={cloud} alt="google cloud logo" />
               </div>
             </div>
@@ -2120,7 +2114,7 @@ const { locale, locales, defaultLocale } = router
                   <Image src={zenD} width={100} height={56.25} alt="" />
                 </div>
               </div>
-              <div className="flex flex-col w-[580px] h-[425px] justify-between px-[30px] py-[40px] border bg-white rounded-xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.17)] z-20">
+              <div className={header.zendesk}>
                 <div className="flex items-center gap-2">
                   <div>
                     <Image
