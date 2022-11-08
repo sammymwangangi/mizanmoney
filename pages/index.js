@@ -177,7 +177,7 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Clients */}
-          <div className="flex lg:ml-[200px] space-x-[77px] mt-[157px] mb-[140px] items-center justify-center max-w-[1290px]">
+          <div className="flex space-x-[77px] mt-[157px] mb-[140px] items-center justify-center">
             <div>
               <Image src={kdic} alt="kdic" width={190} height={80} priority />
             </div>
@@ -213,7 +213,7 @@ const { locale, locales, defaultLocale } = router
             <div className="relative z-20 card1 flex flex-col px-[81px] pt-[50px] pb-[44px] bg-white rounded-3xl lg:w-[760px] h-auto text-center">
               <style jsx>{`
                 .card1 {
-                  box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
+                  box-shadow: 0px -8px 100px 0px #6943AF1A;
                 }
                 .button2 {
                   box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
@@ -421,15 +421,15 @@ const { locale, locales, defaultLocale } = router
 
           {/* Pay with card */}
           <div className="relative flex mb-[541px]">
-            <div className="flex flex-col space-y-[20px] ml-[130px] w-[880px]">
+            <div className="flex flex-col space-y-[20px] ml-[130px]">
               <div>
                 <div className="text-[40px] leading-[60px] font-bold">
-                  <span className="bg-clip-text text-transparent bg-[linear-gradient(89.87deg,_#000000_2.29%,_#A488FF_99.84%)]">
+                  <span className="bg-clip-text text-transparent bg-[linear-gradient(89.87deg,_#000000_30%,_#A488FF_99.84%)]">
                     Turn heads with our
                   </span>
                 </div>
                 <div className="text-[40px] leading-[60px] font-bold">
-                  <span className="bg-clip-text text-transparent bg-[linear-gradient(89.87deg,_#000000_2.29%,_#A488FF_99.84%)]">
+                  <span className="bg-clip-text text-transparent bg-[linear-gradient(89.87deg,_#000000_30%,_#A488FF_99.84%)]">
                     cards made from steel.
                   </span>
                 </div>
@@ -441,7 +441,7 @@ const { locale, locales, defaultLocale } = router
               </div>
             </div>
             {/* Cards and shadow */}
-            <div className="w-[760px]">
+            <div className="lg:absolute lg:right-0 lg:-top-[100px] lg:w-[680px]">
               <Image src={kadi} alt="card" priority />
             </div>
             {/* End */}
@@ -522,7 +522,7 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Round Ups */}
-          <div className="relative z-20 card1 flex px-[79px] pt-[123px] pb-[44px] bg-white rounded-3xl lg:w-[1290px] h-[821px]">
+          <div className="mt-20 relative z-20 card1 flex mx-[49px] px-[79px] pt-[123px] pb-[44px] bg-white rounded-3xl h-[821px]">
             <style jsx>{`
               .card1 {
                 box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
@@ -554,7 +554,7 @@ const { locale, locales, defaultLocale } = router
             <div className="absolute top-[70px] left-[864px]">
               <Image src={cup} alt="cup" priority />
             </div>
-            <div className="absolute top-[558px] left-[1000px]">
+            <div className="absolute top-[550px] left-[1000px]">
               <svg
                 width="18"
                 height="21"
@@ -570,7 +570,7 @@ const { locale, locales, defaultLocale } = router
                 />
               </svg>
             </div>
-            <div className="absolute top-[338.5px] left-[980px] -rotate-12">
+            <div className="absolute top-[320px] left-[978px] -rotate-[20deg]">
               <svg
                 width="229"
                 height="223"
@@ -655,7 +655,7 @@ const { locale, locales, defaultLocale } = router
             </div>
           </div>
 
-          <div className="relative z-20 -top-[150px] card1 flex gap-8 px-[40px] bg-white rounded-3xl lg:w-[1177px] h-[auto] left-[50px]">
+          <div className="relative z-20 mx-[130px] -top-[130px] card1 flex gap-8 px-[40px] bg-white rounded-3xl h-[auto]">
             <style jsx>{`
               .card1 {
                 box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
@@ -1041,13 +1041,13 @@ const { locale, locales, defaultLocale } = router
               {/* Purple */}
               <div className="flex">
                 <div className={header.price1}>
-                  <div className="relative flex flex-col  py-[50px]">
-                    <div className="px-[20px]">
-                      <div className="flex justify-between gap-[100px]">
+                  <div className="relative flex flex-col py-[50px]">
+                    <div className="pl-[20px]">
+                      <div className="flex justify-between gap-[80px] pl-[10px]">
                         <div className="text-[30px] text-[#A08CFF] font-semibold leading-[45px]">
                           Purple
                         </div>
-                        <div className="text-[#1B1C39]">
+                        <div className="text-[#1B1C39] pr-[20px]">
                           <span className="font-medium text-[28px] leading-[42px]">
                             $1.00
                           </span>
@@ -1056,15 +1056,15 @@ const { locale, locales, defaultLocale } = router
                           </span>
                         </div>
                       </div>
-                      <div className="border-b border-[#1B1828]/0.12 mt-[33px] mb-[30px]"></div>
-                      <div className="">
+                      <div className="border-b border-[#1B1828]/0.12 mt-[33px] mb-[30px] w-[340px]"></div>
+                      <div className="pl-[10px]">
                         <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] marker:text-[#8F00E0]">
                           <li>Bank Better</li>
                           <li>Pay Later</li>
                           <li>Customizable Virtual Cards</li>
                         </ul>
                       </div>
-                      <div className="absolute top-[234px]">
+                      <div className="absolute top-[242px]">
                         <Image src={ccb} alt="card control" />
                       </div>
                     </div>
@@ -1083,8 +1083,8 @@ const { locale, locales, defaultLocale } = router
                     Recommended
                   </div>
                   <div className="relative flex flex-col py-[50px]">
-                    <div className="px-[20px]">
-                      <div className="flex justify-between pl-[10px] gap-[61px]">
+                    <div className="pl-[20px] pr-[20px]">
+                      <div className="flex justify-between gap-[61px] pl-[10px]">
                         <div className={header.premium}>Premium</div>
                         <div className="flex flex-col">
                           <div className="text-[#1B1C39]">
@@ -1101,11 +1101,11 @@ const { locale, locales, defaultLocale } = router
                           </div>
                         </div>
                       </div>
-                      <div className="border-b border-[#1B1828]/0.12 mt-[23px] mb-[19px]"></div>
-                      <div className="px-[20px] text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[15px]">
+                      <div className="border-b border-[#1B1828]/0.12 mt-[23px] mb-[19px] pr-[22px]"></div>
+                      <div className="pl-[10px] text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[15px]">
                         Everything in Purple plus:
                       </div>
-                      <div className="px-[20px]">
+                      <div className="pl-[10px]">
                         <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] marker:text-[#8F00E0]">
                           <li>Bank Better +</li>
                           <li>Pay Later +</li>
@@ -1114,7 +1114,7 @@ const { locale, locales, defaultLocale } = router
                           <li>Save Better +</li>
                         </ul>
                       </div>
-                      <div className="absolute top-[294px]">
+                      <div className="absolute top-[303px]">
                         <Image src={ccb2} alt="card control" />
                       </div>
                     </div>
@@ -1130,8 +1130,8 @@ const { locale, locales, defaultLocale } = router
               <div className="flex">
                 <div className={header.price3}>
                   <div className="relative flex flex-col py-[38px]">
-                    <div className="px-[20px]">
-                      <div className="flex justify-between pl-[10px] gap-[61px]">
+                    <div className="pl-[20px]">
+                      <div className="flex justify-between gap-[61px] pl-[10px] pr-[20px]">
                         <div className="text-[#393939] text-[30px] leading-[45px] font-medium">
                           Metal
                         </div>
@@ -1150,12 +1150,12 @@ const { locale, locales, defaultLocale } = router
                           </div>
                         </div>
                       </div>
-                      <div className="border-b border-[#1B1828]/0.12 mt-[14px] mb-[15px]"></div>
-                      <div className="text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[18px] px-[20px]">
+                      <div className="border-b border-[#1B1828]/0.12 mt-[14px] mb-[15px] w-[340px]"></div>
+                      <div className="text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[18px] pl-[10px]">
                         Everything in Premium plus:
                       </div>
-                      <div className="relative">
-                        <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] px-[20px] marker:text-[#8F00E0]">
+                      <div className="relative pl-[10px]">
+                        <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] marker:text-[#8F00E0]">
                           <li>Bank Better Pro</li>
                           <li>Pay Later Pro</li>
                           <li>Spend Better Pro</li>
@@ -1163,7 +1163,7 @@ const { locale, locales, defaultLocale } = router
                           <li>Invest better Pro</li>
                         </ul>
                       </div>
-                      <div className="absolute top-[245px]">
+                      <div className="absolute top-[254px]">
                         <Image src={ccb3} alt="card control" />
                       </div>
                     </div>
@@ -1760,21 +1760,21 @@ const { locale, locales, defaultLocale } = router
           {/* End */} 
 
           {/* Backed By */}
-          <div className="flex flex-col mb-[160px]">
-            <div className="mb-[40px] mx-[130px]">
+          <div className="flex flex-col mb-[160px] mx-[130px]">
+            <div className="mb-[40px]">
               <h1 className="text-[40px] leading-[60px] font-bold">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#9E7AFC]">
                   Backed by
                 </span>
               </h1>
             </div>
-            <div className="grid grid-cols-1 gap-y-10 gap-x-[20px] sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-3 mx-[130px]">
+            <div className="grid grid-cols-1 gap-y-10 gap-x-[20px] sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-3">
               <div className="bg-white rounded-3xl pl-[30px] pt-[40px] pr-[28px] pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
                 <div className="flex items-center gap-[20px]">
                   <div className="h-24 w-24 rounded-full flex-shrink-0 overflow-hidden drop-shadow-[0px_30px_50px_rgba(53,_60,_119,_0.1)]">
-                    <Image src={backer1} width={94} height={94} alt="sponsor1" />
+                    <Image src={backer1} alt="sponsor1" />
                   </div>
-                  <div className="text-[24px] leading-[36px] text-[#1B1C39] font-medium">
+                  <div className="h-[72px] text-[24px] leading-[36px] text-[#1B1C39] font-medium">
                     Sheikh Abdullatif Essajee
                   </div>
                 </div>
@@ -1791,12 +1791,12 @@ const { locale, locales, defaultLocale } = router
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col bg-white rounded-3xl p-8 shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className="flex flex-col bg-white rounded-3xl pl-[30px] pt-[40px] pr-[28px] pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
                 <div className="flex items-center justify-start">
                   <div className="mr-[20px] h-24 w-24 rounded-full flex-shrink-0 overflow-hidden drop-shadow-[0px_30px_50px_rgba(53,_60,_119,_0.1)]">
-                    <Image src={backer2} width={94} height={94} alt="sponsor1" />
+                    <Image src={backer2} alt="sponsor1" />
                   </div>
-                  <div className="flex-1 text-[24px] leading-[36px] text-[#1B1C39] font-medium">
+                  <div className="h-[72px] flex-1 text-[24px] leading-[36px] text-[#1B1C39] font-medium">
                     Mufti Ismail menk
                   </div>
                 </div>
@@ -1822,12 +1822,12 @@ const { locale, locales, defaultLocale } = router
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col bg-white rounded-3xl p-8 shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
-                <div className="flex items-center">
-                  <div className="mr-[20px] h-24 w-24 rounded-full flex-shrink-0 overflow-hidden drop-shadow-[0px_30px_50px_rgba(53,_60,_119,_0.1)]">
-                    <Image src={backer3} width={94} height={94} alt="sponsor1" />
+              <div className="flex flex-col bg-white rounded-3xl pl-[30px] pt-[40px] pr-[28px] pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+                <div className="flex">
+                  <div className="mr-[20px] flex-shrink-0 overflow-hidden drop-shadow-[0px_30px_50px_rgba(53,_60,_119,_0.1)]">
+                    <Image src={backer3} alt="sponsor1" />
                   </div>
-                  <div className="text-[24px] leading-[36px] text-[#1B1C39] font-medium">
+                  <div className="h-[72px] text-[24px] leading-[36px] text-[#1B1C39] font-medium">
                     Sh. Muhammad Ahmad Shaikh
                   </div>
                 </div>
