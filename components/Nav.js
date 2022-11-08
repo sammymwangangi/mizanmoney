@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from 'next/router';
 import { Fragment, forwardRef, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -20,6 +21,7 @@ const flags = [
 
 export default function Navbar() {
   const [selected, setSelected] = useState(flags[0]);
+  const router = useRouter();
   return (
     <Popover>
       <div className="ml-[22px] lg:ml-[130px] mr-[57px] pt-[32px] lg:pt-[44px]">
@@ -78,16 +80,16 @@ export default function Navbar() {
             className="hidden space-x-[72px] md:flex lg:-mt-6"
           >
             <Link href="/">
-              <a className="text-[18px] leading-[25px] text-[#1B1C39] font-semibold">
+            <a className={`text-[18px] leading-[25px] font-semibold hover:text-[#1B1C39] ${router.pathname == "/" ? "text-[#1B1C39]" : "text-[#6D6E8A]"}`}>
                 Personal
-              </a>
+                </a>
+            </Link>
+            <Link href="/brand-story">
+                <a className={`text-[18px] leading-[25px] font-semibold hover:text-[#1B1C39] ${router.pathname == "/brand-story" ? "text-[#1B1C39]" : "text-[#6D6E8A]"}`}>
+                Brand Story
+                </a>
             </Link>
 
-            <Link href="/brand-story">
-              <a className="text-lg text-[#6D6E8A] font-semibold cursor-pointer">
-                Brand Story
-              </a>
-            </Link>
           </Popover.Group>
           {/* Flag */}
 
