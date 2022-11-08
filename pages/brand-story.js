@@ -140,14 +140,14 @@ export default function BrandStory() {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex-1">
-                            <svg className="absolute right-10" width="654" height="643" viewBox="0 0 654 643" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div className="absolute right-0 pr-[100px]">
+                            <svg width="654" height="643" viewBox="0 0 654 643" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.6" fillRule="evenodd" clipRule="evenodd" d="M435.897 458.939C449.672 553.435 525.695 628.181 621.805 641.725C638.382 644.068 653.257 631.477 653.257 615.024L653.257 455.025C653.257 440.117 640.975 428.041 625.812 428.041L463.08 428.041C446.32 428.015 433.514 442.64 435.897 458.939ZM504.248 516.692C504.248 551.478 532.923 579.672 568.303 579.672C603.683 579.672 632.359 551.478 632.359 516.692C632.359 481.906 603.683 453.712 568.303 453.712C532.923 453.712 504.248 481.906 504.248 516.692ZM544.441 428.016C604.542 428.016 653.252 380.124 653.252 321.032C653.252 261.94 604.543 214.049 544.441 214.049C484.34 214.049 435.631 261.94 435.631 321.032C435.604 380.099 484.34 428.016 544.441 428.016ZM544.441 402.551C590.244 402.551 627.352 366.066 627.352 321.032C627.352 275.999 590.244 239.514 544.441 239.514C498.639 239.514 461.53 275.999 461.53 321.032C461.53 366.04 498.639 402.551 544.441 402.551ZM435.006 30.9474C421.231 125.443 345.207 200.19 249.098 213.733C232.521 216.077 217.646 203.486 217.646 187.033L217.646 27.0079C217.646 12.0998 229.928 0.0238888 245.091 0.0238901L407.823 0.0239043C424.583 0.0239058 437.389 14.6488 435.006 30.9474ZM598.86 321.007C598.86 350.566 574.479 374.511 544.442 374.511C514.378 374.511 490.023 350.566 490.023 321.007C490.023 291.448 514.378 267.502 544.442 267.502C574.506 267.502 598.86 291.448 598.86 321.007ZM572.934 321.033C572.934 336.507 560.181 349.046 544.442 349.046C528.703 349.046 515.949 336.507 515.949 321.033C515.949 305.558 528.703 293.019 544.442 293.019C560.181 293.019 572.934 305.558 572.934 321.033ZM467.061 0.307601C563.17 13.8511 639.194 88.598 652.969 183.094C655.352 199.392 642.572 214.017 625.786 213.991L463.054 213.991C447.891 213.991 435.609 201.916 435.609 187.007L435.609 27.0084C435.609 10.5553 450.484 -2.03548 467.061 0.307601ZM520.563 62.3606C555.942 62.3606 584.618 90.5549 584.618 125.341C584.618 160.126 555.942 188.321 520.563 188.321C485.183 188.321 456.507 160.126 456.507 125.341C456.507 90.5549 485.183 62.3606 520.563 62.3606ZM435.006 397.092C421.231 302.597 345.207 227.85 249.098 214.306C232.521 211.963 217.646 224.554 217.646 241.033C217.646 254.499 227.754 265.828 241.294 267.76C277.302 272.858 309.566 289.414 334.104 313.54C358.642 337.666 375.481 369.387 380.666 404.791C382.604 418.129 394.152 428.042 407.849 428.042C424.583 428.016 437.389 413.391 435.006 397.092ZM314.464 406.001C305.979 369.722 276.937 341.167 240.038 332.825C228.568 330.224 217.647 338.927 217.674 350.514L217.674 409.941C217.674 419.931 225.897 428.016 236.058 428.016L296.499 428.016C308.258 428.016 317.109 417.279 314.464 406.001ZM139.834 152.698C154.506 146.722 161.473 130.184 155.396 115.758C149.318 101.333 132.498 94.4822 117.826 100.458C103.154 106.433 96.1863 122.971 102.264 137.397C108.341 151.823 125.162 158.673 139.834 152.698ZM0.285807 183.067C14.0607 88.5716 90.0843 13.8248 186.194 0.28127C202.771 -2.06181 217.646 10.529 217.62 27.0078L217.619 187.007C217.619 201.915 205.337 213.991 190.174 213.991L27.4428 213.991C10.7088 213.991 -2.09725 199.366 0.285807 183.067ZM128.764 180.57C159.063 180.57 183.654 156.418 183.654 126.602C183.654 96.7853 159.063 72.6335 128.764 72.6335C98.4643 72.6335 73.874 96.811 73.874 126.602C73.874 156.392 98.4643 180.57 128.764 180.57Z" fill="#F1F6FB"/>
                             </svg>
                         </div>
                     </div>
-                    <div className="lg:flex gap-[20px] px-[58px]">
-                        <div className="mt-[212px]">
+                    <div className="lg:flex gap-[20px] px-[58px] mt-[36px]">
+                        <div className="mt-[190px]">
                             <Image src={Brand2} alt="brand2" />
                         </div>
                         <div>
@@ -246,7 +246,7 @@ export default function BrandStory() {
                                         color: #1B1C39;
                                     }`}</style>
                             </div>
-                            <div className="w-[559px]">
+                            <div className="w-[580px]">
                                 <p className="text-[22px] leading-[39.6px] text-[#1B1C39]">
                                     Mainstream? No, thanks. We are on mission to change your relationship with the word «Bank». The B-word is outdated and relatable to stress, and outdated financial products.
                                 </p>
@@ -264,8 +264,8 @@ export default function BrandStory() {
                             </svg>
                         </div>
                     </div>
-                    <div className="lg:flex gap-[20px] px-[58px]">
-                        <div className="mt-[212px]">
+                    <div className="lg:flex gap-[20px] px-[58px] mt-[36px]">
+                        <div className="mt-[190px]">
                             <Image src={Brand5} alt="brand2" />
                         </div>
                         <div>
@@ -304,7 +304,7 @@ export default function BrandStory() {
                     <div className="px-[58px] mt-[120px]">
                         <div className="text-[80px] leading-[82px] text-[#1B1C39] font-semibold mb-[60px]">What is a Halal <br></br>Buy now pay later?</div>
                         <div className="relative lg:flex">
-                            <div className="flex flex-col space-y-[40px] text-[22px] leading-[39.6px] text-[#1B1C39] w-[565px]">
+                            <div className="flex flex-col space-y-[40px] text-[22px] leading-[39.6px] text-[#1B1C39] w-[580px]">
                                 <p>
                                     The client purchases only permitted goods/services from mizan via the merchant with a cost plus financing structure (Murabaha) or no cost plus financing structure (Tawliyah).
                                 </p>
@@ -326,8 +326,8 @@ export default function BrandStory() {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:flex gap-[20px] px-[58px]">
-                        <div className="mt-[212px]">
+                    <div className="lg:flex gap-[20px] px-[58px] mt-[36px]">
+                        <div className="mt-[190px]">
                             <Image src={Brand9} alt="brand9" />
                         </div>
                         <div>
@@ -344,11 +344,11 @@ export default function BrandStory() {
                                 color: #1B1C39;
                             }`}</style>
                     </div>
-                    <div className="flex gap-[47px] mb-[60px] px-[58px] text-[22px] leading-[39.6px] text-[#1B1C39]">
-                        <div>
+                    <div className="flex gap-[70px] mb-[60px] px-[58px] text-[22px] leading-[39.6px] text-[#1B1C39]">
+                        <div className="w-[530px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                         </div>
-                        <div>
+                        <div className="w-[530px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                         </div>
                     </div>
