@@ -457,7 +457,7 @@ const { locale, locales, defaultLocale } = router
           {/* Features */}
           <div className="flex flex-col text-center h-[919px] bg-white py-[34px]">
             <h1 className={header.features}>Features</h1>
-            <div className="flex gap-4">
+            <div className="relative flex gap-4">
               <div className="rounded-[25px] px-[20px] py-[30px] w-[480px] h-[568px] -ml-[110px]">
                 <div className="flex flex-col">
                   <div className="rounded-[25px] bg-[linear-gradient(145.77deg,_#FAF9FE_8.5%,_#C6BAFF_90.85%)] justify-center">
@@ -515,7 +515,26 @@ const { locale, locales, defaultLocale } = router
                   </div>
                 </div>
               </div>
+              <div className="absolute left-[38px] top-[200px] cursor-pointer flex items-center justify-center rounded-full w-[84px] h-[84px] bg-[rgba(27,_28,_57,_0.8)] shadow-[0px_15px_30px_rgba(57,_26,_115,_0.15)] rotate-[matrix(-1,_0,_0,_1,_0,_0)]">
+                <svg width="19" height="36" viewBox="0 0 19 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.8333 1.66663L1.6414 17.8585C1.5633 17.9366 1.5633 18.0633 1.6414 18.1414L17.8333 34.3333" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div className="absolute right-[38px] top-[200px] cursor-pointer flex items-center justify-center rounded-full w-[84px] h-[84px] bg-[rgba(27,_28,_57,_0.8)] shadow-[0px_15px_30px_rgba(57,_26,_115,_0.15)] rotate-[matrix(-1,_0,_0,_1,_0,_0)]">    
+                <svg width="19" height="36" viewBox="0 0 19 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.16666 1.66663L17.3586 17.8585C17.4367 17.9366 17.4367 18.0633 17.3586 18.1414L1.16666 34.3333" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
             </div>
+              <div className="flex gap-1 items-center justify-center mt-[30px]">
+                <div className='rounded-full w-[8px] h-[8px] bg-[#A08CFF]'></div>
+                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA]'></div>
+                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA]'></div>
+                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA]'></div>
+                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA]'></div>
+                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA]'></div>
+                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA]'></div>
+              </div>
           </div>
           {/* End */}
 
@@ -1303,7 +1322,7 @@ const { locale, locales, defaultLocale } = router
                     </div>
                   </div>
                 </div>
-                <div className="flex space-x-[8px] items-center">
+                <div className="flex space-x-[8px] items-center mt-[20px]">
                   <div className="p-0.5 flex rounded-full bg-[#A08CFF] items-center justify-center">
                     <svg
                       width="10"
@@ -1325,7 +1344,7 @@ const { locale, locales, defaultLocale } = router
                     Verified Testimonial
                   </div>
                 </div>
-                <div className="text-[16px] leading-[24px] text-[#6D6E8A]">
+                <div className="text-[16px] leading-[24px] text-[#6D6E8A] mt-[20px]">
                 Just wow, i used revolut in the UK, when i came to Africa, i came across Mizan App, it took minutes to setup. I’d say its like the Islamic “Revolt App” version.
                 </div>
               </div>
@@ -1351,7 +1370,7 @@ const { locale, locales, defaultLocale } = router
                     </div>
                   </div>
                 </div>
-                <div className="flex space-x-[8px] items-center">
+                <div className="flex space-x-[8px] items-center mt-[20px]">
                   <div className="p-0.5 flex rounded-full bg-[#A08CFF] items-center justify-center">
                     <svg
                       width="10"
@@ -1373,7 +1392,7 @@ const { locale, locales, defaultLocale } = router
                     Verified Testimonial
                   </div>
                 </div>
-                <div className="text-[16px] leading-[24px] text-[#6D6E8A]">
+                <div className="text-[16px] leading-[24px] text-[#6D6E8A] mt-[20px]">
                 When i joined beta program, i got to experience first hand how my financial future will be revolutionized. Ditching my bank for G.
                 </div>
               </div>
