@@ -473,12 +473,13 @@ const { locale, locales, defaultLocale } = router
                   </div>
                 </div>
               </div>
-              <div className="pace relative rounded-[25px] w-[580px] h-[692px] bg-white shadow-[0px_-8px_100px_rgba(105,_67,_175,_0.26)]">
+              <div className="pace relative rounded-[25px] w-[580px] h-[692px] bg-white">
                 <style jsx>
                   {`
                     .pace{
                       border: 1.26px solid;
                       border-image-source: linear-gradient(355.46deg, #A08CFF -5.29%, rgba(160, 140, 255, 0) 28.96%);
+                      box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.26);
                     }
                   `}
                 </style>

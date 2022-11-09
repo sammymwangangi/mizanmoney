@@ -557,7 +557,7 @@
   /* justify-content: center; */
   /* align-items: center; */
   text-align: center;
-  box-shadow: 0px 4px 4px 0px #00000040;
+  /* box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); */
   top: -170px;
 }
 
