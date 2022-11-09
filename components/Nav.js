@@ -34,6 +34,7 @@ export default function Navbar() {
                 viewBox="0 0 175 41"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="cursor-pointer"
               >
                 <rect width="175" height="41" fill="white" />
                 <path

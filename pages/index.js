@@ -455,7 +455,7 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Features */}
-          {/* <div className="flex flex-col text-center h-[919px] bg-white py-[34px]">
+          <div className="flex flex-col text-center h-[919px] bg-white py-[34px]">
             <h1 className={header.features}>Features</h1>
             <div className="flex gap-4">
               <div className="rounded-[25px] px-[20px] py-[30px] w-[480px] h-[568px] -ml-[110px]">
@@ -515,7 +515,7 @@ const { locale, locales, defaultLocale } = router
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
           {/* End */}
 
           {/* Round Ups */}

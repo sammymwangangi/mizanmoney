@@ -119,14 +119,7 @@ export default function BrandStory() {
                     <div className="relative flex mt-[120px] gap-0 px-[58px]">
                         <div className="flex-1 flex-col">
                             <div className="mb-[60px] w-[603px]">
-                                <h1 className="what">What is<br></br> a Neobank?</h1>
-                                <style jsx>{`
-                                    .what {
-                                      font-weight: 600;
-                                        font-size: 80px;
-                                        line-height: 82px;
-                                        color: #1B1C39;
-                                    }`}</style>
+                                <h1 className="font-semibold text-[#1B1C39] text-[80px] leading-[82px]">What is<br></br> a Neobank?</h1>
                             </div>
                             <div className="w-[580px]">
                                 <p className="text-[20px] leading-[36px] text-[#1B1C39]">
