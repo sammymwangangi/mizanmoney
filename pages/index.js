@@ -36,6 +36,7 @@ import backer2 from "../public/backers/back2.png";
 import backer3 from "../public/backers/back3.png";
 import zenD from "../public/zend.png";
 import handShadow from "../public/hand.png";
+import imagined from "../public/imagined.png";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 
@@ -174,7 +175,7 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Clients */}
-          <div className="flex space-x-[77px] mt-[157px] mb-[140px] items-center justify-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-[273] ml-[19px] md:ml-[130px] mt-[68px] md:mt-[157px] mb-[140px] place-content-center content-center">
             <div>
               <Image src={kdic} alt="kdic" width={190} height={80} priority />
             </div>
@@ -203,11 +204,14 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Islamic Banking Reimagined */}
-          <div className="lg:flex items-center mb-[278px]">
-            <div className="w-[539px] ml-[108px]">
+          <div className="md:flex md:items-center mb-[50px] md:mb-[278px]">
+            <div className="w-[539px] ml-[40px] md:ml-[108px] hidden md:block">
               <Image src={phone} alt="Iphone" objectFit='cover' priority />
             </div>
-            <div className="relative z-20 card1 flex flex-col px-[81px] pt-[50px] pb-[44px] bg-white rounded-3xl lg:w-[760px] h-auto text-center mr-[49px]">
+            <div className="absolute ml-[40px] mr-[54px] md:ml-[108px] block md:hidden z-10 top-[1100px]">
+              <Image src={imagined} alt="Iphone" objectFit='cover' priority />
+            </div>
+            <div className="relative card1 flex flex-col pl-[24px] md:pl-[81px] pr-[24px] pt-[150px] md:pt-[50px] pb-[44px] bg-white rounded-3xl w-[320px] md:w-[760px] h-auto text-center ml-[20px] md:mr-[49px]">
               <style jsx>{`
                 .card1 {
                   box-shadow: 0px -8px 100px 0px #6943AF1A;
@@ -216,15 +220,14 @@ const { locale, locales, defaultLocale } = router
                   box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
                 }
               `}</style>
-              <div className="mb-[36px] text-left">
+              <div className="mb-[36px] text-left pr-4 md:pr-[81px] mt-7 md:mt-0">
                 <h1 className={header.pr_3}>Islamic Banking Reimagined</h1>
               </div>
-              <div className="flex flex-col space-y-[22px] mb-[40px]">
+              <div className="flex flex-col space-y-[22px] mb-[40px] pr-[24px] md:pr-[81px]">
                 <div className="flex space-x-[15px] items-center">
-                  <div className="w-[40px] h-[40px] flex rounded-full bg-[#6D6E8A] items-center justify-center">
+                  <div className="w-[24px] md:w-[40px] h-[24px] md:h-[40px] flex rounded-full bg-[#6D6E8A] items-center justify-center">
                     <svg
-                      width="19"
-                      height="12"
+                      className="w-[10px] h-[7px] md:w-[19px] md:h-[12px]"
                       viewBox="0 0 19 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -238,15 +241,14 @@ const { locale, locales, defaultLocale } = router
                       />
                     </svg>
                   </div>
-                  <div className="flex-1 text-left text-xl text-black font-medium">
+                  <div className="flex-1 text-left text-sm md:text-xl text-black font-medium">
                     Halal ready without compromise.
                   </div>
                 </div>
                 <div className="flex space-x-[15px] items-center">
-                  <div className="w-[40px] h-[40px] flex rounded-full bg-[#6D6E8A] items-center justify-center">
-                    <svg
-                      width="19"
-                      height="12"
+                  <div className="w-[24px] md:w-[40px] h-[24px] md:h-[40px] flex rounded-full bg-[#6D6E8A] items-center justify-center">
+                  <svg
+                      className="w-[10px] h-[7px] md:w-[19px] md:h-[12px]"
                       viewBox="0 0 19 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -260,15 +262,14 @@ const { locale, locales, defaultLocale } = router
                       />
                     </svg>
                   </div>
-                  <div className="flex-1 text-left text-xl text-black font-medium">
+                  <div className="flex-1 text-left text-sm md:text-xl text-black font-medium">
                     Open your account in minutes (Goodbye paper work).
                   </div>
                 </div>
                 <div className="flex space-x-[15px] items-center">
-                  <div className="w-[40px] h-[40px] flex rounded-full bg-[#6D6E8A] items-center justify-center">
-                    <svg
-                      width="19"
-                      height="12"
+                  <div className="w-[24px] md:w-[40px] h-[24px] md:h-[40px] flex rounded-full bg-[#6D6E8A] items-center justify-center">
+                  <svg
+                      className="w-[10px] h-[7px] md:w-[19px] md:h-[12px]"
                       viewBox="0 0 19 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -282,15 +283,14 @@ const { locale, locales, defaultLocale } = router
                       />
                     </svg>
                   </div>
-                  <div className="flex-1 text-left text-xl text-black font-medium">
+                  <div className="flex-1 text-left text-sm md:text-xl text-black font-medium">
                     Get upto 3 days early salary.
                   </div>
                 </div>
                 <div className="flex space-x-[15px] items-center">
-                  <div className="w-[40px] h-[40px] flex rounded-full bg-[#6D6E8A] items-center justify-center">
-                    <svg
-                      width="19"
-                      height="12"
+                  <div className="w-[24px] md:w-[40px] h-[24px] md:h-[40px] flex rounded-full bg-[#6D6E8A] items-center justify-center">
+                  <svg
+                      className="w-[10px] h-[7px] md:w-[19px] md:h-[12px]"
                       viewBox="0 0 19 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -304,15 +304,14 @@ const { locale, locales, defaultLocale } = router
                       />
                     </svg>
                   </div>
-                  <div className="flex-1 text-left text-xl text-black font-medium">
+                  <div className="flex-1 text-left text-sm md:text-xl text-black font-medium">
                     Track every buck. Know your spend.
                   </div>
                 </div>
                 <div className="flex space-x-[15px] items-center">
-                  <div className="w-[40px] h-[40px] flex rounded-full bg-[#6D6E8A] items-center justify-center">
-                    <svg
-                      width="19"
-                      height="12"
+                  <div className="w-[24px] md:w-[40px] h-[24px] md:h-[40px] flex rounded-full bg-[#6D6E8A] items-center justify-center">
+                  <svg
+                      className="w-[10px] h-[7px] md:w-[19px] md:h-[12px]"
                       viewBox="0 0 19 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -326,29 +325,27 @@ const { locale, locales, defaultLocale } = router
                       />
                     </svg>
                   </div>
-                  <div className="flex-1 text-left text-xl text-black font-medium">
+                  <div className="flex-1 text-left text-sm md:text-xl text-black font-medium">
                     Buy now pay later,(interest free, forever).
                   </div>
                 </div>
               </div>
-              <div className="text-left mb-[55px]">
+              <div className="text-left mb-[55px] pr-[24px] md:pr-[81px]">
                 <p className={header.pr_4}>
                   We didn’t just want to throw solutions around, in the hope
                   they find a problem to solve. Thats why we’ve chosen to run a
                   beta phase.
                 </p>
               </div>
-              <div className="rounded-full">
+              <div className="rounded-full pr-[24px] md:pr-[81px]">
                 <div className={header.button2} style={{ color: "white" }}>
                   <a href="#" className="items-center">
                     Apply for the Beta Progam
                   </a>
                 </div>
               </div>
-              <div className="absolute bottom-0 right-0">
+              <div className="absolute bottom-[70px] md:bottom-0 right-0 w-[272.73px] md:w-[342px] h-[240.16px] md:h-[342px]">
                 <svg
-                  width="342"
-                  height="342"
                   viewBox="0 0 342 342"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -417,37 +414,37 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Pay with card */}
-          <div className="relative flex mb-[541px]">
-            <div className="flex flex-col space-y-[20px] ml-[130px]">
-              <div>
-                <div className="text-[40px] leading-[60px] font-bold">
+          <div className="relative md:flex mb-[91px] md:mb-[541px]">
+            <div className="flex flex-col space-y-[14px] md:space-y-[20px] ml-[19px] md:ml-[130px]">
+              <div className="w-[321px] md:w-auto">
+                <div className="text-[26px] md:text-[40px] leading-[36px] md:leading-[60px] font-bold">
                   <span className="bg-clip-text text-transparent bg-[linear-gradient(89.87deg,_#000000_30%,_#A488FF_99.84%)]">
                     Turn heads with our
                   </span>
                 </div>
-                <div className="text-[40px] leading-[60px] font-bold">
+                <div className="text-[26px] md:text-[40px] leading-[36px] md:leading-[60px] font-bold">
                   <span className="bg-clip-text text-transparent bg-[linear-gradient(89.87deg,_#000000_30%,_#A488FF_99.84%)]">
                     cards made from steel.
                   </span>
                 </div>
               </div>
-              <div className="text-[35px] leading-[52px] font-semibold">
+              <div className="text-[20px] md:text-[35px] leading-[30px] md:leading-[52px] font-semibold w-[189px] md:w-auto">
                 <span className="bg-clip-text text-transparent bg-[linear-gradient(102.76deg,_#000000_-19.68%,_#9E7AFC_56.42%)]">
                   Pay or get paid, wherever, whenever.
                 </span>
               </div>
             </div>
             {/* Cards and shadow */}
-            <div className="lg:absolute lg:right-0 lg:-top-[100px] lg:w-[680px]">
+            <div className="absolute right-0 top-[80px] md:-top-[100px] w-[200px] md:w-[680px]">
               <Image src={kadi} alt="card" priority />
             </div>
             {/* End */}
 
             {/* Pay with card and shadow */}
-            <div className="lg:absolute inset-y-0 lg:right-0 top-[240px] z-30">
+            <div className="absolute inset-y-0 right-0 top-[210px] md:top-[240px] z-30">
               <Image src={pay} alt="pay-with-credit-card" priority />
             </div>
-            <div className="lg:absolute inset-y-0 lg:right-0 top-[240px] z-20">
+            <div className="absolute inset-y-0 right-0 top-[210px] md:top-[240px] z-20">
               <Image src={paymask} alt="pay-with-credit-card" priority />
             </div>
             {/* End */}
@@ -455,91 +452,92 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Features */}
-          <div className="flex flex-col text-center h-[919px] bg-white py-[34px]">
-            <h1 className={header.features}>Features</h1>
-            <div className="relative flex gap-4">
-              <div className="rounded-[25px] px-[20px] py-[30px] w-[480px] h-[568px] -ml-[110px]">
-                <div className="flex flex-col">
-                  <div className="rounded-[25px] bg-[linear-gradient(145.77deg,_#FAF9FE_8.5%,_#C6BAFF_90.85%)] justify-center">
-                    <Image
-                      src={phone2}
-                      alt="phone2"
-                    />
-                  </div>
-                  <div className="mt-[40px] mb-[87]">
-                    <h1 className="text-[24px] leading-[36px] font-bold text-[#333333] mb-[31px]">
-                      Track Ur buck. “The Ostrich-effect”
-                    </h1>
-                  </div>
-                </div>
-              </div>
-              <div className="pace relative rounded-[25px] w-[580px] h-[692px] bg-white">
-                <style jsx>
-                  {`
-                    .pace{
-                      border: 1.26px solid;
-                      border-image-source: linear-gradient(355.46deg, #A08CFF -5.29%, rgba(160, 140, 255, 0) 28.96%);
-                      box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.26);
-                    }
-                  `}
-                </style>
-                <div className="flex flex-col">
-                  <div>
-                    <Image src={feature1} alt="feature" />
-                  </div>
-                  <div className={header.pace}>
-                    <h1 className="text-[27px] leading-[40.5px] font-bold text-[#333333] mb-[31px]">
-                      Mizan Pay - Shop now pay at your own pace
-                    </h1>
-                    <p className="text-[16px] leading-[25.6px] font-medium text-[#6D6E8A]">
-                      With our aethetically appealing mizan metal card, you can
-                      easily spread your payments upto 12 months. No late
-                      payment fees, no penalties. What you borrow is what you
-                      will pay. Let’s just keep it at that.
-                    </p>
+          <div className="flex flex-col text-center bg-white py-[34px] mb-[291px] md:mb-auto">
+              <div className={header.features}>Features</div>
+              <div className="relative flex justify-center gap-4">
+                <div className="hidden md:block rounded-[25px] px-[20px] py-[30px] w-[480px] h-[568px] -ml-[110px]">
+                  <div className="flex flex-col">
+                    <div className="rounded-[25px] bg-[linear-gradient(145.77deg,_#FAF9FE_8.5%,_#C6BAFF_90.85%)] justify-center">
+                      <Image
+                        src={phone2}
+                        alt="phone2"
+                      />
+                    </div>
+                    <div className="mt-[40px] mb-[87]">
+                      <h1 className="text-[24px] leading-[36px] font-bold text-[#333333] mb-[31px]">
+                        Track Ur buck. “The Ostrich-effect”
+                      </h1>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="rounded-[25px] px-[20px] py-[30px] w-[480px] h-[568px] -mr-[110px]">
-                <div className="flex flex-col">
-                  <div className="rounded-[25px] bg-[linear-gradient(145.77deg,_#FAF9FE_8.5%,_#C6BAFF_90.85%)] justify-center">
-                    <Image
-                      src={phone3}
-                      alt="phone3"
-                    />
-                  </div>
-                  <div className="mt-[40px] mb-[87]">
-                    <h1 className="text-[24px] leading-[36px] font-bold text-[#333333] mb-[31px]">
-                      Donate to a cause you care. (Effortlessly)
-                    </h1>
+                <div className="pace relative rounded-[25px] w-[320px] md:w-[580px] h-[271px] md:h-[692px] bg-white">
+                  <style jsx>
+                    {`
+                      .pace{
+                        border: 1.26px solid;
+                        border-image-source: linear-gradient(355.46deg, #A08CFF -5.29%, rgba(160, 140, 255, 0) 28.96%);
+                        box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.26);
+                      }
+                    `}
+                  </style>
+                  <div className="flex flex-col">
+                    <div>
+                      <Image src={feature1} alt="feature" />
+                    </div>
+                    <div className={header.pace}>
+                      <h1 className="text-[20px] md:text-[27px] leading-[30px] md:leading-[40.5px] font-bold text-[#333333] mb-[20px] md:mb-[31px]">
+                        Mizan Pay - Shop now pay at your own pace
+                      </h1>
+                      <p className="text-[14px] md:text-[16px] leading-[25px] md:leading-[25.6px] font-medium text-[#6D6E8A]">
+                        With our aethetically appealing mizan metal card, you can
+                        easily spread your payments upto 12 months. No late
+                        payment fees, no penalties. What you borrow is what you
+                        will pay. Let’s just keep it at that.
+                      </p>
+                    </div>
                   </div>
                 </div>
+                <div className="hidden md:block rounded-[25px] px-[20px] py-[30px] w-[480px] h-[568px] -mr-[110px]">
+                  <div className="flex flex-col">
+                    <div className="rounded-[25px] bg-[linear-gradient(145.77deg,_#FAF9FE_8.5%,_#C6BAFF_90.85%)] justify-center">
+                      <Image
+                        src={phone3}
+                        alt="phone3"
+                      />
+                    </div>
+                    <div className="mt-[40px] mb-[87]">
+                      <h1 className="text-[24px] leading-[36px] font-bold text-[#333333] mb-[31px]">
+                        Donate to a cause you care. (Effortlessly)
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <div className="hidden md:absolute left-[38px] top-[200px] cursor-pointer md:flex items-center justify-center rounded-full w-[84px] h-[84px] bg-[rgba(27,_28,_57,_0.8)] shadow-[0px_15px_30px_rgba(57,_26,_115,_0.15)] rotate-[matrix(-1,_0,_0,_1,_0,_0)]">
+                  <svg width="19" height="36" viewBox="0 0 19 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.8333 1.66663L1.6414 17.8585C1.5633 17.9366 1.5633 18.0633 1.6414 18.1414L17.8333 34.3333" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div className="hidden absolute right-[38px] top-[200px] cursor-pointer md:flex items-center justify-center rounded-full w-[84px] h-[84px] bg-[rgba(27,_28,_57,_0.8)] shadow-[0px_15px_30px_rgba(57,_26,_115,_0.15)] rotate-[matrix(-1,_0,_0,_1,_0,_0)]">    
+                  <svg width="19" height="36" viewBox="0 0 19 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.16666 1.66663L17.3586 17.8585C17.4367 17.9366 17.4367 18.0633 17.3586 18.1414L1.16666 34.3333" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
               </div>
-              <div className="absolute left-[38px] top-[200px] cursor-pointer flex items-center justify-center rounded-full w-[84px] h-[84px] bg-[rgba(27,_28,_57,_0.8)] shadow-[0px_15px_30px_rgba(57,_26,_115,_0.15)] rotate-[matrix(-1,_0,_0,_1,_0,_0)]">
-                <svg width="19" height="36" viewBox="0 0 19 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.8333 1.66663L1.6414 17.8585C1.5633 17.9366 1.5633 18.0633 1.6414 18.1414L17.8333 34.3333" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div className="absolute right-[38px] top-[200px] cursor-pointer flex items-center justify-center rounded-full w-[84px] h-[84px] bg-[rgba(27,_28,_57,_0.8)] shadow-[0px_15px_30px_rgba(57,_26,_115,_0.15)] rotate-[matrix(-1,_0,_0,_1,_0,_0)]">    
-                <svg width="19" height="36" viewBox="0 0 19 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.16666 1.66663L17.3586 17.8585C17.4367 17.9366 17.4367 18.0633 17.3586 18.1414L1.16666 34.3333" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-              </div>
-            </div>
-              <div className="flex gap-1 items-center justify-center mt-[30px]">
-                <div className='rounded-full w-[8px] h-[8px] bg-[#A08CFF]'></div>
-                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA]'></div>
-                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA]'></div>
-                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA]'></div>
-                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA]'></div>
-                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA]'></div>
-                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA]'></div>
-              </div>
+              {/* dots */}
+          </div>
+          <div className="flex gap-1 items-center justify-center -mt-10 md:mt-0">
+            <div className='rounded-full w-[8px] h-[8px] bg-[#A08CFF]'></div>
+            <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA] cursor-pointer'></div>
+            <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA] cursor-pointer'></div>
+            <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA] cursor-pointer'></div>
+            <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA] cursor-pointer'></div>
+            <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA] cursor-pointer'></div>
+            <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA] cursor-pointer'></div>
           </div>
           {/* End */}
 
           {/* Round Ups */}
-          <div className="mt-20 relative z-20 card1 flex mx-[49px] px-[79px] pt-[123px] pb-[44px] bg-white rounded-3xl h-[821px]">
+          <div className="mt-20 relative card1 md:flex mx-[20px] md:mx-[49px] px-[20px] md:px-[79px] pt-[60px] md:pt-[123px] pb-[144px] md:pb-[44px] bg-white rounded-3xl md:h-[821px]">
             <style jsx>{`
               .card1 {
                 box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
@@ -548,16 +546,16 @@ const { locale, locales, defaultLocale } = router
                 box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
               }
             `}</style>
-            <div className="w-[479px]">
+            <div className="md:w-[479px]">
               <div className="mb-[4px] text-left">
                 <h1 className={header.pr_3}>How Round-Ups work</h1>
               </div>
 
-              <div className="flex-1 text-left text-[27px] leading-[40px] text-black font-normal mb-[60px]">
+              <div className="flex-1 text-left text-[20px] md:text-[27px] leading-[30px] md:leading-[40px] text-black font-normal mb-[60px]">
                 Invest and save when you spend
               </div>
               <div className="text-left">
-                <p className={header.pr_4}>
+                <p className="text-[16px] md:text-[20px] leading-[28.8px] md:leading-[36px] text-[#1B1C39] font-normal">
                   Imagine you had collected all of your loose change over the
                   years from all your daily purchases—all of the sodas, coffees,
                   meals out—you name it. You’d likely have a good amount of
@@ -565,13 +563,21 @@ const { locale, locales, defaultLocale } = router
                 </p>
               </div>
             </div>
-            <div className="absolute top-[269px] left-[641px]">
-              <Image src={phoneInvest} alt="phone invest" priority />
+            <div className="hidden md:block md:absolute md:top-[70px] md:left-[864px] mt-[29px] md:mt-auto">
+              <Image src={cup} alt="cup" />
             </div>
-            <div className="absolute top-[70px] left-[864px]">
-              <Image src={cup} alt="cup" priority />
+            <div className="hidden md:block md:absolute md:top-[269px] md:left-[641px]">
+              <Image src={phoneInvest} alt="phone invest" />
             </div>
-            <div className="absolute top-[550px] left-[1000px]">
+
+            <div className="md:hidden flex justify-end md:absolute md:top-[70px] md:left-[864px] mt-[29px] md:mt-auto">
+              <Image src={cup} alt="cup" width={178.42} height={178.42} />
+            </div>
+            <div className="md:hidden md:absolute md:top-[269px] md:left-[641px] -mt-[100px] md:mt-auto">
+              <Image src={phoneInvest} alt="phone invest" width={173.74} height={201.83} />
+            </div>
+            {/* Desktop */}
+            <div className="hidden md:block absolute top-[550px] md:left-[1000px]">
               <svg
                 width="18"
                 height="21"
@@ -587,7 +593,7 @@ const { locale, locales, defaultLocale } = router
                 />
               </svg>
             </div>
-            <div className="absolute top-[320px] left-[978px] -rotate-[20deg]">
+            <div className="hidden md:block absolute top-[320px] md:left-[978px] -rotate-[20deg]">
               <svg
                 width="229"
                 height="223"
@@ -603,10 +609,22 @@ const { locale, locales, defaultLocale } = router
                 />
               </svg>
             </div>
-            <div className="absolute bottom-[21.47px] left-[32px]">
+            {/* mobile */}
+            <div className="md:hidden absolute top-[655px] md:top-[550px] left-[200px] md:left-[1000px]">
+              <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.6786 1.98461L3.23291 8.43162L13.1738 19.5461" stroke="#C6BAFF" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div className="md:hidden absolute top-[550px] md:top-[550px] left-[200px] md:left-[978px] -rotate-[10deg]">
+              <svg width="120" height="117" viewBox="0 0 120 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M101.785 2C113.765 21.3771 126.376 65.7538 110.64 88.5511C94.2327 112.32 50.7415 122.655 1 108.703" stroke="#C6BAFF" stroke-width="4" stroke-dasharray="22 22"/>
+              </svg>
+            </div>
+
+            <div className="absolute bottom-[21.47px] md:left-[32px] z-0">
               <svg
-                width="719"
-                height="723"
+                width="566"
+                height="563"
                 viewBox="0 0 719 723"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -672,7 +690,7 @@ const { locale, locales, defaultLocale } = router
             </div>
           </div>
 
-          <div className="relative z-20 mx-[130px] -top-[130px] card1 flex gap-8 px-[40px] bg-white rounded-3xl h-[auto]">
+          <div className="relative z-20 mx-[34px] md:mx-[130px] -top-[130px] card1 md:flex md:gap-8 px-[20px] md:px-[40px] bg-white rounded-3xl h-[auto]">
             <style jsx>{`
               .card1 {
                 box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
@@ -681,17 +699,15 @@ const { locale, locales, defaultLocale } = router
                 box-shadow: 0px -8px 100px rgba(105, 67, 175, 0.1);
               }
             `}</style>
-            <div className="w-[479px] pt-[70px]">
+            <div className="md:w-[479px] pt-[40px] md:pt-[70px]">
               <div className="mb-[23px] text-left">
                 <h1 className={header.pr_3}>Mizan Round-Ups</h1>
               </div>
-              <div className="text-left mb-[58px]">
-                <p className={header.p6}>
+              <div className="text-left mb-[58px] text-[16px] leading-[28.8px] text-[#535060] md:text-[18px] md:leading-[32.04px] md:font-medium">
                   When you make a purchase with your Mizan debit card or another
                   linked card, Mizan rounds up your transaction to the nearest
                   dollar and invests the spare change into your Invest account
                   portfolio or a charity of your choice.
-                </p>
               </div>
               <div>
                 <div className={header.button3} style={{ color: "white" }}>
@@ -705,6 +721,7 @@ const { locale, locales, defaultLocale } = router
               <svg
                 width="484"
                 height="384"
+                className="hidden md:block"
                 viewBox="0 0 576 384"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -912,7 +929,7 @@ const { locale, locales, defaultLocale } = router
               </svg>
 
               <svg
-                className="-mt-24 ml-6"
+                className="-mt-24 ml-6 hidden md:block"
                 width="545"
                 height="92"
                 viewBox="0 0 545 92"
@@ -992,29 +1009,84 @@ const { locale, locales, defaultLocale } = router
                   </linearGradient>
                 </defs>
               </svg>
+              
+              <svg width="299" height="183" className="md:hidden" viewBox="0 0 299 183" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6322_18738)">
+                <line x1="92.2951" y1="247.626" x2="92.2951" stroke="#E6E7F4" stroke-width="0.909734"/>
+                <line x1="150.045" y1="247.626" x2="150.045" stroke="#E6E7F4" stroke-width="0.909734"/>
+                <line x1="207.795" y1="247.626" x2="207.795" stroke="#E6E7F4" stroke-width="0.909734"/>
+                <line x1="265.545" y1="247.626" x2="265.545" stroke="#E6E7F4" stroke-width="0.909734"/>
+                </g>
+                <g filter="url(#filter0_d_6322_18738)">
+                <path d="M269.783 32.9946C269.783 35.3907 267.841 37.3331 265.445 37.3331C263.049 37.3331 261.106 35.3907 261.106 32.9946C261.106 30.5986 263.049 28.6562 265.445 28.6562C267.841 28.6562 269.783 30.5986 269.783 32.9946Z" fill="white" shape-rendering="crispEdges"/>
+                <path d="M269.783 32.9946C269.783 35.3907 267.841 37.3331 265.445 37.3331C263.049 37.3331 261.106 35.3907 261.106 32.9946C261.106 30.5986 263.049 28.6562 265.445 28.6562C267.841 28.6562 269.783 30.5986 269.783 32.9946Z" stroke="url(#paint0_linear_6322_18738)" stroke-width="3.63894" shape-rendering="crispEdges"/>
+                </g>
+                <g filter="url(#filter1_d_6322_18738)">
+                <path d="M38.6036 120.292C38.6036 122.662 36.682 124.584 34.3116 124.584C31.9411 124.584 30.0195 122.662 30.0195 120.292C30.0195 117.922 31.9411 116 34.3116 116C36.682 116 38.6036 117.922 38.6036 120.292Z" fill="white" shape-rendering="crispEdges"/>
+                <path d="M38.6036 120.292C38.6036 122.662 36.682 124.584 34.3116 124.584C31.9411 124.584 30.0195 122.662 30.0195 120.292C30.0195 117.922 31.9411 116 34.3116 116C36.682 116 38.6036 117.922 38.6036 120.292Z" stroke="url(#paint1_linear_6322_18738)" stroke-width="3.63894" shape-rendering="crispEdges"/>
+                </g>
+                <path opacity="0.13" d="M56.434 116.269C50.9161 116.869 46.9513 117.44 46.9513 117.84L46.9513 127.318L256.719 127.318L256.719 35.1979L242.742 49.5295C227.93 64.7169 205.737 70.9426 184.243 65.9403C164.463 61.337 143.976 66.2257 129.216 79.0709L114.416 91.9511C98.4359 105.858 78.0392 113.917 56.434 116.269Z" fill="url(#paint2_linear_6322_18738)"/>
+                <path d="M49.342 117.151L60.7026 116.082C81.6237 114.114 101.11 105.696 116.351 92.0438L130.825 79.0788C145.404 66.0187 165.919 61.0178 185.698 65.7023V65.7023C207.023 70.7529 229.077 64.5272 243.666 49.3379L257.138 35.311" stroke="#8F00E0" stroke-width="2.7292" stroke-linecap="round"/>
+                <path d="M26.2791 139.44V140.184H24.7991V145H23.8871V140.184H22.3991V139.44H26.2791ZM29.1147 145.072C28.6987 145.072 28.3227 144.979 27.9867 144.792C27.6507 144.6 27.3867 144.333 27.1947 143.992C27.0027 143.645 26.9067 143.245 26.9067 142.792C26.9067 142.344 27.0054 141.947 27.2027 141.6C27.4 141.253 27.6694 140.987 28.0107 140.8C28.352 140.613 28.7334 140.52 29.1547 140.52C29.576 140.52 29.9574 140.613 30.2987 140.8C30.64 140.987 30.9094 141.253 31.1067 141.6C31.304 141.947 31.4027 142.344 31.4027 142.792C31.4027 143.24 31.3014 143.637 31.0987 143.984C30.896 144.331 30.6187 144.6 30.2667 144.792C29.92 144.979 29.536 145.072 29.1147 145.072ZM29.1147 144.28C29.3494 144.28 29.568 144.224 29.7707 144.112C29.9787 144 30.1467 143.832 30.2747 143.608C30.4027 143.384 30.4667 143.112 30.4667 142.792C30.4667 142.472 30.4054 142.203 30.2827 141.984C30.16 141.76 29.9974 141.592 29.7947 141.48C29.592 141.368 29.3734 141.312 29.1387 141.312C28.904 141.312 28.6854 141.368 28.4827 141.48C28.2854 141.592 28.128 141.76 28.0107 141.984C27.8934 142.203 27.8347 142.472 27.8347 142.792C27.8347 143.267 27.9547 143.635 28.1947 143.896C28.44 144.152 28.7467 144.28 29.1147 144.28ZM32.0002 142.776C32.0002 142.333 32.0909 141.941 32.2722 141.6C32.4589 141.259 32.7096 140.995 33.0242 140.808C33.3442 140.616 33.6989 140.52 34.0882 140.52C34.3762 140.52 34.6589 140.584 34.9362 140.712C35.2189 140.835 35.4429 141 35.6082 141.208V139.08H36.5282V145H35.6082V144.336C35.4589 144.549 35.2509 144.725 34.9842 144.864C34.7229 145.003 34.4216 145.072 34.0802 145.072C33.6962 145.072 33.3442 144.976 33.0242 144.784C32.7096 144.587 32.4589 144.315 32.2722 143.968C32.0909 143.616 32.0002 143.219 32.0002 142.776ZM35.6082 142.792C35.6082 142.488 35.5442 142.224 35.4162 142C35.2936 141.776 35.1309 141.605 34.9282 141.488C34.7256 141.371 34.5069 141.312 34.2722 141.312C34.0376 141.312 33.8189 141.371 33.6162 141.488C33.4136 141.6 33.2482 141.768 33.1202 141.992C32.9976 142.211 32.9362 142.472 32.9362 142.776C32.9362 143.08 32.9976 143.347 33.1202 143.576C33.2482 143.805 33.4136 143.981 33.6162 144.104C33.8242 144.221 34.0429 144.28 34.2722 144.28C34.5069 144.28 34.7256 144.221 34.9282 144.104C35.1309 143.987 35.2936 143.816 35.4162 143.592C35.5442 143.363 35.6082 143.096 35.6082 142.792ZM37.4221 142.776C37.4221 142.333 37.5128 141.941 37.6941 141.6C37.8808 141.259 38.1315 140.995 38.4461 140.808C38.7661 140.616 39.1181 140.52 39.5021 140.52C39.8488 140.52 40.1501 140.589 40.4061 140.728C40.6675 140.861 40.8755 141.029 41.0301 141.232V140.592H41.9501V145H41.0301V144.344C40.8755 144.552 40.6648 144.725 40.3981 144.864C40.1315 145.003 39.8275 145.072 39.4861 145.072C39.1075 145.072 38.7608 144.976 38.4461 144.784C38.1315 144.587 37.8808 144.315 37.6941 143.968C37.5128 143.616 37.4221 143.219 37.4221 142.776ZM41.0301 142.792C41.0301 142.488 40.9661 142.224 40.8381 142C40.7155 141.776 40.5528 141.605 40.3501 141.488C40.1475 141.371 39.9288 141.312 39.6941 141.312C39.4595 141.312 39.2408 141.371 39.0381 141.488C38.8355 141.6 38.6701 141.768 38.5421 141.992C38.4195 142.211 38.3581 142.472 38.3581 142.776C38.3581 143.08 38.4195 143.347 38.5421 143.576C38.6701 143.805 38.8355 143.981 39.0381 144.104C39.2461 144.221 39.4648 144.28 39.6941 144.28C39.9288 144.28 40.1475 144.221 40.3501 144.104C40.5528 143.987 40.7155 143.816 40.8381 143.592C40.9661 143.363 41.0301 143.096 41.0301 142.792ZM47.116 140.592L44.412 147.072H43.468L44.364 144.928L42.628 140.592H43.644L44.884 143.952L46.172 140.592H47.116Z" fill="#6D6E8A"/>
+                <path d="M248.826 139.952H246.146V141.544C246.258 141.395 246.424 141.269 246.642 141.168C246.866 141.067 247.104 141.016 247.354 141.016C247.802 141.016 248.165 141.112 248.442 141.304C248.725 141.496 248.925 141.739 249.042 142.032C249.165 142.325 249.226 142.635 249.226 142.96C249.226 143.355 249.149 143.707 248.994 144.016C248.845 144.32 248.618 144.56 248.314 144.736C248.016 144.912 247.648 145 247.21 145C246.629 145 246.162 144.856 245.81 144.568C245.458 144.28 245.248 143.899 245.178 143.424H246.066C246.125 143.675 246.256 143.875 246.458 144.024C246.661 144.168 246.914 144.24 247.218 144.24C247.597 144.24 247.88 144.125 248.066 143.896C248.258 143.667 248.354 143.363 248.354 142.984C248.354 142.6 248.258 142.307 248.066 142.104C247.874 141.896 247.592 141.792 247.218 141.792C246.957 141.792 246.736 141.859 246.554 141.992C246.378 142.12 246.25 142.296 246.17 142.52H245.306V139.152H248.826V139.952ZM254.91 145.056C254.392 145.056 253.915 144.936 253.478 144.696C253.046 144.451 252.702 144.112 252.446 143.68C252.195 143.243 252.07 142.752 252.07 142.208C252.07 141.664 252.195 141.176 252.446 140.744C252.702 140.312 253.046 139.976 253.478 139.736C253.915 139.491 254.392 139.368 254.91 139.368C255.432 139.368 255.91 139.491 256.342 139.736C256.779 139.976 257.123 140.312 257.374 140.744C257.624 141.176 257.75 141.664 257.75 142.208C257.75 142.752 257.624 143.243 257.374 143.68C257.123 144.112 256.779 144.451 256.342 144.696C255.91 144.936 255.432 145.056 254.91 145.056ZM254.91 144.264C255.278 144.264 255.606 144.181 255.894 144.016C256.182 143.845 256.406 143.605 256.566 143.296C256.731 142.981 256.814 142.619 256.814 142.208C256.814 141.797 256.731 141.437 256.566 141.128C256.406 140.819 256.182 140.581 255.894 140.416C255.606 140.251 255.278 140.168 254.91 140.168C254.542 140.168 254.214 140.251 253.926 140.416C253.638 140.581 253.411 140.819 253.246 141.128C253.086 141.437 253.006 141.797 253.006 142.208C253.006 142.619 253.086 142.981 253.246 143.296C253.411 143.605 253.638 143.845 253.926 144.016C254.214 144.181 254.542 144.264 254.91 144.264ZM258.343 142.792C258.343 142.339 258.434 141.941 258.615 141.6C258.802 141.253 259.058 140.987 259.383 140.8C259.709 140.613 260.082 140.52 260.503 140.52C261.037 140.52 261.477 140.648 261.823 140.904C262.175 141.155 262.413 141.515 262.535 141.984H261.551C261.471 141.765 261.343 141.595 261.167 141.472C260.991 141.349 260.77 141.288 260.503 141.288C260.13 141.288 259.831 141.421 259.607 141.688C259.389 141.949 259.279 142.317 259.279 142.792C259.279 143.267 259.389 143.637 259.607 143.904C259.831 144.171 260.13 144.304 260.503 144.304C261.031 144.304 261.381 144.072 261.551 143.608H262.535C262.407 144.056 262.167 144.413 261.815 144.68C261.463 144.941 261.026 145.072 260.503 145.072C260.082 145.072 259.709 144.979 259.383 144.792C259.058 144.6 258.802 144.333 258.615 143.992C258.434 143.645 258.343 143.245 258.343 142.792ZM264.508 141.336V143.776C264.508 143.941 264.545 144.061 264.62 144.136C264.7 144.205 264.833 144.24 265.02 144.24H265.58V145H264.86C264.449 145 264.135 144.904 263.916 144.712C263.697 144.52 263.588 144.208 263.588 143.776V141.336H263.068V140.592H263.588V139.496H264.508V140.592H265.58V141.336H264.508ZM268.883 143.76C269.395 143.317 269.797 142.955 270.091 142.672C270.389 142.384 270.637 142.085 270.835 141.776C271.032 141.467 271.131 141.157 271.131 140.848C271.131 140.528 271.053 140.277 270.899 140.096C270.749 139.915 270.512 139.824 270.187 139.824C269.872 139.824 269.627 139.925 269.451 140.128C269.28 140.325 269.189 140.592 269.179 140.928H268.299C268.315 140.32 268.496 139.856 268.843 139.536C269.195 139.211 269.64 139.048 270.179 139.048C270.76 139.048 271.213 139.208 271.539 139.528C271.869 139.848 272.035 140.275 272.035 140.808C272.035 141.192 271.936 141.563 271.739 141.92C271.547 142.272 271.315 142.589 271.043 142.872C270.776 143.149 270.435 143.472 270.019 143.84L269.659 144.16H272.195V144.92H268.307V144.256L268.883 143.76ZM272.996 142.008C272.996 141.085 273.151 140.365 273.46 139.848C273.775 139.325 274.313 139.064 275.076 139.064C275.839 139.064 276.375 139.325 276.684 139.848C276.999 140.365 277.156 141.085 277.156 142.008C277.156 142.941 276.999 143.672 276.684 144.2C276.375 144.723 275.839 144.984 275.076 144.984C274.313 144.984 273.775 144.723 273.46 144.2C273.151 143.672 272.996 142.941 272.996 142.008ZM276.26 142.008C276.26 141.576 276.231 141.211 276.172 140.912C276.119 140.613 276.007 140.371 275.836 140.184C275.665 139.992 275.412 139.896 275.076 139.896C274.74 139.896 274.487 139.992 274.316 140.184C274.145 140.371 274.031 140.613 273.972 140.912C273.919 141.211 273.892 141.576 273.892 142.008C273.892 142.456 273.919 142.832 273.972 143.136C274.025 143.44 274.137 143.685 274.308 143.872C274.484 144.059 274.74 144.152 275.076 144.152C275.412 144.152 275.665 144.059 275.836 143.872C276.012 143.685 276.127 143.44 276.18 143.136C276.233 142.832 276.26 142.456 276.26 142.008ZM278.625 143.76C279.137 143.317 279.54 142.955 279.833 142.672C280.132 142.384 280.38 142.085 280.577 141.776C280.774 141.467 280.873 141.157 280.873 140.848C280.873 140.528 280.796 140.277 280.641 140.096C280.492 139.915 280.254 139.824 279.929 139.824C279.614 139.824 279.369 139.925 279.193 140.128C279.022 140.325 278.932 140.592 278.921 140.928H278.041C278.057 140.32 278.238 139.856 278.585 139.536C278.937 139.211 279.382 139.048 279.921 139.048C280.502 139.048 280.956 139.208 281.281 139.528C281.612 139.848 281.777 140.275 281.777 140.808C281.777 141.192 281.678 141.563 281.481 141.92C281.289 142.272 281.057 142.589 280.785 142.872C280.518 143.149 280.177 143.472 279.761 143.84L279.401 144.16H281.937V144.92H278.049V144.256L278.625 143.76ZM283.242 143.76C283.754 143.317 284.157 142.955 284.45 142.672C284.749 142.384 284.997 142.085 285.194 141.776C285.391 141.467 285.49 141.157 285.49 140.848C285.49 140.528 285.413 140.277 285.258 140.096C285.109 139.915 284.871 139.824 284.546 139.824C284.231 139.824 283.986 139.925 283.81 140.128C283.639 140.325 283.549 140.592 283.538 140.928H282.658C282.674 140.32 282.855 139.856 283.202 139.536C283.554 139.211 283.999 139.048 284.538 139.048C285.119 139.048 285.573 139.208 285.898 139.528C286.229 139.848 286.394 140.275 286.394 140.808C286.394 141.192 286.295 141.563 286.098 141.92C285.906 142.272 285.674 142.589 285.402 142.872C285.135 143.149 284.794 143.472 284.378 143.84L284.018 144.16H286.554V144.92H282.666V144.256L283.242 143.76Z" fill="#6D6E8A"/>
+                <defs>
+                <filter id="filter0_d_6322_18738" x="231.995" y="13.1907" width="66.9" height="66.8999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="13.646"/>
+                <feGaussianBlur stdDeviation="13.646"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.223889 0 0 0 0 0.103125 0 0 0 0 0.45 0 0 0 0.15 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6322_18738"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6322_18738" result="shape"/>
+                </filter>
+                <filter id="filter1_d_6322_18738" x="0.908161" y="100.535" width="66.8067" height="66.807" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="13.646"/>
+                <feGaussianBlur stdDeviation="13.646"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.223889 0 0 0 0 0.103125 0 0 0 0 0.45 0 0 0 0.15 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6322_18738"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6322_18738" result="shape"/>
+                </filter>
+                <linearGradient id="paint0_linear_6322_18738" x1="269.783" y1="28.6562" x2="261.106" y2="37.3331" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8BB4F2"/>
+                <stop offset="0.51551" stop-color="#7C27D9" stop-opacity="0.887325"/>
+                <stop offset="1" stop-color="#DE52D0" stop-opacity="0.76"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_6322_18738" x1="38.6036" y1="116" x2="30.0195" y2="124.584" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8BB4F2"/>
+                <stop offset="0.51551" stop-color="#7C27D9" stop-opacity="0.887325"/>
+                <stop offset="1" stop-color="#DE52D0" stop-opacity="0.76"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_6322_18738" x1="175.767" y1="69.4001" x2="173.268" y2="123.517" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8F00E0"/>
+                <stop offset="1" stop-color="#8F00E0" stop-opacity="0"/>
+                </linearGradient>
+                <clipPath id="clip0_6322_18738">
+                <rect width="231" height="132" fill="white" transform="translate(35)"/>
+                </clipPath>
+                </defs>
+              </svg>
 
               <div className="flex gap-2 items-center">
-                <div className="text-[18px] font-medium leading-[27px] text-[#1B1C39]">
+                <div className="text-[12px] md:text-[18px] font-medium leading-[18px] md:leading-[27px] text-[#1B1C39]">
                   Enter a recurring monthly/weekly deposit
                 </div>
                 <div className={header.btn10}>
-                  <div className="flex gap-[10px] mt-3 sm:mt-0 sm:ml-3 items-center ">
-                    <a
-                      href="#"
-                      className="text-[20px] text-center leading-[30px] text-[#1B1828] py-[15px] pl-[30px]"
-                    >
+                  <div className="text-[16px] md:text-[20px] leading-[24px] md:leading-[30px] text-[#1B1828]">
                       $ 10.00
-                    </a>
                   </div>
                 </div>
               </div>
-              <div className="w-[539px]">
+              <div className="md:w-[539px]">
                 <p className="text-[12px] text-[#1B1C39] leading-[20.52px] mt-[25px] mb-[37px]">
                   Use this tool to see how round-ups and depositing money each
                   month can impact the long term value of your account.
                 </p>
               </div>
-              <div className="absolute top-[59px] left-[500px]">
+              <div className="absolute md:top-[59px] md:left-[500px]">
                 <div className={header.btn3}>
                   <div className="flex mt-3 sm:mt-0 sm:ml-3">
                     <a
@@ -1049,19 +1121,19 @@ const { locale, locales, defaultLocale } = router
 
           {/* Pricing */}
           <div className={header.pricing}>
-            <div className="mb-[4px] text-center">
+            <div className="mb-[4px] text-left md:text-center">
               <h1 className={header.pr_3}>
                 Simple Pricing. No Complex Contracts
               </h1>
             </div>
-            <div className="lg:flex space-x-[20px] justify-center">
+            <div className="md:flex space-x-[20px] justify-center">
               {/* Purple */}
-              <div className="flex">
+              <div className="md:flex">
                 <div className={header.price1}>
                   <div className="relative flex flex-col py-[50px]">
                     <div className="pl-[20px]">
-                      <div className="flex justify-between gap-[80px] pl-[10px]">
-                        <div className="text-[30px] text-[#A08CFF] font-semibold leading-[45px]">
+                      <div className="flex justify-between gap-[63px] md:gap-[80px] pl-[10px]">
+                        <div className="text-[26px] md:text-[30px] leading-[39px] md:leading-[45px] text-[#A08CFF] font-semibold">
                           Purple
                         </div>
                         <div className="text-[#1B1C39] pr-[20px]">
@@ -1073,15 +1145,15 @@ const { locale, locales, defaultLocale } = router
                           </span>
                         </div>
                       </div>
-                      <div className="border-b border-[#1B1828]/0.12 mt-[33px] mb-[30px] w-[340px]"></div>
+                      <div className="border-b border-[#1B1828]/0.12 mt-[33px] mb-[19px] md:mb-[30px] w-[280px] md:w-[340px]"></div>
                       <div className="pl-[10px]">
-                        <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] marker:text-[#8F00E0]">
+                        <ul className="list-inside list-disc text-[#6D6E8A] tex-[18px] md:text-[20px] leading-[27px] md:leading-[30px] space-y-[10px] marker:text-[#8F00E0]">
                           <li>Bank Better</li>
                           <li>Pay Later</li>
                           <li>Customizable Virtual Cards</li>
                         </ul>
                       </div>
-                      <div className="absolute top-[234px]">
+                      <div className="absolute top-[335px] md:top-[234px]">
                         <Image src={ccb} alt="card control" />
                       </div>
                     </div>
@@ -1094,14 +1166,14 @@ const { locale, locales, defaultLocale } = router
                 </div>
               </div>
               {/* Premium */}
-              <div className="flex relative">
+              <div className="md:flex relative">
                 <div className={header.price2}>
-                  <div className="absolute top-0 left-0 right-0 rounded-t-[25px] w-[380px] text-center text-[15px] leading-[22.5px] bg-[#6D6E8A] text-white py-2 mb-[25px]">
+                  <div className="absolute top-0 left-0 right-0 rounded-t-[25px] w-[320px] md:w-[380px] text-center text-[15px] leading-[22.5px] bg-[#6D6E8A] text-white py-2 mb-[25px]">
                     Recommended
                   </div>
                   <div className="relative flex flex-col py-[50px]">
                     <div className="pl-[20px] pr-[20px]">
-                      <div className="flex justify-between gap-[61px] pl-[10px]">
+                      <div className="flex justify-between gap-[22px] md:gap-[61px] pl-[10px]">
                         <div className={header.premium}>Premium</div>
                         <div className="flex flex-col">
                           <div className="text-[#1B1C39]">
@@ -1123,7 +1195,7 @@ const { locale, locales, defaultLocale } = router
                         Everything in Purple plus:
                       </div>
                       <div className="pl-[10px]">
-                        <ul className="list-inside list-disc text-[#6D6E8A] text-[20px] leading-[30px] space-y-[10px] marker:text-[#8F00E0]">
+                        <ul className="list-inside list-disc text-[#6D6E8A] text-[18px] md:text-[20px] leading-[27px] md:leading-[30px] space-y-[10px] marker:text-[#8F00E0]">
                           <li>Bank Better +</li>
                           <li>Pay Later +</li>
                           <li>Spend Better +</li>
@@ -1131,7 +1203,7 @@ const { locale, locales, defaultLocale } = router
                           <li>Save Better +</li>
                         </ul>
                       </div>
-                      <div className="absolute top-[294px]">
+                      <div className="absolute top-[347px] md:top-[294px]">
                         <Image src={ccb2} alt="card control" />
                       </div>
                     </div>
@@ -1144,7 +1216,7 @@ const { locale, locales, defaultLocale } = router
                 </div>
               </div>
               {/* Metal */}
-              <div className="flex">
+              <div className="md:flex">
                 <div className={header.price3}>
                   <div className="relative flex flex-col py-[38px]">
                     <div className="pl-[20px]">
@@ -1180,7 +1252,7 @@ const { locale, locales, defaultLocale } = router
                           <li>Invest better Pro</li>
                         </ul>
                       </div>
-                      <div className="absolute top-[245px]">
+                      <div className="absolute top-[300px] md:top-[245px]">
                         <Image src={ccb3} alt="card control" />
                       </div>
                     </div>
@@ -1197,8 +1269,8 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Testimonials */}
-          <div className="relative mt-[270px]">
-            <div className="lg:absolute lg:top-0 lg:left-0 pt-[80px] px-[23px]">
+          <div className="relative mt-[1700px] md:mt-[270px]">
+            <div className="absolute top-[90px] md:top-0 left-0 pt-[80px] px-[23px]">
               <svg
                 width="99"
                 height="70"
@@ -1213,7 +1285,7 @@ const { locale, locales, defaultLocale } = router
                 />
               </svg>
             </div>
-            <div className="lg:absolute lg:top-[490px] lg:right-0">
+            <div className="absolute top-[490px] right-0">
               <svg
                 width="99"
                 height="70"
@@ -1228,28 +1300,28 @@ const { locale, locales, defaultLocale } = router
                 />
               </svg>
             </div>
-            <div className="flex lg:absolute inset-x-0 lg:top-[490px] rounded-[30px] justify-center">
+            <div className="flex absolute inset-x-0 top-[490px] rounded-[30px] justify-center">
               <Image src={pray} width={90} height={98.44} alt="pray" />
             </div>
 
-            <div className="relative flex gap-[20px] text-center items-center justify-center mb-[55px] mx-[130px]">
-              <div>
+            <div className="relative flex flex-col md:flex md:flex-row md:gap-[20px] text-center items-center justify-center mb-[55px] md:mx-[130px]">
+              <div className="absolute md:relative bottom-[130px] md:bottom-0 left-0">
                 <Image src={love} width={120} height={120} alt="love" />
               </div>
-              <div className="flex flex-col mb-[4px] text-center">
+              <div className="flex flex-col space-y-[9px] md:space-y-0 mb-[4px] px-[20px] text-left md:text-center">
                 <h1 className={header.pr_3}>What our “Early Users” say</h1>
                 <h1 className={header.h2}>
                   (Don’t just take our word for it).
                 </h1>
               </div>
-              <div>
+              <div className="absolute md:relative top-[130px] md:top-0 right-[100px] md:right-0">
                 <Image src={wink} width={80} height={91.2} alt="love" />
               </div>
-              <div className="lg:absolute lg:-top-[10px] lg:right-[50px]">
+              <div className="absolute top-[110px] right-6 md:-top-[10px] md:right-[50px]">
                 <Image src={glasses} width={68} height={70.2} alt="love" />
               </div>
             </div>
-            <div className="flex items-center gap-4 justify-center mx-[130px]">
+            <div className="flex flex-col md:flex md:flex-row items-center gap-4 justify-center md:mx-[130px] mt-[150px] md:mt-[120px] md:mt-0">
               <div className={header.aldo}>
                 <div className="flex items-center gap-4 mb-[20px]">
                   <div>
@@ -1401,7 +1473,7 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Peace of mind */}
-          <div className="relative mt-[172px] mb-[49px] max-w-[1290px] mx-auto sm:mx-[20px] lg:mx-[130px] xl:mx-[130px]">
+          <div className="relative mt-[172px] mb-[49px] max-w-[1290px] mx-auto sm:mx-[20px] md:mx-[130px] xl:mx-[130px]">
             <div className="absolute left-[500px] -top-20 -z-20">
               <svg
                 width="751"
@@ -1768,7 +1840,7 @@ const { locale, locales, defaultLocale } = router
           {/* End */} 
 
           {/* Backed By */}
-          <div className="flex flex-col mb-[160px] mx-[130px]">
+          <div className="flex flex-col mb-[160px] md:mx-[130px]">
             <div className="mb-[40px]">
               <h1 className="text-[40px] leading-[60px] font-bold">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#9E7AFC]">

@@ -2,7 +2,7 @@ import header from "../styles/header.module.css";
 
 const banner = () => {
     return (
-        <main className="w-[527px] ml-[130px] mr-[57px] mt-10 sm:mt-12 md:mt-16 lg:mt-12 xl:mt-[90px]">
+        <main className="w-[321px] md:w-[527px] ml-[19px] md:ml-[130px] mr-[57px] mt-10 sm:mt-12 md:mt-16 lg:mt-12 xl:mt-[90px]">
             <div className="">
                 <h1 className="text-[62px] leading[93px] font-bold -mb-[6px]">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#9E7AFC]">
@@ -22,10 +22,10 @@ const banner = () => {
                     seamless, without walls, borders or physical limits, built on
                     an ethical islamic framework.
                 </p>
-                <p className="mt-3 text-xl text-[#4B4B4B] font-medium sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
+                <p className="mt-3 text-xl text-[#4B4B4B] font-medium mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                     Join our waiting list.
                 </p>
-                <div className="mt-5 sm:mt-8 lg:flex space-x-[80px] sm:justify-center lg:justify-start">
+                <div className="mt-8 md:mt-8 md:flex md:space-x-[80px] justify-center md:justify-start">
                     <div className="rounded-full">
                         <div className={header.waitlist} style={{color: "white"}}>
                             <a href="#" className="items-center text-center">
