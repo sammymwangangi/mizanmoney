@@ -1239,7 +1239,7 @@ const { locale, locales, defaultLocale } = router
                           </div>
                         </div>
                       </div>
-                      <div className="border-b border-[#1B1828]/0.12 mt-[14px] mb-[15px] w-[340px]"></div>
+                      <div className="border-b border-[#1B1828]/0.12 mt-[14px] mb-[15px] w-[280px] md:w-[340px]"></div>
                       <div className="text-[16px] leading-[24px] font-semibold text-[#6D6E8A] mb-[18px] pl-[10px]">
                         Everything in Premium plus:
                       </div>
@@ -1285,7 +1285,7 @@ const { locale, locales, defaultLocale } = router
                 />
               </svg>
             </div>
-            <div className="absolute top-[490px] right-0">
+            <div className="absolute top-[595px] md:top-[490px] right-0">
               <svg
                 width="99"
                 height="70"
@@ -1300,7 +1300,7 @@ const { locale, locales, defaultLocale } = router
                 />
               </svg>
             </div>
-            <div className="flex absolute inset-x-0 top-[490px] rounded-[30px] justify-center">
+            <div className="flex absolute left-[30px] md:inset-x-0 top-[630px] md:top-[490px] rounded-[30px] justify-center">
               <Image src={pray} width={90} height={98.44} alt="pray" />
             </div>
 
@@ -1321,7 +1321,7 @@ const { locale, locales, defaultLocale } = router
                 <Image src={glasses} width={68} height={70.2} alt="love" />
               </div>
             </div>
-            <div className="flex flex-col md:flex md:flex-row items-center gap-4 justify-center md:mx-[130px] mt-[150px] md:mt-[120px] md:mt-0">
+            <div className="flex flex-col md:flex md:flex-row items-center gap-4 justify-center md:mx-[130px] mt-[150px] md:mt-0">
               <div className={header.aldo}>
                 <div className="flex items-center gap-4 mb-[20px]">
                   <div>
@@ -1372,7 +1372,9 @@ const { locale, locales, defaultLocale } = router
                   like the Islamic “Revolt App” version.
                 </div>
               </div>
-              <div className={header.aldo}>
+              {/* <div className="hidden md:flex"> */}
+
+              <div className={header.aldo2}>
                 <div className="flex items-center gap-4">
                   <div>
                     <Image
@@ -1420,7 +1422,8 @@ const { locale, locales, defaultLocale } = router
                 Just wow, i used revolut in the UK, when i came to Africa, i came across Mizan App, it took minutes to setup. I’d say its like the Islamic “Revolt App” version.
                 </div>
               </div>
-              <div className={header.aldo}>
+              {/* </div> */}
+              <div className={header.aldo3}>
                 <div className="flex items-center gap-4">
                   <div>
                     <Image
@@ -1467,6 +1470,12 @@ const { locale, locales, defaultLocale } = router
                 <div className="text-[16px] leading-[24px] text-[#6D6E8A] mt-[20px]">
                 When i joined beta program, i got to experience first hand how my financial future will be revolutionized. Ditching my bank for G.
                 </div>
+              </div>
+
+              <div className="flex gap-1 items-center justify-center mt-10 md:mt-0 md:hidden">
+                <div className='rounded-full w-[8px] h-[8px] bg-[#A08CFF]'></div>
+                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA] cursor-pointer'></div>
+                <div className='rounded-full w-[8px] h-[8px] bg-[#CECFEA] cursor-pointer'></div>
               </div>
             </div>
           </div>
