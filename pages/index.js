@@ -36,7 +36,9 @@ import backer2 from "../public/backers/back2.png";
 import backer3 from "../public/backers/back3.png";
 import zenD from "../public/zend.png";
 import handShadow from "../public/hand.png";
+import hold from "../public/hold.png";
 import imagined from "../public/imagined.png";
+import holdShadow from "../public/hold-shadow.png";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 
@@ -1483,7 +1485,7 @@ const { locale, locales, defaultLocale } = router
 
           {/* Peace of mind */}
           <div className="relative mt-[172px] mb-[49px] max-w-[1290px] mx-auto sm:mx-[20px] md:mx-[130px] xl:mx-[130px]">
-            <div className="absolute left-[500px] -top-20 -z-20">
+            <div className="hidden md:block absolute left-0 md:left-[500px] -top-20 -z-20">
               <svg
                 width="751"
                 height="751"
@@ -1511,8 +1513,20 @@ const { locale, locales, defaultLocale } = router
                   </linearGradient>
                 </defs>
               </svg>
-            </div>  
-            <div className="absolute w-[561px] h-[803px] left-[600px] top-[20px] -z-10">
+            </div>
+            <div className="md:hidden md:absolute -z-20">
+              <svg width="336" height="336" viewBox="0 0 336 336" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="168" cy="168" r="168" fill="url(#paint0_linear_11_9041)"/>
+              <defs>
+              <linearGradient id="paint0_linear_11_9041" x1="70.5185" y1="4.87453e-06" x2="286.741" y2="317.852" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FAF9FE"/>
+              <stop offset="1" stop-color="#C6BAFF"/>
+              </linearGradient>
+              </defs>
+              </svg>
+            </div> 
+              {/* Hand */}
+            <div className="hidden md:block absolute w-[320px] md:w-[561px] h-[803px] left-0 md:left-[600px] top-[20px] z-0 md:-z-10">
               <Image
                 src={blackHand}
                 width={561}
@@ -1520,7 +1534,16 @@ const { locale, locales, defaultLocale } = router
                 alt="black hand holding phone"
               />
             </div>
-            <div className="absolute w-full left-[500px] -z-20 top-[200px]">
+            <div className="md:hidden absolute left-20 top-[50px] z-0 md:-z-10">
+              <Image
+                src={hold}
+                width={251}
+                height={359}
+                alt="black hand holding phone"
+              />
+            </div>
+              {/* Shadow */}
+            <div className="absolute w-full left-0 md:left-[500px] -z-20 top-[200px]">
               <Image
                 src={handShadow}
                 width={596}
@@ -1528,12 +1551,13 @@ const { locale, locales, defaultLocale } = router
                 alt="black hand holding phone"
               />
             </div>
+            <div className=""></div>
             <div className="flex">
               <div className="flex flex-col z-30 ">
                 <div className="mb-[40px]">
                   <h1 className={header.pr_3}>And finally peace of mind</h1>
                 </div>
-                <div className="flex gap-[30px] w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
+                <div className="flex gap-[30px] w-[320px] md:w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
                   <div className="p-[9px] rounded-full bg-[#E0D2FF]">
                     <svg
                       width="40"
@@ -1638,7 +1662,7 @@ const { locale, locales, defaultLocale } = router
                     Swiss level bank security with PCI /DSS certified.
                   </div>
                 </div>
-                <div className="flex gap-[30px] w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[18px] mb-[20px]">
+                <div className="flex gap-[30px] w-[320px] md:w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[18px] mb-[20px]">
                   <div className="p-[9px] rounded-full bg-[#E0D2FF]">
                     <svg
                       width="30"
@@ -1689,7 +1713,7 @@ const { locale, locales, defaultLocale } = router
                     Instantly freeze your lost card, wherever, whenever.
                   </div>
                 </div>
-                <div className="flex gap-[30px] w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
+                <div className="flex gap-[30px] w-[320px] md:w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
                   <div className="p-[9px] rounded-full bg-[#E0D2FF]">
                     <svg
                       width="29"
@@ -1771,7 +1795,7 @@ const { locale, locales, defaultLocale } = router
                     passwords.
                   </div>
                 </div>
-                <div className="flex gap-[30px] w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
+                <div className="flex gap-[30px] w-[320px] md:w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
                   <div className="p-[9px] rounded-full bg-[#E0D2FF]">
                     <svg
                       width="40"
@@ -1823,7 +1847,7 @@ const { locale, locales, defaultLocale } = router
 
           {/* Top Providers */}
           <div className="flex flex-col rounded-3xl py-[70px] bg-white shadow-[0px_-8px_100px_rgba(105,_67,_175,_0.1)] z-20 mt-[180px] mb-[160px] max-w-[1290px] ml-[54px]">
-            <div className="mb-[40px] pl-[82px]">
+            <div className="mb-[21px] md:mb-[40px] pl-[19px] md:pl-[82px]">
               <h1 className={header.pr_3}>We work with top providers</h1>
             </div>
             <div className="lg:flex items-center gap-[20px] pl-[76px] pr-[84px]">
