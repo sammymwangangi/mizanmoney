@@ -9,6 +9,7 @@ import trustpilot from "../public/clients/trustpilot.png";
 import phone from "../public/banking/phone3.png";
 import pay from "../public/pay.png";
 import kadi from "../public/kadi.png";
+import ladyFinal from "../public/lady-final.png";
 import paymask from "../public/payMask.png";
 import feature1 from "../public/features/fe1.png";
 import phone2 from "../public/features/Phone.png";
@@ -1484,7 +1485,10 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Peace of mind */}
-          <div className="relative mt-[172px] mb-[49px] max-w-[1290px] mx-auto sm:mx-[20px] md:mx-[130px] xl:mx-[130px]">
+          <div className="relative mt-[172px] mb-[49px] mx-[20px] md:mx-[130px]">
+            <div className="md:hidden mb-[40px]">
+              <h1 className={header.pr_3}>And finally peace of mind</h1>
+            </div>
             <div className="hidden md:block absolute left-0 md:left-[500px] -top-20 -z-20">
               <svg
                 width="751"
@@ -1534,7 +1538,7 @@ const { locale, locales, defaultLocale } = router
                 alt="black hand holding phone"
               />
             </div>
-            <div className="md:hidden absolute left-20 top-[50px] z-0 md:-z-10">
+            <div className="md:hidden absolute left-[50px] top-[150px] z-10 md:-z-10">
               <Image
                 src={hold}
                 width={251}
@@ -1543,7 +1547,7 @@ const { locale, locales, defaultLocale } = router
               />
             </div>
               {/* Shadow */}
-            <div className="absolute w-full left-0 md:left-[500px] -z-20 top-[200px]">
+            <div className="absolute w-full left-0 md:left-[500px] z-0 md:-z-20 top-[180px]">
               <Image
                 src={handShadow}
                 width={596}
@@ -1551,10 +1555,9 @@ const { locale, locales, defaultLocale } = router
                 alt="black hand holding phone"
               />
             </div>
-            <div className=""></div>
-            <div className="flex">
+            <div className="mt-[53px] md:mt-0 md:flex">
               <div className="flex flex-col z-30 ">
-                <div className="mb-[40px]">
+                <div className="hidden md:block mb-[40px]">
                   <h1 className={header.pr_3}>And finally peace of mind</h1>
                 </div>
                 <div className="flex gap-[30px] w-[320px] md:w-[579px] items-center z-10 bg-white rounded-3xl shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1)] px-[24px] py-[17px] mb-[20px]">
@@ -1840,17 +1843,16 @@ const { locale, locales, defaultLocale } = router
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
           {/* End */}
 
           {/* Top Providers */}
-          <div className="flex flex-col rounded-3xl py-[70px] bg-white shadow-[0px_-8px_100px_rgba(105,_67,_175,_0.1)] z-20 mt-[180px] mb-[160px] max-w-[1290px] ml-[54px]">
-            <div className="mb-[21px] md:mb-[40px] pl-[19px] md:pl-[82px]">
+          <div className="flex flex-col rounded-3xl md:px-[46px] py-0 md:py-[70px] bg-transparent md:bg-white md:shadow-[0px_-8px_100px_rgba(105,_67,_175,_0.1)] z-20 mt-[40px] md:mt-[180px] mb-[80px] md:mb-[160px] mx-[20px] md:mx-[54px]">
+            <div className="hidden md:block mb-[21px] md:mb-[40px">
               <h1 className={header.pr_3}>We work with top providers</h1>
             </div>
-            <div className="lg:flex items-center gap-[20px] pl-[76px] pr-[84px]">
+            <div className="grid grid-cols-2 md:flex items-center gap-[20px]">
               <div className={header.provider}>
                 <Image
                   src={shariyah2}
@@ -1873,21 +1875,21 @@ const { locale, locales, defaultLocale } = router
           {/* End */} 
 
           {/* Backed By */}
-          <div className="flex flex-col mb-[160px] md:mx-[130px]">
+          <div className="flex flex-col mb-[80px] md:mb-[160px] mx-[20px] md:mx-[130px]">
             <div className="mb-[40px]">
-              <h1 className="text-[40px] leading-[60px] font-bold">
+              <h1 className="text-[26px] md:text-[40px] leading-[36px] md:leading-[60px] font-bold">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#9E7AFC]">
                   Backed by
                 </span>
               </h1>
             </div>
             <div className="grid grid-cols-1 gap-y-10 gap-x-[20px] sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-3">
-              <div className="bg-white rounded-3xl pl-[30px] pt-[40px] pr-[28px] pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className="bg-white rounded-3xl px-[20px] py-[30px] md:pl-[30px] md:pt-[40px] md:pr-[28px] md:pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
                 <div className="flex gap-[20px]">
                   <div className="h-24 w-24 rounded-full flex-shrink-0 overflow-hidden drop-shadow-[0px_30px_50px_rgba(53,_60,_119,_0.1)]">
                     <Image src={backer1} alt="sponsor1" />
                   </div>
-                  <div className="h-[72px] text-[24px] leading-[36px] text-[#1B1C39] font-medium">
+                  <div className="h-[30px] md:h-[72px] text-[20px] md:text-[24px] leading-[30px] md:leading-[36px] text-[#1B1C39] font-medium">
                     Sheikh Abdullatif Essajee
                   </div>
                 </div>
@@ -1904,12 +1906,12 @@ const { locale, locales, defaultLocale } = router
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col bg-white rounded-3xl pl-[30px] pt-[40px] pr-[28px] pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+              <div className="flex flex-col bg-white rounded-3xl px-[20px] py-[30px] md:pl-[30px] md:pt-[40px] md:pr-[28px] md:pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
                 <div className="flex items-center justify-start">
                   <div className="mr-[20px] h-24 w-24 rounded-full flex-shrink-0 overflow-hidden drop-shadow-[0px_30px_50px_rgba(53,_60,_119,_0.1)]">
                     <Image src={backer2} alt="sponsor1" />
                   </div>
-                  <div className="h-[72px] flex-1 text-[24px] leading-[36px] text-[#1B1C39] font-medium">
+                  <div className="h-[30px] md:h-[72px] flex-1 text-[20px] md:text-[24px] leading-[30px] md:leading-[36px] text-[#1B1C39] font-medium">
                     Mufti Ismail menk
                   </div>
                 </div>
@@ -1935,12 +1937,12 @@ const { locale, locales, defaultLocale } = router
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col bg-white rounded-3xl pl-[30px] pt-[40px] pr-[28px] pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
-                <div className="flex">
+              <div className="flex flex-col bg-white rounded-3xl px-[20px] py-[30px] md:pl-[30px] md:pt-[40px] md:pr-[28px] md:pb-[40px] shadow-[0px_20px_40px_rgba(105,_67,_175,_0.1);]">
+                <div className="flex items-center">
                   <div className="mr-[20px] flex-shrink-0 overflow-hidden drop-shadow-[0px_30px_50px_rgba(53,_60,_119,_0.1)]">
                     <Image src={backer3} alt="sponsor1" />
                   </div>
-                  <div className="h-[72px] text-[24px] leading-[36px] text-[#1B1C39] font-medium">
+                  <div className="h-[30px] md:h-[72px] text-[20px] md:text-[24px] leading-[30px] md:leading-[36px] text-[#1B1C39] font-medium">
                     Sh. Muhammad Ahmad Shaikh
                   </div>
                 </div>
@@ -1964,8 +1966,8 @@ const { locale, locales, defaultLocale } = router
           {/* End */}
 
           {/* Zendesk */}
-          <div className="relative flex flex-col mb-[160px] mx-auto sm:mx-[20px] md:mx-[20px] lg:mx-[130px] xl:mx-[130px]">
-            <h1 className="text-[40px] leading[60px] font-bold">
+          <div className="relative flex flex-col mb-[80px] md:mb-[160px] mx-[20px] md:mx-[130px]">
+            <h1 className="text-[26px] md:text-[40px] leading-[36px] md:leading[60px] font-bold">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#000000] to-[#9E7AFC]">
                 Any questions?
               </span>
@@ -1975,7 +1977,7 @@ const { locale, locales, defaultLocale } = router
               have a suggestion? Do let us know, we dont like leaving anything
               to chance
             </h1>
-            <div className="flex items-center justify-center gap-[150px] mt-[40px]">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-[57px] md:gap-[150px] mt-[40px]">
               <div className="flex flex-col text-center">
                 <div>
                   <svg
@@ -2241,7 +2243,13 @@ const { locale, locales, defaultLocale } = router
               </div>
               <div className={header.zendesk}>
                 <div className="flex items-center gap-2">
-                  <div>
+                  <div className="md:hidden">
+                    <Image
+                      src={ladyFinal}
+                      alt="lady zendesk"
+                    />
+                  </div>
+                  <div className='hidden md:block'>
                     <Image
                       src={lady}
                       width={64}
@@ -2250,7 +2258,7 @@ const { locale, locales, defaultLocale } = router
                     />
                   </div>
                   <div className="relative">
-                    <svg
+                    <svg className="hidden md:block"
                       width="451"
                       height="52"
                       viewBox="0 0 451 52"
@@ -2263,13 +2271,18 @@ const { locale, locales, defaultLocale } = router
                         fillOpacity="0.1"
                       />
                     </svg>
-                    <div className="absolute left-[44px] top-[15px] text-[#6D6E8A] tex-[15px] leading-[19px]">
+                    
+                    <svg className="md:hidden" width="234" height="55" viewBox="0 0 234 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.7339 26C10.7339 11.6406 22.3745 0 36.7339 0H208C222.359 0 234 11.6406 234 26V29C234 43.3594 222.372 55 208.013 55C150.712 55 17.2148 55 0 55C10.7339 52.3529 10.7339 37.9412 10.7339 37.9412V26Z" fill="#6943AF" fill-opacity="0.1"/>
+                    </svg>
+
+                    <div className="absolute left-[44px] top-[15px] text-[#6D6E8A] text-[14px] md:text-[15px] leading-[19px]">
                       Hi! My name’s Sofie, how can we help you?
                     </div>
                   </div>
                 </div>
                 <div className="relative">
-                  <svg
+                  <svg className="hidden md:block"
                     width="520"
                     height="62"
                     viewBox="0 0 520 62"
@@ -2278,7 +2291,12 @@ const { locale, locales, defaultLocale } = router
                   >
                     <rect width="520" height="62" rx="31" fill="#F3F1F9" />
                   </svg>
-                  <div className="absolute flex items-center gap-[20px] left-[25px] top-[18px] text-[#6D6E8A] tex-[15px] leading-[19px]">
+                  
+                  <svg className="md:hidden" width="279" height="48" viewBox="0 0 279 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="279" height="48" rx="24" fill="#F3F1F9"/>
+                  </svg>
+
+                  <div className="absolute flex items-center gap-[20px] left-[25px] top-[18px] text-[#6D6E8A] text-[14px] md:text-[15px] leading-[19px]">
                     <span>
                       <svg
                         width="23"
@@ -2344,7 +2362,7 @@ const { locale, locales, defaultLocale } = router
           
         </div>
 
-        <div className="lg:absolute inset-y-0 lg:right-0 top-[8872px] -z-10">
+        <div className="absolute inset-y-0 lg:right-0 top-[11400px] md:top-[8872px] -z-10">
           <svg
             width="647"
             height="918"
